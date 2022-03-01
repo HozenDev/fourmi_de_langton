@@ -1,0 +1,88 @@
+* Fourmi de Langton
+** Pour commencer
+*** Pré-requis :
+
+**** Python : =python3=
+
+***** Linux:
+
+     Ligne de commande:
+
+     (installation ici de python3.8 mais installer la dernière version disponible est
+     préférable).
+     
+     =sudo apt-get update=
+     =sudo apt-get install python3.8=
+
+***** Windows:
+
+     [[https://www.python.org/downloads/windows/][Python pour Windows]]
+    
+**** PyGame : =pygame  2.0.0.dev8=
+
+***** Linux:
+
+      =sudo apt-get install python3-pip=
+
+      Une fois *pip* installé :
+
+      =sudo pip3 install -update pip=
+      =sudo pip3 install pygame=
+
+***** Windows:
+
+      =Win + r= et taper =cmd=
+
+      Insérer cette ligne dans le commande:
+      
+      =python -m pip install pygame=
+
+*** Installation
+
+    Aucune installation pour ce programme.
+
+** Démarrage
+
+*** Linux
+
+    Se rendre dans le dossier =fourmi/= et exécuter =exec.sh=.
+
+    =cd fourmi/ && ./exec.sh=
+
+*** Windows
+
+    Se rendre dans le dossier =fourmi/= et exécuter avec l'interpréteur *python3*
+    =main.py=
+
+    =python3 main.py=
+
+** Outils
+
+   - Emacs
+   - 
+   - 
+   - 
+   - 
+
+** Versions
+
+   *Dernière version stable :* 1.0
+
+   *Dernière version :* 1.0
+
+   [[https://gitlab.isima.fr/endurel/fourmi-de-langton/tags][Liste des versions]]
+
+** Auteurs
+
+*** Responsable de projet
+
+    - BARRA Vincent
+
+*** Equipe de développement
+      
+   - MALLEPEYRE Nourrane
+   - DUREL Enzo
+
+** Licence
+
+   Le projet est *open-source*

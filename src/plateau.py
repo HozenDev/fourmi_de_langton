@@ -4,7 +4,7 @@ import random
 from color import *
 
 class Plateau :
-    def __init__(self, taille=(1, 1), res=(32, 32)):
+    def __init__(self, behavior, color, taille=(1, 1), res=(32, 32)):
         self.w = taille[0] # width of plateau
         self.h = taille[1] # height of plateau
         self.schema = [[Case((res[0], res[1])) # schema of plateau
@@ -12,11 +12,14 @@ class Plateau :
                        for i in range(self.h)]
         """Init graphics"""
         self.screen = pygame.display.get_surface()
+        """Color"""
+        self.behavior = behavior
+        self.color = color
         
     def random_schema(self):
         for line in self.schema:
             for i in line:
-                r = random.choice(i.color)
+                r = random.choice(self.color)
                 i.set_color(r)
 
     def blank_schema(self):
@@ -25,7 +28,7 @@ class Plateau :
     def reset(self):
         for line in self.schema:
             for i in line:
-                i.set_color('white')
+                i.set_color(color_dic["white"])
         self.draw()
         
     def draw(self, start=[0,0], end=[None, None]):
@@ -50,7 +53,7 @@ class Plateau :
                     """Draw the rectangle of a case"""
                     pygame.draw.rect(
                         self.screen,
-                        color_dic[self.schema[i][j].color[self.schema[i][j].cur_color]],
+                        self.schema[i][j].cur_color,
                         pygame.Rect(j*self.schema[i][j].w,
                                     i*self.schema[i][j].h,
                                     self.schema[i][j].w,
@@ -66,6 +69,20 @@ class Plateau :
         s = ""
         for i in self.schema:
             for j in i:
-                s += f"{j.color[j.cur_color]} "
+                s += f"{j.cur_color} "
             s += f"\n"
         return s
+
+if __name__ == "__main__":
+
+    p = Plateau("LR", [(255, 255, 255), (0, 0, 0)], taille=(5, 5))
+    p.schema[0][0].set_color((0, 0, 0))
+    i = p.color.index(p.schema[0][0].cur_color)    
+    print(i, p.behavior[i])
+    print(p.color)
+    case = p.schema[1][1]
+    index = p.color.index(case.cur_color)
+    case.set_color(p.color[(index+1)%len(p.color)])
+    index = p.color.index(case.cur_color)
+    case.set_color(p.color[(index+1)%len(p.color)])    
+    print(p)

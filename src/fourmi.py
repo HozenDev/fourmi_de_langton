@@ -2,7 +2,8 @@ import pygame
 from color import *
 
 class Fourmi :
-    def __init__(self, coords=(0, 0), taille=4, speed=1, direction=0):
+    def __init__(self, coords=(0, 0), taille=4, speed=1, direction=0,
+                 color=[(255, 255, 255), (0, 0, 0)], behavior="LR"):
         """ant coordinates"""
         self.x = int(coords[0]) # current position
         self.y = int(coords[1])
@@ -19,6 +20,9 @@ class Fourmi :
         self.screen = pygame.display.get_surface()
         self.taille = taille
         self.out = False
+        """Behavior"""
+        self.color = color
+        self.behavior = behavior
 
     def set_out(self):
         self.out = True
@@ -42,16 +46,16 @@ class Fourmi :
         
     def inverse_color_case(self, case):
         """color relations"""
-        if case.color[case.cur_color] == "white":
-            case.set_color("black")
-        elif case.color[case.cur_color] == "black":
-            case.set_color("white")    
+        index = self.color.index(case.cur_color)
+        case.set_color(self.color[(index+1)%len(self.color)])
         
     def rotate(self, case):
         """rotation ant conduct"""
-        if case.color[case.cur_color] == "white":
+        index = self.color.index(case.cur_color)
+        index_behavior = self.behavior[index]
+        if index_behavior == 'L':
             self.rotate_left()
-        elif case.color[case.cur_color] == "black":
+        elif index_behavior == 'R':
             self.rotate_right()
         
     def conduct(self) :

@@ -3,7 +3,7 @@ from color import *
 from button import Button
 
 class InputBox(Button):
-    def __init__(self, pos, size, text='', fun=None):
+    def __init__(self, pos, size, text='', fun=None, max_len=5):
         super().__init__(pos, size, text=text, fun=fun)
         """Rect"""
         self.int_rect = pygame.Rect(pos[0]+5, pos[1]+5, size[0]-10, size[1]-10)
@@ -14,6 +14,8 @@ class InputBox(Button):
         self.disable_color = DISABLE_IB_COLOR
         self.int_color = color_dic["white"]
         self.text_color = TEXT_IB_COLOR
+        """Text"""
+        self.max_len = max_len
         
     def handle_event(self, event):
         """Text input and pressed reference"""
@@ -28,17 +30,20 @@ class InputBox(Button):
         if event.type == pygame.KEYDOWN:
             if self.active:
                 if event.key == pygame.K_RETURN:
-                    self.fun(self.text)
+                    if self.fun is not None:
+                        self.fun(self.text)
+                    else:
+                        print("Button has no function.")
                     self.text = ''
                     self.active = False
                     self.color = self.inactive_color
                 elif event.key == pygame.K_BACKSPACE:
                     self.text = self.text[:-1]
                 else:
-                    if len(self.text) < 5:
+                    if len(self.text) < self.max_len:
                         self.text += event.unicode
                     else:
-                        print("Maximum of char : 5")
+                        print(f"Maximum of char : {self.max_len}")
                 self.txt_surf = self.font.render(self.text, True, self.text_color)
 
     def draw(self, screen):
@@ -52,7 +57,7 @@ class InputBox(Button):
                              self.int_rect,
                              border_radius=self.border_radius)
         except Exception:
-            print("Mettez a jour PyGame")
+            print("You need to update PyGame.")
             pygame.draw.rect(screen,
                              self.color,
                              self.rect) 

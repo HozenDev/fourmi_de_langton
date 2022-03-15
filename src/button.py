@@ -2,13 +2,14 @@ import pygame
 from color import *
 
 class Button:
-    def __init__(self, pos, size, fun=None, text=''):
+    def __init__(self, pos, size, text='', fun=None):
         """Rect"""
         self.rect = pygame.Rect(pos, size) # rect collison button
         """Colors"""
         self.inactive_color = INACTIVE_BUTTON_COLOR # when button inactive
         self.active_color = ACTIVE_BUTTON_COLOR # when button is clicked on 
-        self.disable_color = DISABLE_BUTTON_COLOR # when button disabled
+        self.disable_color = DISABLE_BUTTON_COLOR
+        # self.disable_color = DISABLE_BUTTON_COLOR # when button disabled
         self.color = INACTIVE_BUTTON_COLOR # current color
         self.text_color = TEXT_BUTTON_COLOR # text inside color
         self.hover_color = HOVER_BUTTON_COLOR # when mouse on the button

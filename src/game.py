@@ -1,15 +1,25 @@
 import pygame
 import time
+import random
+
 from plateau import Plateau
 from fourmi import Fourmi
+
 from button import Button
-from menu import Menu
-from color import *
 from input_box import InputBox
+from check_box import CheckBox
+from menu import Menu
+
+from color import *
+from const import *
 
 class Game:
-    def __init__(self, size_screen=(640, 480), size_plateau=(480, 480), res=4,
-                 draw_step=1, step_number=None):
+    def __init__(self,
+                 size_screen=DEFAULT_SCREEN_SIZE,
+                 size_plateau=DEFAULT_PLATEAU_SIZE,
+                 res=DEFAULT_RESOLUTION,
+                 draw_step=DEFAULT_DRAW_STEP,
+                 step_number=DEFAULT_STEP_NUMBER):
 
         """Ratio Init"""
         self.draw_step = draw_step # draw the plateau for every draw_step
@@ -22,7 +32,6 @@ class Game:
         self.screen = pygame.display.set_mode(size_screen, pygame.DOUBLEBUF) # screen set
         pygame.display.set_caption("Fourmi de Langton") # title set
         self.clock = pygame.time.Clock() # clock to control the framerate
-        self.multiprocessing = (self.draw_step > 10)
         
         """Boolean Init"""
         self.end = False # if simulation end
@@ -32,9 +41,16 @@ class Game:
         """Debug Init"""
         self.debug = False
         self.iteration = 0
+
+        """Color list from behavior"""
+        self.behavior = ""
+        self.color = []
+        self.set_behavior("LR")
         
         """Plateau Init"""
-        self.plateau = Plateau(taille=(self.size_plateau[0]//self.res, 
+        self.plateau = Plateau(self.behavior,
+                               self.color,
+                               taille=(self.size_plateau[0]//self.res, 
                                        self.size_plateau[1]//self.res),
                                res=(self.res, self.res))
         
@@ -44,42 +60,47 @@ class Game:
         
         """Button"""
         self.btn_debug = Button((self.size_screen[0]-260, 20),
-                                (100, 50),
+                                BUTTON_SIZE,
                                 text="Debug",
                                 fun=self.active_debug)
         self.btn_play = Button((self.size_screen[0]-260, self.size_plateau[1]-70),
-                               (100, 50),
+                               BUTTON_SIZE,
                                text="Play",
                                fun=self.play)
         self.btn_stop = Button((self.size_screen[0]-120, self.size_plateau[1]-70),
-                               (100, 50),
+                               BUTTON_SIZE,
                                text="Stop",
                                fun=self.stop)
         self.btn_reset = Button((self.size_screen[0]-260, 90),
-                                (100, 50),
+                                BUTTON_SIZE,
                                 text="Reset",
                                 fun=self.reset)
         self.btn_next = Button((self.size_screen[0]-260, self.size_plateau[1]-140),
-                                (100, 50),
+                                BUTTON_SIZE,
                                 text="Next",
                                 fun=self.next_step)
-
         self.btn_add_f = Button((self.size_screen[0]-260, self.size_plateau[1]-210),
-                                (100, 50),
+                                BUTTON_SIZE,
                                 text="Add",
                                 fun=self.add_fourmi)
         
         """InputBox"""
         self.ib_next = InputBox((self.size_screen[0]-120, self.size_plateau[1]-140),
-                                (100, 50),
+                                BUTTON_SIZE,
                                 fun=self.set_next)
-                                
+        self.ib_behavior = InputBox((self.size_screen[0]-260, 160),
+                                    (240, 50),
+                                    fun=self.set_behavior,
+                                    max_len=10)
+
+        """CheckBox"""
+        
         """Menu"""
         self.menu = Menu((size_plateau[0], 0),
                          (size_screen[0]-size_plateau[0], size_screen[1]),
                          btn_list=[self.btn_debug, self.btn_play, self.btn_stop,
                                    self.btn_reset, self.btn_next, self.btn_add_f,
-                                   self.ib_next])
+                                   self.ib_next, self.ib_behavior])
         
         """Simulation"""
         self.it = self.play_iter()
@@ -101,21 +122,18 @@ class Game:
 
         while self.start:
 
-            self.btn_play.enable()
-            self.btn_stop.enable()
-            self.btn_debug.enable()
-            self.btn_next.enable()
-            self.btn_reset.enable()
-            self.ib_next.enable()
-            self.btn_add_f.enable()
+            self.menu.enable() # enable all buttons in the menu
 
             if self.nb_fourmi <= 0:
-                self.btn_play.disable()
-                self.btn_next.disable()
-                self.ib_next.disable()
-                self.btn_stop.disable()
-                self.btn_debug.disable()
+                self.menu.disable(self.btn_play,
+                                  self.btn_next,
+                                  self.ib_next,
+                                  self.btn_stop,
+                                  self.btn_debug)
 
+            if self.nb_fourmi > 0:
+                self.menu.disable(self.ib_behavior)
+                
             self.handle_event()
             pygame.display.update() # update the screen            
             self.clock.tick(30) # control the max framerate
@@ -139,15 +157,17 @@ class Game:
                             f_new = Fourmi(coords=(f_x, f_y),
                                            taille=self.res,
                                            speed=self.res,
-                                           direction=0)
+                                           direction=0,
+                                           behavior=self.behavior,
+                                           color=self.color)
                             self.fourmi_list.append(f_new)
                             self.nb_fourmi += 1
                             f_new.draw()
                         else:
-                            print("fourmi non créée")
+                            print("Can't create an ant here.")
                 
         else:
-            print("Vous ne pouvez pas ajouter de fourmi quand la simulation est active.")
+            print("Can't add an ant when simulation is running..")
 
     def reset(self):
         if not self.run :
@@ -183,7 +203,7 @@ class Game:
                 while self.run:
                     next(self.it)
                 if self.end :
-                    print("Fin de la simulation")
+                    print("Simulation ended.")
         except Exception:
             print("Already playing")
             
@@ -214,7 +234,7 @@ class Game:
                                          f.y//self.res - self.draw_step],
                                   end=[f.x//self.res + self.draw_step + 1,
                                        f.y//self.res + self.draw_step + 1])
-                f.draw()        
+                f.draw()    
             
     def fourmi_out(self):
         for f in self.fourmi_list:
@@ -232,19 +252,24 @@ class Game:
     def handle_event(self):
 
         for event in pygame.event.get():
-            self.btn_debug.handle_event(event)
-            self.btn_play.handle_event(event)
-            self.btn_stop.handle_event(event)
+            self.menu.handle_event(event,
+                                   self.btn_debug,
+                                   self.btn_play,
+                                   self.btn_stop)
+            
             if not self.run:
-                self.btn_next.handle_event(event)
-                self.ib_next.handle_event(event)
-                self.btn_reset.handle_event(event)
-                self.btn_add_f.handle_event(event)                
+                self.menu.handle_event(event,
+                                       self.btn_next,
+                                       self.ib_next,
+                                       self.btn_reset,
+                                       self.btn_add_f,
+                                       self.ib_behavior)
+                
             else:
-                self.btn_next.disable()
-                self.ib_next.disable()
-                self.btn_reset.disable()
-                self.btn_add_f.disable()
+                self.menu.disable(self.btn_next,
+                                  self.ib_next,
+                                  self.btn_reset,
+                                  self.btn_add_f)
                 
             if event.type == pygame.QUIT:
                 self.run = False
@@ -259,17 +284,43 @@ class Game:
         try:
             self.next_time = int(text)
         except Exception:
-            print("Invalide range of Next")
+            print("Invalide next value.")
             
     def active_debug(self):
         self.debug = not self.debug
 
     def debuging(self):
         # print(f"Iteration : {self.iteration}")
-        txt_surf = self.btn_debug.font.render(f"{self.iteration}", True, color_dic["white"])
+        txt_surf = self.btn_debug.font.render(f"{self.iteration}",
+                                              True,
+                                              color_dic["white"])
         pos = list(self.btn_debug.get_pos())
         size = list(self.btn_debug.get_size())
+
         text_w = txt_surf.get_width() 
         text_h = txt_surf.get_height()
-        pos[0], pos[1] = self.size_screen[0]-70-text_w//2, 20 + size[1]//2 - text_h//2
+
+        pos = (self.size_screen[0]-70-text_w//2,
+               20 + size[1]//2 - text_h//2),
+
         self.screen.blit(txt_surf, pos)
+
+    def init_color(self, nb):
+        color_list = []
+        color = []
+        color_list.append(color_dic["white"])
+        for _ in range(nb-1):
+            for _ in range(3):
+                color.append(random.randint(0, 255))
+            color_list.append(tuple(color.copy()))
+            color = [].copy()
+        self.color = color_list.copy()        
+
+    def set_behavior(self, text):
+        for letter in text:
+            if letter != "R" and letter != "L":
+                print("Invalide behavior, must be a text of 'R' and 'L'.")
+                return;
+        self.behavior = text
+        self.init_color(len(text))
+        

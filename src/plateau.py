@@ -1,12 +1,14 @@
 import pygame
-from case import Case
 import random
+import numpy as np
+
+from case import Case
 from color import *
 
 class Plateau :
     def __init__(self, behavior, color, taille=(1, 1), res=(32, 32)):
         self.w = taille[0] # width of plateau
-        self.h = taille[1] # height of plateau
+        self.h = taille[1] # height of plateau)
         self.schema = [[Case((res[0], res[1])) # schema of plateau
                         for j in range(self.w)]
                        for i in range(self.h)]

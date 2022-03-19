@@ -1,4 +1,6 @@
 import pygame
+import time
+
 from color import *
 from button import Button
 
@@ -17,6 +19,9 @@ class CheckBox(Button):
         self.disable_color = DISABLE_CB_COLOR
         self.disable_active_color = DISABLE_ACTIVE_CB_COLOR
         self.text_color = TEXT_IB_COLOR
+        """Time"""
+        self.delay = 1_000_000 # en ns
+        self.active_time = time.time_ns()
 
     def disable(self):
         """Disable the button"""
@@ -32,9 +37,10 @@ class CheckBox(Button):
             return;
         if event.type == pygame.MOUSEBUTTONUP:
             if self.rect.collidepoint(event.pos):
+
                 self.active = not self.active
-            self.color = self.active_color if self.active else self.inactive_color
-            if self.rect.collidepoint(event.pos) and self.active:
+                self.color = self.active_color if self.active else self.inactive_color
+
                 if self.fun is not None:
                     self.fun()
                 else:

@@ -94,25 +94,30 @@ class Game:
                                     max_len=10)
 
         """CheckBox"""
+
+        self.infinite_ant = False
+        self.cb_infinite = CheckBox((self.size_screen[0]-260, 230),
+                                    (20, 20),
+                                    text="Infinite",
+                                    fun=self.infinite)
         
         """Menu"""
         self.menu = Menu((size_plateau[0], 0),
                          (size_screen[0]-size_plateau[0], size_screen[1]),
                          btn_list=[self.btn_debug, self.btn_play, self.btn_stop,
                                    self.btn_reset, self.btn_next, self.btn_add_f,
-                                   self.ib_next, self.ib_behavior])
+                                   self.ib_next, self.ib_behavior, self.cb_infinite])
         
         """Simulation"""
         self.it = self.play_iter()
         self.next_time = 1
         
-        
     def start(self):
-        """Start"""
+        """Global start, here when ants aren't running"""
         
         self.plateau.reset()
         
-        # self.plateau.random_schema()
+        # self.plateau.random_schema() # set the plateau to random
         
         self.plateau.draw()
         self.menu.draw(self.screen)
@@ -136,12 +141,16 @@ class Game:
                 
             self.handle_event()
             pygame.display.update() # update the screen            
-            self.clock.tick(30) # control the max framerate
+            self.clock.tick(60) # control the max framerate
             
     def stop(self):
+        """Stop the game"""
         self.run = False
 
     def add_fourmi(self):
+        """
+        Add a ant on the plateau
+        """
         if not self.run :
             not_click = True
             while not_click:
@@ -170,6 +179,12 @@ class Game:
             print("Can't add an ant when simulation is running..")
 
     def reset(self):
+        """
+        Reset the game :
+        - delete all ants
+        - reset plateau
+        - turn global number iteration to 0
+        """
         if not self.run :
             self.plateau.reset()
 
@@ -186,6 +201,7 @@ class Game:
             print("Can't reset when simulation is running")
 
     def next_step(self):
+        """Play iteration of step the user give, default:1"""
         try:
             if not self.end and not self.run:
                 for _  in range(self.next_time):
@@ -196,6 +212,7 @@ class Game:
             print("Already in function")
             
     def play(self):
+        """Play, infinite loop"""
         try:
             if not self.run:
                 if not self.end:
@@ -208,7 +225,7 @@ class Game:
             print("Already playing")
             
     def play_iter(self):
-        """Game run"""
+        """Return the game iterator, calls in next and play button"""
         
         while self.step_number == None or self.iteration <= self.step_number:
 
@@ -241,8 +258,12 @@ class Game:
             if f.x == self.size_plateau[0] \
                or f.y == self.size_plateau[1] \
                or f.x < 0 or f.y < 0:
-                self.run = False
-                self.end = True
+                if self.infinite_ant:
+                    f.x = f.x%self.size_plateau[0]
+                    f.y = f.y%self.size_plateau[1]
+                else:
+                    self.run = False
+                    self.end = True
         
     def fourmi_step(self):
         for f in self.fourmi_list:
@@ -255,7 +276,8 @@ class Game:
             self.menu.handle_event(event,
                                    self.btn_debug,
                                    self.btn_play,
-                                   self.btn_stop)
+                                   self.btn_stop,
+                                   self.cb_infinite)
             
             if not self.run:
                 self.menu.handle_event(event,
@@ -280,12 +302,19 @@ class Game:
         if self.debug:
             self.debuging()
 
-    def set_next(self, text):
-        try:
-            self.next_time = int(text)
-        except Exception:
-            print("Invalide next value.")
-            
+    def init_color(self, nb):
+        color_list = []
+        color = []
+        color_list.append(color_dic["white"])
+        for _ in range(nb-1):
+            for _ in range(3):
+                color.append(random.randint(0, 255))
+            color_list.append(tuple(color.copy()))
+            color = [].copy()
+        self.color = color_list.copy()
+
+    """Button fonctions"""
+
     def active_debug(self):
         self.debug = not self.debug
 
@@ -303,19 +332,15 @@ class Game:
         pos = (self.size_screen[0]-70-text_w//2,
                20 + size[1]//2 - text_h//2),
 
-        self.screen.blit(txt_surf, pos)
+        self.screen.blit(txt_surf, pos)    
 
-    def init_color(self, nb):
-        color_list = []
-        color = []
-        color_list.append(color_dic["white"])
-        for _ in range(nb-1):
-            for _ in range(3):
-                color.append(random.randint(0, 255))
-            color_list.append(tuple(color.copy()))
-            color = [].copy()
-        self.color = color_list.copy()        
-
+    def set_next(self, text):
+        try:
+            self.next_time = int(text)
+            print(f"Set next step to {self.next_time}")
+        except Exception:
+            print("Invalide next value.")
+        
     def set_behavior(self, text):
         for letter in text:
             if letter != "R" and letter != "L":
@@ -323,4 +348,8 @@ class Game:
                 return;
         self.behavior = text
         self.init_color(len(text))
+        print(f"Set game behavior to {self.behavior}")
         
+    def infinite(self):
+        self.infinite_ant = not self.infinite_ant
+        print(f"Set infinite board to {self.infinite_ant}")

@@ -245,6 +245,7 @@ class Game:
             yield;
 
     def draw(self):
+        """Draw the map and ants"""
         for f in self.fourmi_list:
             if not self.end and self.iteration % self.draw_step == 0:
                 self.plateau.draw(start=[f.x//self.res - self.draw_step,
@@ -254,6 +255,7 @@ class Game:
                 f.draw()    
             
     def fourmi_out(self):
+        """Set game to end if fourmi is extremity of the map indexes"""
         for f in self.fourmi_list:
             if f.x == self.size_plateau[0] \
                or f.y == self.size_plateau[1] \
@@ -266,11 +268,13 @@ class Game:
                     self.end = True
         
     def fourmi_step(self):
+        """Move ants once"""
         for f in self.fourmi_list:
             case = self.plateau.get_case(f.x, f.y, self.res)
             f.one_step(case)
         
     def handle_event(self):
+        """Listener to client interactions: Button & Keyboard"""
 
         for event in pygame.event.get():
             self.menu.handle_event(event,
@@ -303,6 +307,7 @@ class Game:
             self.debuging()
 
     def init_color(self, nb):
+        """Init color when set a new behavior"""
         color_list = []
         color = []
         color_list.append(color_dic["white"])
@@ -313,12 +318,12 @@ class Game:
             color = [].copy()
         self.color = color_list.copy()
 
-    """Button fonctions"""
-
     def active_debug(self):
+        """active function debuging in play"""
         self.debug = not self.debug
 
     def debuging(self):
+        """Print the total of iteration since the simulation is running"""
         # print(f"Iteration : {self.iteration}")
         txt_surf = self.btn_debug.font.render(f"{self.iteration}",
                                               True,
@@ -335,6 +340,7 @@ class Game:
         self.screen.blit(txt_surf, pos)    
 
     def set_next(self, text):
+        """Set the step for next function"""
         try:
             self.next_time = int(text)
             print(f"Set next step to {self.next_time}")
@@ -342,6 +348,7 @@ class Game:
             print("Invalide next value.")
         
     def set_behavior(self, text):
+        """Set the behavior before add ants and game start"""
         for letter in text:
             if letter != "R" and letter != "L":
                 print("Invalide behavior, must be a text of 'R' and 'L'.")
@@ -351,5 +358,6 @@ class Game:
         print(f"Set game behavior to {self.behavior}")
         
     def infinite(self):
+        """Define if ants are in an infinite place"""
         self.infinite_ant = not self.infinite_ant
         print(f"Set infinite board to {self.infinite_ant}")

@@ -1,0 +1,4 @@
+<map id="langton.fourmi.Fourmi.move_left" name="langton.fourmi.Fourmi.move_left">
+<area shape="rect" id="node1" title="Ant move left This method calls move() with a left vector (&#45;x, 0)." alt="" coords="5,5,243,32"/>
+<area shape="rect" id="node2" href="$classlangton_1_1fourmi_1_1_fourmi.html#a653f86d31de2c1e007da91cd82080e63" title="Vectorial ant movement This method reprensent primitive ant movement." alt="" coords="291,5,499,32"/>
+</map>

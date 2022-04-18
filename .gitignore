@@ -1,2 +1,5 @@
 log.txt
-src/__pycache__/
+src/langton/__pycache__
+src/buttons/__pycache__
+src/utils/__pycache__
+*~undo-tree~

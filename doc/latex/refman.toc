@@ -1,0 +1,294 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {section}{\numberline {1}Namespace Index}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Packages}{1}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Hierarchical Index}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Class Hierarchy}{2}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Class Index}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Class List}{3}{subsection.3.1}%
+\contentsline {section}{\numberline {4}File Index}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}File List}{3}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Namespace Documentation}{4}{section.5}%
+\contentsline {subsection}{\numberline {5.1}buttons Namespace Reference}{4}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Detailed Description}{4}{subsubsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.2}buttons.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}button Namespace Reference}{4}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Detailed Description}{5}{subsubsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.3}buttons.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}check\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}box Namespace Reference}{5}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Detailed Description}{5}{subsubsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.4}buttons.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}box Namespace Reference}{5}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Detailed Description}{6}{subsubsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.5}buttons.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}menu Namespace Reference}{6}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Detailed Description}{6}{subsubsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.6}langton Namespace Reference}{6}{subsection.5.6}%
+\contentsline {subsubsection}{\numberline {5.6.1}Detailed Description}{7}{subsubsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.7}langton.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}case Namespace Reference}{7}{subsection.5.7}%
+\contentsline {subsubsection}{\numberline {5.7.1}Detailed Description}{7}{subsubsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.8}langton.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}fourmi Namespace Reference}{7}{subsection.5.8}%
+\contentsline {subsubsection}{\numberline {5.8.1}Detailed Description}{8}{subsubsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.9}langton.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}plateau Namespace Reference}{8}{subsection.5.9}%
+\contentsline {subsubsection}{\numberline {5.9.1}Detailed Description}{8}{subsubsection.5.9.1}%
+\contentsline {subsection}{\numberline {5.10}langton.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}simulation Namespace Reference}{8}{subsection.5.10}%
+\contentsline {subsubsection}{\numberline {5.10.1}Detailed Description}{9}{subsubsection.5.10.1}%
+\contentsline {subsection}{\numberline {5.11}main Namespace Reference}{9}{subsection.5.11}%
+\contentsline {subsubsection}{\numberline {5.11.1}Detailed Description}{9}{subsubsection.5.11.1}%
+\contentsline {subsubsection}{\numberline {5.11.2}Variable Documentation}{9}{subsubsection.5.11.2}%
+\contentsline {paragraph}{\numberline {5.11.2.1}simulation}{9}{paragraph.5.11.2.1}%
+\contentsline {subsection}{\numberline {5.12}utils Namespace Reference}{9}{subsection.5.12}%
+\contentsline {subsubsection}{\numberline {5.12.1}Detailed Description}{10}{subsubsection.5.12.1}%
+\contentsline {subsection}{\numberline {5.13}utils.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}color Namespace Reference}{10}{subsection.5.13}%
+\contentsline {subsubsection}{\numberline {5.13.1}Detailed Description}{10}{subsubsection.5.13.1}%
+\contentsline {subsubsection}{\numberline {5.13.2}Variable Documentation}{11}{subsubsection.5.13.2}%
+\contentsline {paragraph}{\numberline {5.13.2.1}ACTIVE\_BUTTON\_COLOR}{11}{paragraph.5.13.2.1}%
+\contentsline {paragraph}{\numberline {5.13.2.2}ACTIVE\_CB\_COLOR}{11}{paragraph.5.13.2.2}%
+\contentsline {paragraph}{\numberline {5.13.2.3}ACTIVE\_IB\_COLOR}{11}{paragraph.5.13.2.3}%
+\contentsline {paragraph}{\numberline {5.13.2.4}dic}{11}{paragraph.5.13.2.4}%
+\contentsline {paragraph}{\numberline {5.13.2.5}DISABLE\_ACTIVE\_CB\_COLOR}{11}{paragraph.5.13.2.5}%
+\contentsline {paragraph}{\numberline {5.13.2.6}DISABLE\_BUTTON\_COLOR}{11}{paragraph.5.13.2.6}%
+\contentsline {paragraph}{\numberline {5.13.2.7}DISABLE\_CB\_COLOR}{11}{paragraph.5.13.2.7}%
+\contentsline {paragraph}{\numberline {5.13.2.8}DISABLE\_IB\_COLOR}{12}{paragraph.5.13.2.8}%
+\contentsline {paragraph}{\numberline {5.13.2.9}HOVER\_BUTTON\_COLOR}{12}{paragraph.5.13.2.9}%
+\contentsline {paragraph}{\numberline {5.13.2.10}INACTIVE\_BUTTON\_COLOR}{12}{paragraph.5.13.2.10}%
+\contentsline {paragraph}{\numberline {5.13.2.11}INACTIVE\_CB\_COLOR}{12}{paragraph.5.13.2.11}%
+\contentsline {paragraph}{\numberline {5.13.2.12}INACTIVE\_IB\_COLOR}{12}{paragraph.5.13.2.12}%
+\contentsline {paragraph}{\numberline {5.13.2.13}MENU\_COLOR}{12}{paragraph.5.13.2.13}%
+\contentsline {paragraph}{\numberline {5.13.2.14}TEXT\_BUTTON\_COLOR}{12}{paragraph.5.13.2.14}%
+\contentsline {paragraph}{\numberline {5.13.2.15}TEXT\_CB\_COLOR}{12}{paragraph.5.13.2.15}%
+\contentsline {paragraph}{\numberline {5.13.2.16}TEXT\_IB\_COLOR}{13}{paragraph.5.13.2.16}%
+\contentsline {subsection}{\numberline {5.14}utils.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}const Namespace Reference}{13}{subsection.5.14}%
+\contentsline {subsubsection}{\numberline {5.14.1}Detailed Description}{13}{subsubsection.5.14.1}%
+\contentsline {subsubsection}{\numberline {5.14.2}Variable Documentation}{13}{subsubsection.5.14.2}%
+\contentsline {paragraph}{\numberline {5.14.2.1}BUTTON\_SIZE}{13}{paragraph.5.14.2.1}%
+\contentsline {paragraph}{\numberline {5.14.2.2}DEFAULT\_PLATEAU\_SIZE}{13}{paragraph.5.14.2.2}%
+\contentsline {paragraph}{\numberline {5.14.2.3}DEFAULT\_RESOLUTION}{14}{paragraph.5.14.2.3}%
+\contentsline {paragraph}{\numberline {5.14.2.4}DEFAULT\_SCREEN\_SIZE}{14}{paragraph.5.14.2.4}%
+\contentsline {section}{\numberline {6}Class Documentation}{14}{section.6}%
+\contentsline {subsection}{\numberline {6.1}buttons.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}button.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Button Class Reference}{14}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Detailed Description}{17}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Constructor \& Destructor Documentation}{17}{subsubsection.6.1.2}%
+\contentsline {paragraph}{\numberline {6.1.2.1}\_\_init\_\_()}{17}{paragraph.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.3}Member Function Documentation}{17}{subsubsection.6.1.3}%
+\contentsline {paragraph}{\numberline {6.1.3.1}disable()}{18}{paragraph.6.1.3.1}%
+\contentsline {paragraph}{\numberline {6.1.3.2}draw()}{18}{paragraph.6.1.3.2}%
+\contentsline {paragraph}{\numberline {6.1.3.3}enable()}{19}{paragraph.6.1.3.3}%
+\contentsline {paragraph}{\numberline {6.1.3.4}get\_pos()}{19}{paragraph.6.1.3.4}%
+\contentsline {paragraph}{\numberline {6.1.3.5}get\_size()}{19}{paragraph.6.1.3.5}%
+\contentsline {paragraph}{\numberline {6.1.3.6}handle\_event()}{19}{paragraph.6.1.3.6}%
+\contentsline {subsubsection}{\numberline {6.1.4}Member Data Documentation}{20}{subsubsection.6.1.4}%
+\contentsline {paragraph}{\numberline {6.1.4.1}active}{20}{paragraph.6.1.4.1}%
+\contentsline {paragraph}{\numberline {6.1.4.2}active\_color}{20}{paragraph.6.1.4.2}%
+\contentsline {paragraph}{\numberline {6.1.4.3}b\_disable}{20}{paragraph.6.1.4.3}%
+\contentsline {paragraph}{\numberline {6.1.4.4}border\_radius}{20}{paragraph.6.1.4.4}%
+\contentsline {paragraph}{\numberline {6.1.4.5}color}{20}{paragraph.6.1.4.5}%
+\contentsline {paragraph}{\numberline {6.1.4.6}disable\_color}{21}{paragraph.6.1.4.6}%
+\contentsline {paragraph}{\numberline {6.1.4.7}font}{21}{paragraph.6.1.4.7}%
+\contentsline {paragraph}{\numberline {6.1.4.8}fun}{21}{paragraph.6.1.4.8}%
+\contentsline {paragraph}{\numberline {6.1.4.9}hover\_color}{21}{paragraph.6.1.4.9}%
+\contentsline {paragraph}{\numberline {6.1.4.10}inactive\_color}{21}{paragraph.6.1.4.10}%
+\contentsline {paragraph}{\numberline {6.1.4.11}rect}{21}{paragraph.6.1.4.11}%
+\contentsline {paragraph}{\numberline {6.1.4.12}text}{21}{paragraph.6.1.4.12}%
+\contentsline {paragraph}{\numberline {6.1.4.13}text\_color}{21}{paragraph.6.1.4.13}%
+\contentsline {paragraph}{\numberline {6.1.4.14}txt\_surf}{22}{paragraph.6.1.4.14}%
+\contentsline {subsection}{\numberline {6.2}langton.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}case.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Case Class Reference}{22}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Detailed Description}{22}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Constructor \& Destructor Documentation}{23}{subsubsection.6.2.2}%
+\contentsline {paragraph}{\numberline {6.2.2.1}\_\_init\_\_()}{23}{paragraph.6.2.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.3}Member Function Documentation}{23}{subsubsection.6.2.3}%
+\contentsline {paragraph}{\numberline {6.2.3.1}set\_color()}{23}{paragraph.6.2.3.1}%
+\contentsline {paragraph}{\numberline {6.2.3.2}validate\_color()}{24}{paragraph.6.2.3.2}%
+\contentsline {subsubsection}{\numberline {6.2.4}Member Data Documentation}{25}{subsubsection.6.2.4}%
+\contentsline {paragraph}{\numberline {6.2.4.1}cur\_color}{25}{paragraph.6.2.4.1}%
+\contentsline {paragraph}{\numberline {6.2.4.2}h}{25}{paragraph.6.2.4.2}%
+\contentsline {paragraph}{\numberline {6.2.4.3}w}{25}{paragraph.6.2.4.3}%
+\contentsline {subsection}{\numberline {6.3}buttons.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}check\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}box.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Check\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box Class Reference}{26}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Detailed Description}{28}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Constructor \& Destructor Documentation}{28}{subsubsection.6.3.2}%
+\contentsline {paragraph}{\numberline {6.3.2.1}\_\_init\_\_()}{28}{paragraph.6.3.2.1}%
+\contentsline {subsubsection}{\numberline {6.3.3}Member Function Documentation}{29}{subsubsection.6.3.3}%
+\contentsline {paragraph}{\numberline {6.3.3.1}disable()}{29}{paragraph.6.3.3.1}%
+\contentsline {paragraph}{\numberline {6.3.3.2}draw()}{29}{paragraph.6.3.3.2}%
+\contentsline {paragraph}{\numberline {6.3.3.3}handle\_event()}{30}{paragraph.6.3.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.4}Member Data Documentation}{31}{subsubsection.6.3.4}%
+\contentsline {paragraph}{\numberline {6.3.4.1}active}{31}{paragraph.6.3.4.1}%
+\contentsline {paragraph}{\numberline {6.3.4.2}active\_color}{31}{paragraph.6.3.4.2}%
+\contentsline {paragraph}{\numberline {6.3.4.3}active\_time}{31}{paragraph.6.3.4.3}%
+\contentsline {paragraph}{\numberline {6.3.4.4}b\_disable}{31}{paragraph.6.3.4.4}%
+\contentsline {paragraph}{\numberline {6.3.4.5}color}{31}{paragraph.6.3.4.5}%
+\contentsline {paragraph}{\numberline {6.3.4.6}delay}{32}{paragraph.6.3.4.6}%
+\contentsline {paragraph}{\numberline {6.3.4.7}disable\_active\_color}{32}{paragraph.6.3.4.7}%
+\contentsline {paragraph}{\numberline {6.3.4.8}disable\_color}{32}{paragraph.6.3.4.8}%
+\contentsline {paragraph}{\numberline {6.3.4.9}font}{32}{paragraph.6.3.4.9}%
+\contentsline {paragraph}{\numberline {6.3.4.10}inactive\_color}{32}{paragraph.6.3.4.10}%
+\contentsline {paragraph}{\numberline {6.3.4.11}text\_color}{32}{paragraph.6.3.4.11}%
+\contentsline {paragraph}{\numberline {6.3.4.12}txt\_surf}{32}{paragraph.6.3.4.12}%
+\contentsline {subsection}{\numberline {6.4}langton.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}fourmi.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Fourmi Class Reference}{33}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Detailed Description}{34}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Constructor \& Destructor Documentation}{35}{subsubsection.6.4.2}%
+\contentsline {paragraph}{\numberline {6.4.2.1}\_\_init\_\_()}{35}{paragraph.6.4.2.1}%
+\contentsline {subsubsection}{\numberline {6.4.3}Member Function Documentation}{35}{subsubsection.6.4.3}%
+\contentsline {paragraph}{\numberline {6.4.3.1}\_\_str\_\_()}{35}{paragraph.6.4.3.1}%
+\contentsline {paragraph}{\numberline {6.4.3.2}conduct()}{35}{paragraph.6.4.3.2}%
+\contentsline {paragraph}{\numberline {6.4.3.3}draw()}{36}{paragraph.6.4.3.3}%
+\contentsline {paragraph}{\numberline {6.4.3.4}inverse\_color\_case()}{37}{paragraph.6.4.3.4}%
+\contentsline {paragraph}{\numberline {6.4.3.5}is\_out()}{37}{paragraph.6.4.3.5}%
+\contentsline {paragraph}{\numberline {6.4.3.6}move()}{37}{paragraph.6.4.3.6}%
+\contentsline {paragraph}{\numberline {6.4.3.7}move\_down()}{38}{paragraph.6.4.3.7}%
+\contentsline {paragraph}{\numberline {6.4.3.8}move\_left()}{38}{paragraph.6.4.3.8}%
+\contentsline {paragraph}{\numberline {6.4.3.9}move\_right()}{39}{paragraph.6.4.3.9}%
+\contentsline {paragraph}{\numberline {6.4.3.10}move\_up()}{40}{paragraph.6.4.3.10}%
+\contentsline {paragraph}{\numberline {6.4.3.11}one\_step()}{40}{paragraph.6.4.3.11}%
+\contentsline {paragraph}{\numberline {6.4.3.12}reset()}{41}{paragraph.6.4.3.12}%
+\contentsline {paragraph}{\numberline {6.4.3.13}rotate()}{41}{paragraph.6.4.3.13}%
+\contentsline {paragraph}{\numberline {6.4.3.14}rotate\_left()}{42}{paragraph.6.4.3.14}%
+\contentsline {paragraph}{\numberline {6.4.3.15}rotate\_right()}{42}{paragraph.6.4.3.15}%
+\contentsline {paragraph}{\numberline {6.4.3.16}set\_out()}{43}{paragraph.6.4.3.16}%
+\contentsline {subsubsection}{\numberline {6.4.4}Member Data Documentation}{43}{subsubsection.6.4.4}%
+\contentsline {paragraph}{\numberline {6.4.4.1}begin\_direction}{43}{paragraph.6.4.4.1}%
+\contentsline {paragraph}{\numberline {6.4.4.2}begin\_x}{43}{paragraph.6.4.4.2}%
+\contentsline {paragraph}{\numberline {6.4.4.3}begin\_y}{43}{paragraph.6.4.4.3}%
+\contentsline {paragraph}{\numberline {6.4.4.4}behavior}{43}{paragraph.6.4.4.4}%
+\contentsline {paragraph}{\numberline {6.4.4.5}color}{43}{paragraph.6.4.4.5}%
+\contentsline {paragraph}{\numberline {6.4.4.6}direction}{43}{paragraph.6.4.4.6}%
+\contentsline {paragraph}{\numberline {6.4.4.7}index\_direction}{44}{paragraph.6.4.4.7}%
+\contentsline {paragraph}{\numberline {6.4.4.8}nb\_direction}{44}{paragraph.6.4.4.8}%
+\contentsline {paragraph}{\numberline {6.4.4.9}out}{44}{paragraph.6.4.4.9}%
+\contentsline {paragraph}{\numberline {6.4.4.10}rotation}{44}{paragraph.6.4.4.10}%
+\contentsline {paragraph}{\numberline {6.4.4.11}screen}{44}{paragraph.6.4.4.11}%
+\contentsline {paragraph}{\numberline {6.4.4.12}speed}{44}{paragraph.6.4.4.12}%
+\contentsline {paragraph}{\numberline {6.4.4.13}taille}{44}{paragraph.6.4.4.13}%
+\contentsline {paragraph}{\numberline {6.4.4.14}x}{44}{paragraph.6.4.4.14}%
+\contentsline {paragraph}{\numberline {6.4.4.15}y}{45}{paragraph.6.4.4.15}%
+\contentsline {subsection}{\numberline {6.5}buttons.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}box.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box Class Reference}{45}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Detailed Description}{48}{subsubsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.2}Constructor \& Destructor Documentation}{48}{subsubsection.6.5.2}%
+\contentsline {paragraph}{\numberline {6.5.2.1}\_\_init\_\_()}{48}{paragraph.6.5.2.1}%
+\contentsline {subsubsection}{\numberline {6.5.3}Member Function Documentation}{49}{subsubsection.6.5.3}%
+\contentsline {paragraph}{\numberline {6.5.3.1}draw()}{49}{paragraph.6.5.3.1}%
+\contentsline {paragraph}{\numberline {6.5.3.2}handle\_event()}{50}{paragraph.6.5.3.2}%
+\contentsline {subsubsection}{\numberline {6.5.4}Member Data Documentation}{50}{subsubsection.6.5.4}%
+\contentsline {paragraph}{\numberline {6.5.4.1}active}{51}{paragraph.6.5.4.1}%
+\contentsline {paragraph}{\numberline {6.5.4.2}active\_color}{51}{paragraph.6.5.4.2}%
+\contentsline {paragraph}{\numberline {6.5.4.3}color}{51}{paragraph.6.5.4.3}%
+\contentsline {paragraph}{\numberline {6.5.4.4}disable\_color}{51}{paragraph.6.5.4.4}%
+\contentsline {paragraph}{\numberline {6.5.4.5}inactive\_color}{51}{paragraph.6.5.4.5}%
+\contentsline {paragraph}{\numberline {6.5.4.6}int\_color}{51}{paragraph.6.5.4.6}%
+\contentsline {paragraph}{\numberline {6.5.4.7}int\_rect}{51}{paragraph.6.5.4.7}%
+\contentsline {paragraph}{\numberline {6.5.4.8}max\_len}{51}{paragraph.6.5.4.8}%
+\contentsline {paragraph}{\numberline {6.5.4.9}text}{52}{paragraph.6.5.4.9}%
+\contentsline {paragraph}{\numberline {6.5.4.10}text\_color}{52}{paragraph.6.5.4.10}%
+\contentsline {paragraph}{\numberline {6.5.4.11}txt\_surf}{52}{paragraph.6.5.4.11}%
+\contentsline {subsection}{\numberline {6.6}buttons.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}menu.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu Class Reference}{52}{subsection.6.6}%
+\contentsline {subsubsection}{\numberline {6.6.1}Detailed Description}{53}{subsubsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.2}Constructor \& Destructor Documentation}{53}{subsubsection.6.6.2}%
+\contentsline {paragraph}{\numberline {6.6.2.1}\_\_init\_\_()}{53}{paragraph.6.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.6.3}Member Function Documentation}{53}{subsubsection.6.6.3}%
+\contentsline {paragraph}{\numberline {6.6.3.1}disable()}{53}{paragraph.6.6.3.1}%
+\contentsline {paragraph}{\numberline {6.6.3.2}draw()}{54}{paragraph.6.6.3.2}%
+\contentsline {paragraph}{\numberline {6.6.3.3}enable()}{54}{paragraph.6.6.3.3}%
+\contentsline {paragraph}{\numberline {6.6.3.4}handle\_event()}{55}{paragraph.6.6.3.4}%
+\contentsline {subsubsection}{\numberline {6.6.4}Member Data Documentation}{55}{subsubsection.6.6.4}%
+\contentsline {paragraph}{\numberline {6.6.4.1}btn\_list}{55}{paragraph.6.6.4.1}%
+\contentsline {paragraph}{\numberline {6.6.4.2}color}{55}{paragraph.6.6.4.2}%
+\contentsline {paragraph}{\numberline {6.6.4.3}rect}{55}{paragraph.6.6.4.3}%
+\contentsline {subsection}{\numberline {6.7}langton.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}plateau.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Plateau Class Reference}{56}{subsection.6.7}%
+\contentsline {subsubsection}{\numberline {6.7.1}Detailed Description}{57}{subsubsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.2}Constructor \& Destructor Documentation}{57}{subsubsection.6.7.2}%
+\contentsline {paragraph}{\numberline {6.7.2.1}\_\_init\_\_()}{57}{paragraph.6.7.2.1}%
+\contentsline {subsubsection}{\numberline {6.7.3}Member Function Documentation}{57}{subsubsection.6.7.3}%
+\contentsline {paragraph}{\numberline {6.7.3.1}\_\_str\_\_()}{57}{paragraph.6.7.3.1}%
+\contentsline {paragraph}{\numberline {6.7.3.2}draw()}{57}{paragraph.6.7.3.2}%
+\contentsline {paragraph}{\numberline {6.7.3.3}draw\_ant()}{58}{paragraph.6.7.3.3}%
+\contentsline {paragraph}{\numberline {6.7.3.4}draw\_case()}{59}{paragraph.6.7.3.4}%
+\contentsline {paragraph}{\numberline {6.7.3.5}get\_case()}{59}{paragraph.6.7.3.5}%
+\contentsline {paragraph}{\numberline {6.7.3.6}random\_schema()}{59}{paragraph.6.7.3.6}%
+\contentsline {paragraph}{\numberline {6.7.3.7}reset()}{60}{paragraph.6.7.3.7}%
+\contentsline {paragraph}{\numberline {6.7.3.8}set\_behavior()}{60}{paragraph.6.7.3.8}%
+\contentsline {subsubsection}{\numberline {6.7.4}Member Data Documentation}{61}{subsubsection.6.7.4}%
+\contentsline {paragraph}{\numberline {6.7.4.1}behavior}{61}{paragraph.6.7.4.1}%
+\contentsline {paragraph}{\numberline {6.7.4.2}color}{61}{paragraph.6.7.4.2}%
+\contentsline {paragraph}{\numberline {6.7.4.3}h}{61}{paragraph.6.7.4.3}%
+\contentsline {paragraph}{\numberline {6.7.4.4}schema}{61}{paragraph.6.7.4.4}%
+\contentsline {paragraph}{\numberline {6.7.4.5}screen}{61}{paragraph.6.7.4.5}%
+\contentsline {paragraph}{\numberline {6.7.4.6}w}{61}{paragraph.6.7.4.6}%
+\contentsline {subsection}{\numberline {6.8}langton.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}simulation.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Simulation Class Reference}{62}{subsection.6.8}%
+\contentsline {subsubsection}{\numberline {6.8.1}Detailed Description}{64}{subsubsection.6.8.1}%
+\contentsline {subsubsection}{\numberline {6.8.2}Constructor \& Destructor Documentation}{64}{subsubsection.6.8.2}%
+\contentsline {paragraph}{\numberline {6.8.2.1}\_\_init\_\_()}{64}{paragraph.6.8.2.1}%
+\contentsline {subsubsection}{\numberline {6.8.3}Member Function Documentation}{64}{subsubsection.6.8.3}%
+\contentsline {paragraph}{\numberline {6.8.3.1}\_\_iter\_\_()}{65}{paragraph.6.8.3.1}%
+\contentsline {paragraph}{\numberline {6.8.3.2}active\_debug()}{65}{paragraph.6.8.3.2}%
+\contentsline {paragraph}{\numberline {6.8.3.3}add\_fourmi()}{65}{paragraph.6.8.3.3}%
+\contentsline {paragraph}{\numberline {6.8.3.4}debuging()}{66}{paragraph.6.8.3.4}%
+\contentsline {paragraph}{\numberline {6.8.3.5}draw()}{66}{paragraph.6.8.3.5}%
+\contentsline {paragraph}{\numberline {6.8.3.6}fourmi\_out()}{66}{paragraph.6.8.3.6}%
+\contentsline {paragraph}{\numberline {6.8.3.7}fourmi\_step()}{67}{paragraph.6.8.3.7}%
+\contentsline {paragraph}{\numberline {6.8.3.8}handle\_event()}{67}{paragraph.6.8.3.8}%
+\contentsline {paragraph}{\numberline {6.8.3.9}infinite()}{68}{paragraph.6.8.3.9}%
+\contentsline {paragraph}{\numberline {6.8.3.10}init\_color()}{68}{paragraph.6.8.3.10}%
+\contentsline {paragraph}{\numberline {6.8.3.11}next\_step()}{68}{paragraph.6.8.3.11}%
+\contentsline {paragraph}{\numberline {6.8.3.12}play()}{68}{paragraph.6.8.3.12}%
+\contentsline {paragraph}{\numberline {6.8.3.13}reset()}{69}{paragraph.6.8.3.13}%
+\contentsline {paragraph}{\numberline {6.8.3.14}set\_behavior()}{69}{paragraph.6.8.3.14}%
+\contentsline {paragraph}{\numberline {6.8.3.15}set\_next()}{70}{paragraph.6.8.3.15}%
+\contentsline {paragraph}{\numberline {6.8.3.16}set\_random\_grid()}{70}{paragraph.6.8.3.16}%
+\contentsline {paragraph}{\numberline {6.8.3.17}start()}{70}{paragraph.6.8.3.17}%
+\contentsline {paragraph}{\numberline {6.8.3.18}stop()}{71}{paragraph.6.8.3.18}%
+\contentsline {subsubsection}{\numberline {6.8.4}Member Data Documentation}{71}{subsubsection.6.8.4}%
+\contentsline {paragraph}{\numberline {6.8.4.1}behavior}{71}{paragraph.6.8.4.1}%
+\contentsline {paragraph}{\numberline {6.8.4.2}btn\_add\_f}{71}{paragraph.6.8.4.2}%
+\contentsline {paragraph}{\numberline {6.8.4.3}btn\_debug}{71}{paragraph.6.8.4.3}%
+\contentsline {paragraph}{\numberline {6.8.4.4}btn\_next}{71}{paragraph.6.8.4.4}%
+\contentsline {paragraph}{\numberline {6.8.4.5}btn\_play}{72}{paragraph.6.8.4.5}%
+\contentsline {paragraph}{\numberline {6.8.4.6}btn\_reset}{72}{paragraph.6.8.4.6}%
+\contentsline {paragraph}{\numberline {6.8.4.7}btn\_stop}{72}{paragraph.6.8.4.7}%
+\contentsline {paragraph}{\numberline {6.8.4.8}cb\_infinite}{72}{paragraph.6.8.4.8}%
+\contentsline {paragraph}{\numberline {6.8.4.9}cb\_random\_grid}{72}{paragraph.6.8.4.9}%
+\contentsline {paragraph}{\numberline {6.8.4.10}clock}{72}{paragraph.6.8.4.10}%
+\contentsline {paragraph}{\numberline {6.8.4.11}color}{72}{paragraph.6.8.4.11}%
+\contentsline {paragraph}{\numberline {6.8.4.12}debug}{72}{paragraph.6.8.4.12}%
+\contentsline {paragraph}{\numberline {6.8.4.13}end}{73}{paragraph.6.8.4.13}%
+\contentsline {paragraph}{\numberline {6.8.4.14}fourmi\_list}{73}{paragraph.6.8.4.14}%
+\contentsline {paragraph}{\numberline {6.8.4.15}ib\_behavior}{73}{paragraph.6.8.4.15}%
+\contentsline {paragraph}{\numberline {6.8.4.16}ib\_next}{73}{paragraph.6.8.4.16}%
+\contentsline {paragraph}{\numberline {6.8.4.17}infinite\_ant}{73}{paragraph.6.8.4.17}%
+\contentsline {paragraph}{\numberline {6.8.4.18}it}{73}{paragraph.6.8.4.18}%
+\contentsline {paragraph}{\numberline {6.8.4.19}iteration}{73}{paragraph.6.8.4.19}%
+\contentsline {paragraph}{\numberline {6.8.4.20}menu}{73}{paragraph.6.8.4.20}%
+\contentsline {paragraph}{\numberline {6.8.4.21}nb\_fourmi}{74}{paragraph.6.8.4.21}%
+\contentsline {paragraph}{\numberline {6.8.4.22}next\_time}{74}{paragraph.6.8.4.22}%
+\contentsline {paragraph}{\numberline {6.8.4.23}plateau}{74}{paragraph.6.8.4.23}%
+\contentsline {paragraph}{\numberline {6.8.4.24}random\_grid}{74}{paragraph.6.8.4.24}%
+\contentsline {paragraph}{\numberline {6.8.4.25}res}{74}{paragraph.6.8.4.25}%
+\contentsline {paragraph}{\numberline {6.8.4.26}run}{74}{paragraph.6.8.4.26}%
+\contentsline {paragraph}{\numberline {6.8.4.27}screen}{74}{paragraph.6.8.4.27}%
+\contentsline {paragraph}{\numberline {6.8.4.28}size\_plateau}{74}{paragraph.6.8.4.28}%
+\contentsline {paragraph}{\numberline {6.8.4.29}size\_screen}{75}{paragraph.6.8.4.29}%
+\contentsline {paragraph}{\numberline {6.8.4.30}start}{75}{paragraph.6.8.4.30}%
+\contentsline {section}{\numberline {7}File Documentation}{75}{section.7}%
+\contentsline {subsection}{\numberline {7.1}button.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{75}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}button.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{75}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}check\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}box.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{77}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}check\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}box.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{77}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}box.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{78}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}box.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{78}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}menu.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{79}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}menu.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{80}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{80}{subsection.7.9}%
+\contentsline {subsection}{\numberline {7.10}buttons/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}.py}{80}{subsection.7.10}%
+\contentsline {subsection}{\numberline {7.11}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{81}{subsection.7.11}%
+\contentsline {subsection}{\numberline {7.12}langton/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}.py}{81}{subsection.7.12}%
+\contentsline {subsection}{\numberline {7.13}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{81}{subsection.7.13}%
+\contentsline {subsection}{\numberline {7.14}utils/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}.py}{81}{subsection.7.14}%
+\contentsline {subsection}{\numberline {7.15}case.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{81}{subsection.7.15}%
+\contentsline {subsection}{\numberline {7.16}case.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{82}{subsection.7.16}%
+\contentsline {subsection}{\numberline {7.17}fourmi.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{82}{subsection.7.17}%
+\contentsline {subsection}{\numberline {7.18}fourmi.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{83}{subsection.7.18}%
+\contentsline {subsection}{\numberline {7.19}plateau.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{85}{subsection.7.19}%
+\contentsline {subsection}{\numberline {7.20}plateau.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{85}{subsection.7.20}%
+\contentsline {subsection}{\numberline {7.21}simulation.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{86}{subsection.7.21}%
+\contentsline {subsection}{\numberline {7.22}simulation.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{87}{subsection.7.22}%
+\contentsline {subsection}{\numberline {7.23}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{91}{subsection.7.23}%
+\contentsline {subsection}{\numberline {7.24}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{91}{subsection.7.24}%
+\contentsline {subsection}{\numberline {7.25}color.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{92}{subsection.7.25}%
+\contentsline {subsection}{\numberline {7.26}color.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{92}{subsection.7.26}%
+\contentsline {subsection}{\numberline {7.27}const.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{93}{subsection.7.27}%
+\contentsline {subsection}{\numberline {7.28}const.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{93}{subsection.7.28}%
+\contentsline {section}{Index}{95}{section*.119}%

@@ -1,0 +1,17 @@
+<map id="game.Game.play_iter" name="game.Game.play_iter">
+<area shape="rect" id="node1" title=" " alt="" coords="5,359,168,385"/>
+<area shape="rect" id="node2" href="$classfourmi_1_1_fourmi.html#abc5935608d45602f858df7697ef02e3c" title="Ant draw This method draw the ant with pyGame draw.rect function." alt="" coords="245,5,395,32"/>
+<area shape="rect" id="node3" href="$classgame_1_1_game.html#a65192a60b3de4c18c999822534b76f46" title=" " alt="" coords="251,80,389,107"/>
+<area shape="rect" id="node4" href="$classbutton_1_1_button.html#a6fd693c0a7d466ff7e283c5a5ad5c539" title="Draw the button This method draw the button rectangle with pyGame draw.rect function and the text wit..." alt="" coords="247,131,393,157"/>
+<area shape="rect" id="node5" href="$classcheck__box_1_1_check_box.html#ae99db6f2d9413c9be74273b652e6534e" title="Draw the button This method draw the button rectangle with pyGame draw.rect function and the text wit..." alt="" coords="222,181,418,208"/>
+<area shape="rect" id="node6" href="$classinput__box_1_1_input_box.html#a0011f0a2111d3c65b12bbd19fa081670" title="Draw the button This method draw the button rectangle with pyGame draw.rect function and the text wit..." alt="" coords="228,232,412,259"/>
+<area shape="rect" id="node7" href="$classmenu_1_1_menu.html#a3944e4acb96d4886337a876404803231" title="Draw the Menu." alt="" coords="253,283,387,309"/>
+<area shape="rect" id="node8" href="$classplateau_1_1_plateau.html#aaa186690fb8c15fb3cc8c1e12d8cde4a" title="default color schema" alt="" coords="240,333,400,360"/>
+<area shape="rect" id="node9" href="$classgame_1_1_game.html#a384ef19eae4763096dc2929796260f37" title=" " alt="" coords="231,384,409,411"/>
+<area shape="rect" id="node10" href="$classgame_1_1_game.html#a1f98e94e262c7c3cd6886de83e63330f" title=" " alt="" coords="228,435,412,461"/>
+<area shape="rect" id="node11" href="$classgame_1_1_game.html#a35f61a87ab2c0ba59013af922a0493ef" title=" " alt="" coords="223,509,417,536"/>
+<area shape="rect" id="node12" href="$classbutton_1_1_button.html#a8f678134483966ec198d720647e624be" title="User input method This method operate users input with event.type pyGame attributs." alt="" coords="241,561,399,602"/>
+<area shape="rect" id="node13" href="$classcheck__box_1_1_check_box.html#aeffcc10fc2cc41884223386d9dcae851" title="User input method This method operate users input with event.type pyGame attributs." alt="" coords="216,626,424,667"/>
+<area shape="rect" id="node14" href="$classinput__box_1_1_input_box.html#ab0c9c033fd1faf66fbaac23f26283abe" title="User input method This method operate users input with event.type pyGame attributs." alt="" coords="222,691,418,733"/>
+<area shape="rect" id="node15" href="$classmenu_1_1_menu.html#ac47b192925a3f1ad639649f5709d59ad" title="Enable some button of Menu." alt="" coords="225,757,415,784"/>
+</map>

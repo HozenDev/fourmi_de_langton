@@ -1,0 +1,374 @@
+\hypertarget{simulation_8py_source}{}\doxysubsection{simulation.\+py}
+\label{simulation_8py_source}\index{simulation.py@{simulation.py}}
+\mbox{\hyperlink{simulation_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00001}\mbox{\hyperlink{namespacelangton_1_1simulation}{00001}} \textcolor{stringliteral}{"{}"{}"{}!}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00002}00002 \textcolor{stringliteral}{@brief Simulation package}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00003}00003 \textcolor{stringliteral}{@author Durel Enzo}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00004}00004 \textcolor{stringliteral}{@author Mallepeyre Nourrane}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00005}00005 \textcolor{stringliteral}{@version 1.0}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00006}00006 \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00008}00008 \textcolor{keyword}{import} pygame}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00009}00009 \textcolor{keyword}{import} time}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00010}00010 \textcolor{keyword}{import} random}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00012}00012 \textcolor{keyword}{import} langton \textcolor{keyword}{as} lgt}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00013}00013 \textcolor{keyword}{from} buttons \textcolor{keyword}{import} Button, Menu, CheckBox, InputBox}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00014}00014 \textcolor{keyword}{from} utils \textcolor{keyword}{import} color, const}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00016}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation}{00016}} \textcolor{keyword}{class }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation}{Simulation}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00017}00017     \textcolor{stringliteral}{"{}"{}"{}!@brief Represent a Simulation"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00019}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a4662d058d0cdd707a92a10bec25178a7}{00019}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a4662d058d0cdd707a92a10bec25178a7}{\_\_init\_\_}}(self,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00020}00020                  size\_screen=const.DEFAULT\_SCREEN\_SIZE,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00021}00021                  size\_plateau=const.DEFAULT\_PLATEAU\_SIZE,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00022}00022                  res=const.DEFAULT\_RESOLUTION):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00023}00023         \textcolor{stringliteral}{"{}"{}"{}!@brief Construct Simulation object}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00024}00024 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} size\_screen Size of the window}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00025}00025         \textcolor{preprocessor}{@param} size\_plateau Size of the grid where stand ants}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00026}00026         \textcolor{preprocessor}{@param} res Number of pixel define size of Case \textcolor{keywordflow}{and} Fourmi}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00027}00027         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00028}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{00028}} \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\_screen}} = size\_screen }\textcolor{comment}{\# size of the screen}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00029}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{00029}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}} = size\_plateau \textcolor{comment}{\# size of the plateau}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00030}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{00030}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}} = res \textcolor{comment}{\# resolution of a case / fourmi}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00032}00032         \textcolor{comment}{\# PYGAME \#}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00033}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a773c12ae029194e5551af2ab72fde3bf}{00033}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a773c12ae029194e5551af2ab72fde3bf}{screen}} = pygame.display.set\_mode(size\_screen, pygame.DOUBLEBUF) \textcolor{comment}{\# screen set}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00034}00034         pygame.display.set\_caption(\textcolor{stringliteral}{"{}Fourmi de Langton"{}}) \textcolor{comment}{\# title set}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00035}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af20973026f33e4fb96ef3cd9dc402fc2}{00035}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af20973026f33e4fb96ef3cd9dc402fc2}{clock}} = pygame.time.Clock() \textcolor{comment}{\# clock to control the framerate}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00036}00036         }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00037}00037         \textcolor{comment}{\# STATES \#}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00038}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a36dbbc66b5b8e122b73455e359baa7ae}{00038}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a36dbbc66b5b8e122b73455e359baa7ae}{end}} = \textcolor{keyword}{False} \textcolor{comment}{\# if simulation end}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00039}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}{00039}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}{run}} = \textcolor{keyword}{False} \textcolor{comment}{\# simulation loop}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00041}00041         \textcolor{comment}{\# DEBUG \#}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00042}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a393e9b798bff08aaf71ff3216ecb180d}{00042}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a393e9b798bff08aaf71ff3216ecb180d}{debug}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00043}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac3344803777f8e212e5b42cc5b650365}{00043}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac3344803777f8e212e5b42cc5b650365}{iteration}} = 0}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00045}00045         \textcolor{comment}{\# BEHAVIOR \#}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00046}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15d6471477fd3fd63e5ba54a09e43cea}{00046}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15d6471477fd3fd63e5ba54a09e43cea}{behavior}} = \textcolor{stringliteral}{"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00047}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a3158144794c0cd8c507d57161f015780}{00047}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a3158144794c0cd8c507d57161f015780}{color}} = []}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00049}00049         \textcolor{comment}{\# PLATEAU INIT \#}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00050}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af1c34b60c5bc9a17d422ec15152cde88}{00050}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af1c34b60c5bc9a17d422ec15152cde88}{plateau}} = lgt.Plateau(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15d6471477fd3fd63e5ba54a09e43cea}{behavior}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00051}00051                                    self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a3158144794c0cd8c507d57161f015780}{color}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00052}00052                                    taille=(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[0]//self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}}, }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00053}00053                                            self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[1]//self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}}),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00054}00054                                    res=(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}}, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}}))}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00056}00056         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a}{set\_behavior}}(\textcolor{stringliteral}{"{}LR"{}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00057}00057         }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00058}00058         \textcolor{comment}{\# Fourmi(s) Init \#}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00059}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9723a50148dd177e9a7c8299dbc6b8e7}{00059}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9723a50148dd177e9a7c8299dbc6b8e7}{nb\_fourmi}} = 0}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00060}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1a1cdd446e7147d61fbdd025e52d08e6}{00060}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1a1cdd446e7147d61fbdd025e52d08e6}{fourmi\_list}} = []}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00061}00061         }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00062}00062         \textcolor{comment}{\# Button \#}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00063}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a6562952d824855015a6348227e068429}{00063}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a6562952d824855015a6348227e068429}{btn\_debug}} = \mbox{\hyperlink{classbuttons_1_1button_1_1_button}{Button}}((self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\_screen}}[0]-\/260, 20),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00064}00064                                 const.BUTTON\_SIZE,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00065}00065                                 text=\textcolor{stringliteral}{"{}Debug"{}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00066}00066                                 fun=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aab9b1888a30ff6d12813bf21497178d7}{active\_debug}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00067}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a3423ebdc5b0b16212881291132bfbba3}{00067}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a3423ebdc5b0b16212881291132bfbba3}{btn\_play}} = \mbox{\hyperlink{classbuttons_1_1button_1_1_button}{Button}}((self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\_screen}}[0]-\/260, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[1]-\/70),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00068}00068                                const.BUTTON\_SIZE,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00069}00069                                text=\textcolor{stringliteral}{"{}Play"{}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00070}00070                                fun=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a2b80456b1fc72a33e2a6ca83b26a480f}{play}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00071}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9a738344077ceeb8da798b58bb370e28}{00071}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9a738344077ceeb8da798b58bb370e28}{btn\_stop}} = \mbox{\hyperlink{classbuttons_1_1button_1_1_button}{Button}}((self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\_screen}}[0]-\/120, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[1]-\/70),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00072}00072                                const.BUTTON\_SIZE,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00073}00073                                text=\textcolor{stringliteral}{"{}Stop"{}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00074}00074                                fun=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a99acbb2b1e61988f6fb7b0fc488a0c3d}{stop}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00075}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac48b06c521d6f6feee388f78efa8b69b}{00075}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac48b06c521d6f6feee388f78efa8b69b}{btn\_reset}} = \mbox{\hyperlink{classbuttons_1_1button_1_1_button}{Button}}((self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\_screen}}[0]-\/260, 90),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00076}00076                                 const.BUTTON\_SIZE,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00077}00077                                 text=\textcolor{stringliteral}{"{}Reset"{}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00078}00078                                 fun=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de17}{reset}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00079}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af3ca3a0bbe8ede6535bd15a4fdcbe130}{00079}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af3ca3a0bbe8ede6535bd15a4fdcbe130}{btn\_next}} = \mbox{\hyperlink{classbuttons_1_1button_1_1_button}{Button}}((self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\_screen}}[0]-\/260, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[1]-\/140),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00080}00080                                 const.BUTTON\_SIZE,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00081}00081                                 text=\textcolor{stringliteral}{"{}Next"{}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00082}00082                                 fun=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af0de351e406a5de695a6c27aba8b91ed}{next\_step}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00083}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a556d77c166a4c52e7c1652623f564bc0}{00083}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a556d77c166a4c52e7c1652623f564bc0}{btn\_add\_f}} = \mbox{\hyperlink{classbuttons_1_1button_1_1_button}{Button}}((self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\_screen}}[0]-\/260, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[1]-\/210),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00084}00084                                 const.BUTTON\_SIZE,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00085}00085                                 text=\textcolor{stringliteral}{"{}Add"{}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00086}00086                                 fun=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a45418b1fc257cca1d9c0714db4bdc791}{add\_fourmi}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00087}00087         }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00088}00088         \textcolor{comment}{\# InputBox \#}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00089}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a268636dfb561b92ac9ef0c138be257ad}{00089}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a268636dfb561b92ac9ef0c138be257ad}{ib\_next}} = \mbox{\hyperlink{classbuttons_1_1input__box_1_1_input_box}{InputBox}}((self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\_screen}}[0]-\/120, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[1]-\/140),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00090}00090                                 const.BUTTON\_SIZE,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00091}00091                                 fun=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac96fdc02a3622151c440dcd2196139ab}{set\_next}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00092}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a0d2dc226a9def3a9f31dc716d2ef7b6a}{00092}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a0d2dc226a9def3a9f31dc716d2ef7b6a}{ib\_behavior}} = \mbox{\hyperlink{classbuttons_1_1input__box_1_1_input_box}{InputBox}}((self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\_screen}}[0]-\/260, 160),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00093}00093                                     (240, 50),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00094}00094                                     fun=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a}{set\_behavior}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00095}00095                                     max\_len=10)}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00097}00097         \textcolor{comment}{\# CheckBox \#}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00098}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a5ddf8dfba8e9ab766aab288276b51777}{00098}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a5ddf8dfba8e9ab766aab288276b51777}{cb\_infinite}} = \mbox{\hyperlink{classbuttons_1_1check__box_1_1_check_box}{CheckBox}}((self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\_screen}}[0]-\/260, 230),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00099}00099                                     (20, 20),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00100}00100                                     text=\textcolor{stringliteral}{"{}Infinite"{}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00101}00101                                     fun=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a76def25452c459e755c7c77010872fe8}{infinite}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00102}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aa9ec200f0f087914861fc9b527f685d5}{00102}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aa9ec200f0f087914861fc9b527f685d5}{cb\_random\_grid}} = \mbox{\hyperlink{classbuttons_1_1check__box_1_1_check_box}{CheckBox}}((self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\_screen}}[0]-\/260, 270),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00103}00103                                        (20, 20),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00104}00104                                        text=\textcolor{stringliteral}{"{}Random Grid"{}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00105}00105                                        fun=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ab2fc64bafbdebe6be345ab38a2831e16}{set\_random\_grid}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00106}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a44d1ba0614a1a7eb5617558b410228e6}{00106}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a44d1ba0614a1a7eb5617558b410228e6}{infinite\_ant}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00107}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac278df3b69b7433c6e08441c26818ae5}{00107}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac278df3b69b7433c6e08441c26818ae5}{random\_grid}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00109}00109         \textcolor{comment}{\# Menu \#}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00110}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}{00110}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}{menu}} = \mbox{\hyperlink{classbuttons_1_1menu_1_1_menu}{Menu}}((size\_plateau[0], 0),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00111}00111                          (size\_screen[0]-\/size\_plateau[0], size\_screen[1]),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00112}00112                          btn\_list=[self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a6562952d824855015a6348227e068429}{btn\_debug}}, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a3423ebdc5b0b16212881291132bfbba3}{btn\_play}}, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9a738344077ceeb8da798b58bb370e28}{btn\_stop}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00113}00113                                    self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac48b06c521d6f6feee388f78efa8b69b}{btn\_reset}}, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af3ca3a0bbe8ede6535bd15a4fdcbe130}{btn\_next}}, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a556d77c166a4c52e7c1652623f564bc0}{btn\_add\_f}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00114}00114                                    self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a268636dfb561b92ac9ef0c138be257ad}{ib\_next}}, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a0d2dc226a9def3a9f31dc716d2ef7b6a}{ib\_behavior}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00115}00115                                    self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a5ddf8dfba8e9ab766aab288276b51777}{cb\_infinite}}, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aa9ec200f0f087914861fc9b527f685d5}{cb\_random\_grid}}])}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00116}00116         }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00117}00117         \textcolor{comment}{\# Simulation \#}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00118}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1e53dde8cab6c40f5807bfefae18710a}{00118}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1e53dde8cab6c40f5807bfefae18710a}{it}} = self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9da91713f42652792e9ca626148a5d85}{\_\_iter\_\_}}()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00119}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ad0beaea0860515bb559c291bd6c43491}{00119}}         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ad0beaea0860515bb559c291bd6c43491}{next\_time}} = 1}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00120}00120         }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00121}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4c4}{00121}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a8c904c65a3ec3a125395e3b74cf9e1fa}{start}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00122}00122         \textcolor{stringliteral}{"{}"{}"{}!@brief Global start, here when ants aren't running"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00123}00123         }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00124}00124         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af1c34b60c5bc9a17d422ec15152cde88}{plateau}}.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de17}{reset}}()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00125}00125         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af1c34b60c5bc9a17d422ec15152cde88}{plateau}}.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286e2}{draw}}()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00126}00126         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}{menu}}.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286e2}{draw}}(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a773c12ae029194e5551af2ab72fde3bf}{screen}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00128}00128         \textcolor{keywordflow}{while} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a8c904c65a3ec3a125395e3b74cf9e1fa}{start}}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4c4}{start}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00130}00130             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}{menu}}.enable() \textcolor{comment}{\# enable all buttons in the menu}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00132}00132             \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9723a50148dd177e9a7c8299dbc6b8e7}{nb\_fourmi}} <= 0:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00133}00133                 self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}{menu}}.disable(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a3423ebdc5b0b16212881291132bfbba3}{btn\_play}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00134}00134                                   self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af3ca3a0bbe8ede6535bd15a4fdcbe130}{btn\_next}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00135}00135                                   self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a268636dfb561b92ac9ef0c138be257ad}{ib\_next}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00136}00136                                   self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9a738344077ceeb8da798b58bb370e28}{btn\_stop}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00137}00137                                   self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a6562952d824855015a6348227e068429}{btn\_debug}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00138}00138 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00139}00139             \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9723a50148dd177e9a7c8299dbc6b8e7}{nb\_fourmi}} > 0:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00140}00140                 self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}{menu}}.disable(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a0d2dc226a9def3a9f31dc716d2ef7b6a}{ib\_behavior}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00141}00141                 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00142}00142             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851}{handle\_event}}()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00143}00143             pygame.display.update() \textcolor{comment}{\# update the screen            }}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00144}00144             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af20973026f33e4fb96ef3cd9dc402fc2}{clock}}.tick(30) \textcolor{comment}{\# control the max framerate}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00145}00145             }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00146}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a99acbb2b1e61988f6fb7b0fc488a0c3d}{00146}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a99acbb2b1e61988f6fb7b0fc488a0c3d}{stop}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00147}00147         \textcolor{stringliteral}{"{}"{}"{}!@brief Stop the game by set self.run to false"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00148}00148         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}{run}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00149}00149 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00150}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a45418b1fc257cca1d9c0714db4bdc791}{00150}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a45418b1fc257cca1d9c0714db4bdc791}{add\_fourmi}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00151}00151         \textcolor{stringliteral}{"{}"{}"{}!@brief Add an ant on the grid"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00152}00152         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}{run}} :}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00153}00153             not\_click = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00154}00154             \textcolor{keywordflow}{while} not\_click:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00155}00155                 self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af20973026f33e4fb96ef3cd9dc402fc2}{clock}}.tick(30) \textcolor{comment}{\# control the max framerate                }}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00156}00156                 \textcolor{keywordflow}{for} event \textcolor{keywordflow}{in} pygame.event.get():            }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00157}00157                     \textcolor{keywordflow}{if} event.type == pygame.MOUSEBUTTONDOWN:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00158}00158                         not\_click = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00159}00159                         \textcolor{keywordflow}{if} event.pos[0] >= 0 \textcolor{keywordflow}{and} event.pos[0] < self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[0] \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00160}00160                            \textcolor{keywordflow}{and} event.pos[1] >= 0 \textcolor{keywordflow}{and} event.pos[1] < self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[1] :}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00161}00161                             e\_x, e\_y = event.pos}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00162}00162                             f\_x = (e\_x//self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}})*self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00163}00163                             f\_y = (e\_y//self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}})*self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00164}00164                             f\_new = lgt.Fourmi(coords=(f\_x, f\_y),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00165}00165                                            taille=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00166}00166                                            speed=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00167}00167                                            direction=0,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00168}00168                                            behavior=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15d6471477fd3fd63e5ba54a09e43cea}{behavior}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00169}00169                                            color=self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a3158144794c0cd8c507d57161f015780}{color}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00170}00170                             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1a1cdd446e7147d61fbdd025e52d08e6}{fourmi\_list}}.append(f\_new)}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00171}00171                             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9723a50148dd177e9a7c8299dbc6b8e7}{nb\_fourmi}} += 1}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00172}00172                             f\_new.draw()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00173}00173                         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00174}00174                             print(\textcolor{stringliteral}{"{}Can't create an ant here."{}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00175}00175                 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00176}00176         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00177}00177             print(\textcolor{stringliteral}{"{}Can't add an ant when simulation is running.."{}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00178}00178 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00179}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de17}{00179}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de17}{reset}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00180}00180         \textcolor{stringliteral}{"{}"{}"{}!@brief Reset the simulation"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00181}00181         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}{run}} :}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00182}00182             \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac278df3b69b7433c6e08441c26818ae5}{random\_grid}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00183}00183                 self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af1c34b60c5bc9a17d422ec15152cde88}{plateau}}.random\_schema()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00184}00184             \textcolor{keywordflow}{else} :}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00185}00185                 self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af1c34b60c5bc9a17d422ec15152cde88}{plateau}}.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de17}{reset}}()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00186}00186 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00187}00187             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1a1cdd446e7147d61fbdd025e52d08e6}{fourmi\_list}} = [].copy()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00188}00188             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9723a50148dd177e9a7c8299dbc6b8e7}{nb\_fourmi}} = 0}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00189}00189 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00190}00190             \textcolor{keywordflow}{for} f \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1a1cdd446e7147d61fbdd025e52d08e6}{fourmi\_list}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00191}00191                 f.reset()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00192}00192             }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00193}00193             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac3344803777f8e212e5b42cc5b650365}{iteration}} = 0}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00194}00194             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a36dbbc66b5b8e122b73455e359baa7ae}{end}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00195}00195             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}{menu}}.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286e2}{draw}}(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a773c12ae029194e5551af2ab72fde3bf}{screen}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00196}00196         \textcolor{keywordflow}{else} :}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00197}00197             print(\textcolor{stringliteral}{"{}Can't reset when simulation is running"{}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00198}00198 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00199}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af0de351e406a5de695a6c27aba8b91ed}{00199}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af0de351e406a5de695a6c27aba8b91ed}{next\_step}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00200}00200         \textcolor{stringliteral}{"{}"{}"{}!@brief Play simulation iterator next\_number times, (default 1)}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00201}00201 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@exception} StopIteration If Simulation ended}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00202}00202         \textcolor{preprocessor}{@exception} Exception If Simulation already run}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00203}00203         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00204}00204 \textcolor{stringliteral}{        }\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00205}00205             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a36dbbc66b5b8e122b73455e359baa7ae}{end}} \textcolor{keywordflow}{and} \textcolor{keywordflow}{not} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}{run}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00206}00206                 \textcolor{keywordflow}{for} \_  \textcolor{keywordflow}{in} range(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ad0beaea0860515bb559c291bd6c43491}{next\_time}}):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00207}00207                     next(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1e53dde8cab6c40f5807bfefae18710a}{it}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00208}00208         \textcolor{keywordflow}{except} StopIteration:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00209}00209             print(\textcolor{stringliteral}{"{}Simulation ended"{}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00210}00210         \textcolor{keywordflow}{except} Exception:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00211}00211             print(\textcolor{stringliteral}{"{}Already in function"{}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00212}00212             }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00213}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a2b80456b1fc72a33e2a6ca83b26a480f}{00213}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a2b80456b1fc72a33e2a6ca83b26a480f}{play}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00214}00214         \textcolor{stringliteral}{"{}"{}"{}!@brief Play Simulation loop"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00215}00215         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00216}00216             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}{run}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00217}00217                 \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a36dbbc66b5b8e122b73455e359baa7ae}{end}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00218}00218                     self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}{run}} = \textcolor{keyword}{True}      }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00219}00219                 \textcolor{keywordflow}{while} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}{run}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00220}00220                     next(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1e53dde8cab6c40f5807bfefae18710a}{it}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00221}00221                 \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a36dbbc66b5b8e122b73455e359baa7ae}{end}} :}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00222}00222                     print(\textcolor{stringliteral}{"{}Simulation ended."{}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00223}00223         \textcolor{keywordflow}{except} Exception:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00224}00224             raise(Exception)}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00225}00225             print(\textcolor{stringliteral}{"{}Already playing"{}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00226}00226             }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00227}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9da91713f42652792e9ca626148a5d85}{00227}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9da91713f42652792e9ca626148a5d85}{\_\_iter\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00228}00228         \textcolor{stringliteral}{"{}"{}"{}!@brief Simulation iterator"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00229}00229 \textcolor{stringliteral}{        }}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00230}00230 \textcolor{stringliteral}{        }\textcolor{keywordflow}{while} \textcolor{keyword}{True}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00231}00231 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00232}00232             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac3344803777f8e212e5b42cc5b650365}{iteration}} += 1}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00233}00233             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851}{handle\_event}}()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00234}00234             }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00235}00235             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a2478e6c5471747b59b037f5d80f72294}{fourmi\_step}}()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00236}00236             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a5bd1badd9fa1819a30e2adc5ace9a443}{fourmi\_out}}()            }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00237}00237             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286e2}{draw}}()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00238}00238             }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00239}00239             pygame.display.update() \textcolor{comment}{\# update the screen}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00240}00240             \textcolor{comment}{\# self.clock.tick(60) \# control the max framerate}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00241}00241             \textcolor{keywordflow}{yield};}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00242}00242 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00243}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286e2}{00243}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286e2}{draw}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00244}00244         \textcolor{stringliteral}{"{}"{}"{}!@brief Draw the map and ants"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00245}00245         \textcolor{keywordflow}{for} f \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1a1cdd446e7147d61fbdd025e52d08e6}{fourmi\_list}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00246}00246             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a36dbbc66b5b8e122b73455e359baa7ae}{end}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00247}00247                 self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af1c34b60c5bc9a17d422ec15152cde88}{plateau}}.draw\_ant((f.x//self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}}, f.y//self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}}))}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00248}00248                 f.draw()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00249}00249             }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00250}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a5bd1badd9fa1819a30e2adc5ace9a443}{00250}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a5bd1badd9fa1819a30e2adc5ace9a443}{fourmi\_out}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00251}00251         \textcolor{stringliteral}{"{}"{}"{}!@brief Check if an ant is out of index of the grid"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00252}00252         \textcolor{keywordflow}{for} f \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1a1cdd446e7147d61fbdd025e52d08e6}{fourmi\_list}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00253}00253             \textcolor{keywordflow}{if} f.x == self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[0] \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00254}00254                \textcolor{keywordflow}{or} f.y == self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[1] \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00255}00255                \textcolor{keywordflow}{or} f.x < 0 \textcolor{keywordflow}{or} f.y < 0:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00256}00256                 \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a44d1ba0614a1a7eb5617558b410228e6}{infinite\_ant}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00257}00257                     f.x = f.x\%self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[0]}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00258}00258                     f.y = f.y\%self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[1]}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00259}00259                 \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00260}00260                     self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}{run}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00261}00261                     self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a36dbbc66b5b8e122b73455e359baa7ae}{end}} = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00262}00262         }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00263}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a2478e6c5471747b59b037f5d80f72294}{00263}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a2478e6c5471747b59b037f5d80f72294}{fourmi\_step}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00264}00264         \textcolor{stringliteral}{"{}"{}"{}!@brief Move all ants once"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00265}00265         \textcolor{keywordflow}{for} f \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1a1cdd446e7147d61fbdd025e52d08e6}{fourmi\_list}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00266}00266             case = self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af1c34b60c5bc9a17d422ec15152cde88}{plateau}}.get\_case(f.x, f.y, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00267}00267             f.one\_step(case)}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00268}00268         }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00269}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851}{00269}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851}{handle\_event}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00270}00270         \textcolor{stringliteral}{"{}"{}"{}!@brief Event listener user interactions: Button \& Keyboard"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00271}00271 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00272}00272         \textcolor{keywordflow}{for} event \textcolor{keywordflow}{in} pygame.event.get():}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00273}00273             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}{menu}}.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851}{handle\_event}}(event,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00274}00274                                    self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a6562952d824855015a6348227e068429}{btn\_debug}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00275}00275                                    self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a3423ebdc5b0b16212881291132bfbba3}{btn\_play}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00276}00276                                    self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9a738344077ceeb8da798b58bb370e28}{btn\_stop}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00277}00277                                    self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a5ddf8dfba8e9ab766aab288276b51777}{cb\_infinite}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00278}00278                                    self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aa9ec200f0f087914861fc9b527f685d5}{cb\_random\_grid}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00279}00279             }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00280}00280             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}{run}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00281}00281                 self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}{menu}}.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851}{handle\_event}}(event,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00282}00282                                        self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af3ca3a0bbe8ede6535bd15a4fdcbe130}{btn\_next}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00283}00283                                        self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a268636dfb561b92ac9ef0c138be257ad}{ib\_next}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00284}00284                                        self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac48b06c521d6f6feee388f78efa8b69b}{btn\_reset}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00285}00285                                        self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a556d77c166a4c52e7c1652623f564bc0}{btn\_add\_f}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00286}00286                                        self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a0d2dc226a9def3a9f31dc716d2ef7b6a}{ib\_behavior}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00287}00287                 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00288}00288             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00289}00289                 self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}{menu}}.disable(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af3ca3a0bbe8ede6535bd15a4fdcbe130}{btn\_next}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00290}00290                                   self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a268636dfb561b92ac9ef0c138be257ad}{ib\_next}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00291}00291                                   self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac48b06c521d6f6feee388f78efa8b69b}{btn\_reset}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00292}00292                                   self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a556d77c166a4c52e7c1652623f564bc0}{btn\_add\_f}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00293}00293                 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00294}00294             \textcolor{keywordflow}{if} event.type == pygame.QUIT:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00295}00295                 self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}{run}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00296}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a8c904c65a3ec3a125395e3b74cf9e1fa}{00296}}                 self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a8c904c65a3ec3a125395e3b74cf9e1fa}{start}}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4c4}{start}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00297}00297 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00298}00298         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}{menu}}.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286e2}{draw}}(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a773c12ae029194e5551af2ab72fde3bf}{screen}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00299}00299                 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00300}00300         \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a393e9b798bff08aaf71ff3216ecb180d}{debug}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00301}00301             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a21b1164f60b3a232e2400e0d93f6c085}{debuging}}()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00302}00302 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00303}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a25e7ef7c60a93999cd4c275c77e199d4}{00303}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a25e7ef7c60a93999cd4c275c77e199d4}{init\_color}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00304}00304         \textcolor{stringliteral}{"{}"{}"{}!@brief Init random color from simulation behavior"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00305}00305 \textcolor{stringliteral}{        color\_list = []}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00306}00306 \textcolor{stringliteral}{        color\_tuple = []}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00307}00307 \textcolor{stringliteral}{        color\_list.append(color.dic["{}white"{}}])}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00308}00308         \textcolor{keywordflow}{for} \_ \textcolor{keywordflow}{in} range(len(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15d6471477fd3fd63e5ba54a09e43cea}{behavior}})-\/1):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00309}00309             \textcolor{keywordflow}{for} \_ \textcolor{keywordflow}{in} range(3):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00310}00310                 color\_tuple.append(random.randint(0, 255))}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00311}00311             color\_list.append(tuple(color\_tuple.copy()))}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00312}00312             color\_tuple = [].copy()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00313}00313         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a3158144794c0cd8c507d57161f015780}{color}} = color\_list.copy()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00314}00314 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00315}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aab9b1888a30ff6d12813bf21497178d7}{00315}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aab9b1888a30ff6d12813bf21497178d7}{active\_debug}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00316}00316         \textcolor{stringliteral}{"{}"{}"{}!@brief Change boolean value for debug option button"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00317}00317         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a393e9b798bff08aaf71ff3216ecb180d}{debug}} = \textcolor{keywordflow}{not} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a393e9b798bff08aaf71ff3216ecb180d}{debug}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00318}00318 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00319}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a21b1164f60b3a232e2400e0d93f6c085}{00319}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a21b1164f60b3a232e2400e0d93f6c085}{debuging}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00320}00320         \textcolor{stringliteral}{"{}"{}"{}!@brief Print the total of iteration since the simulation is running"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00321}00321         \textcolor{comment}{\# print(f"{}Iteration : \{self.iteration\}"{})}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00322}00322         txt\_surf = self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a6562952d824855015a6348227e068429}{btn\_debug}}.font.render(f\textcolor{stringliteral}{"{}\{self.iteration\}"{}},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00323}00323                                               \textcolor{keyword}{True},}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00324}00324                                               color.dic[\textcolor{stringliteral}{"{}white"{}}])}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00325}00325         pos = list(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a6562952d824855015a6348227e068429}{btn\_debug}}.get\_pos())}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00326}00326         size = list(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a6562952d824855015a6348227e068429}{btn\_debug}}.get\_size())}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00327}00327 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00328}00328         text\_w = txt\_surf.get\_width() }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00329}00329         text\_h = txt\_surf.get\_height()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00330}00330 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00331}00331         pos = (self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\_screen}}[0]-\/70-\/text\_w//2,}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00332}00332                20 + size[1]//2 -\/ text\_h//2),}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00333}00333 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00334}00334         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a773c12ae029194e5551af2ab72fde3bf}{screen}}.blit(txt\_surf, pos)    }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00335}00335 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00336}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac96fdc02a3622151c440dcd2196139ab}{00336}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac96fdc02a3622151c440dcd2196139ab}{set\_next}}(self, text):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00337}00337         \textcolor{stringliteral}{"{}"{}"{}!@brief Set the step for next function"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00338}00338         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00339}00339             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ad0beaea0860515bb559c291bd6c43491}{next\_time}} = int(text)}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00340}00340             print(f\textcolor{stringliteral}{"{}Set next step to \{self.next\_time\}"{}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00341}00341         \textcolor{keywordflow}{except} Exception:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00342}00342             print(\textcolor{stringliteral}{"{}Invalide next value."{}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00343}00343         }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00344}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a}{00344}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a}{set\_behavior}}(self, text):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00345}00345         \textcolor{stringliteral}{"{}"{}"{}!@brief Set the behavior before add ants and game start"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00346}00346         \textcolor{keywordflow}{for} letter \textcolor{keywordflow}{in} text:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00347}00347             \textcolor{keywordflow}{if} letter != \textcolor{stringliteral}{"{}R"{}} \textcolor{keywordflow}{and} letter != \textcolor{stringliteral}{"{}L"{}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00348}00348                 print(\textcolor{stringliteral}{"{}Invalide behavior, must be a text of 'R' and 'L'."{}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00349}00349                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00350}00350         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15d6471477fd3fd63e5ba54a09e43cea}{behavior}} = text}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00351}00351         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a25e7ef7c60a93999cd4c275c77e199d4}{init\_color}}()}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00352}00352         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af1c34b60c5bc9a17d422ec15152cde88}{plateau}}.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a}{set\_behavior}}(self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a3158144794c0cd8c507d57161f015780}{color}}, self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15d6471477fd3fd63e5ba54a09e43cea}{behavior}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00353}00353         print(f\textcolor{stringliteral}{"{}Set simulation behavior to \{self.behavior\}"{}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00354}00354         }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00355}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a76def25452c459e755c7c77010872fe8}{00355}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a76def25452c459e755c7c77010872fe8}{infinite}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00356}00356         \textcolor{stringliteral}{"{}"{}"{}!@brief Define if ants are in an infinite place"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00357}00357         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a44d1ba0614a1a7eb5617558b410228e6}{infinite\_ant}} = \textcolor{keywordflow}{not} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a44d1ba0614a1a7eb5617558b410228e6}{infinite\_ant}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00358}00358         \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a44d1ba0614a1a7eb5617558b410228e6}{infinite\_ant}} \textcolor{keywordflow}{and} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a36dbbc66b5b8e122b73455e359baa7ae}{end}} :}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00359}00359             self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a36dbbc66b5b8e122b73455e359baa7ae}{end}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00360}00360             \textcolor{keywordflow}{for} f \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1a1cdd446e7147d61fbdd025e52d08e6}{fourmi\_list}}:}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00361}00361                 f.x \%= self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[0]}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00362}00362                 f.y \%= self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\_plateau}}[1]}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00363}00363         print(f\textcolor{stringliteral}{"{}Set infinite board to \{self.infinite\_ant\}"{}})}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00364}00364 }
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00365}\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ab2fc64bafbdebe6be345ab38a2831e16}{00365}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ab2fc64bafbdebe6be345ab38a2831e16}{set\_random\_grid}}(self):}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00366}00366         \textcolor{stringliteral}{"{}"{}"{}!@brief Random Grid CheckBox function"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00367}00367         self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac278df3b69b7433c6e08441c26818ae5}{random\_grid}} = \textcolor{keywordflow}{not} self.\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac278df3b69b7433c6e08441c26818ae5}{random\_grid}}}
+\DoxyCodeLine{\Hypertarget{simulation_8py_source_l00368}00368         print(f\textcolor{stringliteral}{"{}Set random grid to \{self.random\_grid\}"{}})}
+
+\end{DoxyCode}

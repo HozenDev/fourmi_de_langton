@@ -1,0 +1,4 @@
+<map id="langton.fourmi.Fourmi.conduct" name="langton.fourmi.Fourmi.conduct">
+<area shape="rect" id="node1" title="Move the ant following its conduct This method moves the ant compare to the conduct wanted." alt="" coords="284,5,507,32"/>
+<area shape="rect" id="node2" href="$classlangton_1_1fourmi_1_1_fourmi.html#a94f50ddabad6971f3ed75329d4ea028f" title="An ant complete movement This method make the ant follows a complete movement (rotate,..." alt="" coords="5,5,236,32"/>
+</map>

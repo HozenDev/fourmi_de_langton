@@ -1,0 +1,129 @@
+\hypertarget{button_8py_source}{}\doxysubsection{button.\+py}
+\label{button_8py_source}\index{button.py@{button.py}}
+\mbox{\hyperlink{button_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00001}\mbox{\hyperlink{namespacebuttons_1_1button}{00001}} \textcolor{stringliteral}{"{}"{}"{}!}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00002}00002 \textcolor{stringliteral}{@brief Button package}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00003}00003 \textcolor{stringliteral}{@author Durel Enzo}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00004}00004 \textcolor{stringliteral}{@author Mallepeyre Nourrane}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00005}00005 \textcolor{stringliteral}{@version 1.0}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00006}00006 \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00008}00008 \textcolor{keyword}{import} pygame}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00009}00009 \textcolor{keyword}{from} utils \textcolor{keyword}{import} color}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00011}\mbox{\hyperlink{classbuttons_1_1button_1_1_button}{00011}} \textcolor{keyword}{class }\mbox{\hyperlink{classbuttons_1_1button_1_1_button}{Button}}:}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00012}00012     \textcolor{stringliteral}{"{}"{}"{}!@brief Represent a Button"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00013}00013     }
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00014}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ae4c6da00998421b07efbeafa1bcf65d5}{00014}}     \textcolor{keyword}{def }\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ae4c6da00998421b07efbeafa1bcf65d5}{\_\_init\_\_}}(self, pos, size, text='', fun=None):}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00015}00015         \textcolor{stringliteral}{"{}"{}"{}!@brief Construct Button object}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00016}00016 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} pos A tuple position of top left button corner}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00017}00017         \textcolor{preprocessor}{@param} size A tuple represent the size of button (width, height)}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00018}00018         \textcolor{preprocessor}{@param} text String affiliate to the button}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00019}00019         \textcolor{preprocessor}{@param} fun Function reference \textcolor{keywordflow}{for} button event}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00020}00020         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00021}00021 \textcolor{stringliteral}{        }\textcolor{comment}{\# RECTANGLE \#}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00022}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{00022}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}} = pygame.Rect(pos, size) \textcolor{comment}{\# rect collison button}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00023}00023         \textcolor{comment}{\# COLORS \#}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00024}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a0ec3143005f9214af92d7a873b86d618}{00024}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a0ec3143005f9214af92d7a873b86d618}{inactive\_color}} = color.INACTIVE\_BUTTON\_COLOR \textcolor{comment}{\# when button inactive}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00025}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a1231f73315e878ce49f2f11c00bb3be9}{00025}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a1231f73315e878ce49f2f11c00bb3be9}{active\_color}} = color.ACTIVE\_BUTTON\_COLOR \textcolor{comment}{\# when button is clicked on }}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00026}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a12ee2959161dee994d1f47dad9d5068b}{00026}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a12ee2959161dee994d1f47dad9d5068b}{disable\_color}} = color.DISABLE\_BUTTON\_COLOR}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00027}00027         \textcolor{comment}{\# self.disable\_color = DISABLE\_BUTTON\_COLOR \# when button disabled}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00028}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4faf3575b3bb12c27b8c3b3a9424c5e8}{00028}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4faf3575b3bb12c27b8c3b3a9424c5e8}{color}} = color.INACTIVE\_BUTTON\_COLOR \textcolor{comment}{\# current color}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00029}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4b5df025089e1419d0c5a967704fad8a}{00029}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4b5df025089e1419d0c5a967704fad8a}{text\_color}} = color.TEXT\_BUTTON\_COLOR \textcolor{comment}{\# text inside color}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00030}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a9c51b99435ca26d82986049564a62a8a}{00030}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a9c51b99435ca26d82986049564a62a8a}{hover\_color}} = color.HOVER\_BUTTON\_COLOR \textcolor{comment}{\# when mouse on the button}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00031}00031         \textcolor{comment}{\# TEXT \#}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00032}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_aa95c3d36c5255948374d272dd5b4e41e}{00032}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_aa95c3d36c5255948374d272dd5b4e41e}{text}} = text \textcolor{comment}{\# string text}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00033}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_af4cde291cf3f91346a95c697079884bc}{00033}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_af4cde291cf3f91346a95c697079884bc}{font}} = pygame.font.Font(\textcolor{keywordtype}{None}, 32) \textcolor{comment}{\# font of the text}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00034}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ac48e80ef6fc7b36e64c32f4a71c70c1d}{00034}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ac48e80ef6fc7b36e64c32f4a71c70c1d}{txt\_surf}} = self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_af4cde291cf3f91346a95c697079884bc}{font}}.render(text, \textcolor{keyword}{True}, self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4b5df025089e1419d0c5a967704fad8a}{text\_color}}) \textcolor{comment}{\# surface txt}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00035}00035         \textcolor{comment}{\# STATE \#}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00036}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_adb1031dd6fbbd93febcdf01aec74f6b0}{00036}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_adb1031dd6fbbd93febcdf01aec74f6b0}{active}} = \textcolor{keyword}{False} \textcolor{comment}{\# if button is active}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00037}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_accc46dbe7e2981eb80f3b141f4774618}{00037}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_accc46dbe7e2981eb80f3b141f4774618}{b\_disable}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00038}00038         \textcolor{comment}{\# FUNCTION \#}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00039}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_abe959ae3b79bb0e3499895edbfcfe8af}{00039}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_abe959ae3b79bb0e3499895edbfcfe8af}{fun}} = fun \textcolor{comment}{\# fonction reference}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00040}00040         \textcolor{comment}{\# STYLE \#}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00041}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ab3d99bb83d8bc84af6fe0daeacc90abb}{00041}}         self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ab3d99bb83d8bc84af6fe0daeacc90abb}{border\_radius}} = 4 \textcolor{comment}{\# round corners of the button}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00043}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ae98c6358b015d661264abeff0a87a581}{00043}}     \textcolor{keyword}{def }\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ae98c6358b015d661264abeff0a87a581}{enable}}(self):}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00044}00044         \textcolor{stringliteral}{"{}"{}"{}!@brief Enable the button}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00045}00045 \textcolor{stringliteral}{        This method enable the button (the user can click on it).}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00046}00046 \textcolor{stringliteral}{        "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00047}00047 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_accc46dbe7e2981eb80f3b141f4774618}{b\_disable}}:}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00048}00048             self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_accc46dbe7e2981eb80f3b141f4774618}{b\_disable}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00049}00049             self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4faf3575b3bb12c27b8c3b3a9424c5e8}{color}} = self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a0ec3143005f9214af92d7a873b86d618}{inactive\_color}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00050}00050         }
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00051}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a85bed9b1a73cc6240cf8a92b32da2181}{00051}}     \textcolor{keyword}{def }\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a85bed9b1a73cc6240cf8a92b32da2181}{disable}}(self):}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00052}00052         \textcolor{stringliteral}{"{}"{}"{}!@brief Disable the button}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00053}00053 \textcolor{stringliteral}{        This method disable the button (the user can't click on it).}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00054}00054 \textcolor{stringliteral}{        "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00055}00055 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_accc46dbe7e2981eb80f3b141f4774618}{b\_disable}}:}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00056}00056             self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_accc46dbe7e2981eb80f3b141f4774618}{b\_disable}} = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00057}00057             self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4faf3575b3bb12c27b8c3b3a9424c5e8}{color}} = self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a12ee2959161dee994d1f47dad9d5068b}{disable\_color}} \textcolor{comment}{\# disable color}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00058}00058             }
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00059}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ac4f99f58b27912deb3b8b884119f736a}{00059}}     \textcolor{keyword}{def }\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ac4f99f58b27912deb3b8b884119f736a}{draw}}(self, screen):}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00060}00060         \textcolor{stringliteral}{"{}"{}"{}!@brief Draw the button}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00061}00061 \textcolor{stringliteral}{        This method draw the button rectangle }\textcolor{keyword}{with} pyGame draw.rect function}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00062}00062         \textcolor{keywordflow}{and} the text \textcolor{keyword}{with} screen.blit function.}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00063}00063         \textcolor{preprocessor}{@param} screen Pygame screen object where the button \textcolor{keyword}{with} be draw}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00064}00064         \textcolor{preprocessor}{@exception} Exception Used \textcolor{keywordflow}{if} pyGame \textcolor{keywordflow}{is} under update}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00065}00065         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00066}00066 \textcolor{stringliteral}{        }\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00067}00067             pygame.draw.rect(screen,}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00068}00068                              self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4faf3575b3bb12c27b8c3b3a9424c5e8}{color}},}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00069}00069                              self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}},}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00070}00070                              border\_radius=self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ab3d99bb83d8bc84af6fe0daeacc90abb}{border\_radius}})}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00071}00071         \textcolor{keywordflow}{except} Exception:}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00072}00072             print(\textcolor{stringliteral}{"{}Mettez a jour PyGame"{}})}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00073}00073             pygame.draw.rect(screen,}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00074}00074                              self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4faf3575b3bb12c27b8c3b3a9424c5e8}{color}},}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00075}00075                              self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}})}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00076}00076         text\_w = self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ac48e80ef6fc7b36e64c32f4a71c70c1d}{txt\_surf}}.get\_width()}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00077}00077         text\_h = self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ac48e80ef6fc7b36e64c32f4a71c70c1d}{txt\_surf}}.get\_height()}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00078}00078         screen.blit(self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ac48e80ef6fc7b36e64c32f4a71c70c1d}{txt\_surf}},}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00079}00079                     (self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}}.x+self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}}.w/2-\/text\_w/2, self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}}.y+self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}}.h/2-\/text\_h/2))}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00081}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a8a596d4166c7736581e88d3dc4e94191}{00081}}     \textcolor{keyword}{def }\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a8a596d4166c7736581e88d3dc4e94191}{handle\_event}}(self, event):}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00082}00082         \textcolor{stringliteral}{"{}"{}"{}!@brief User input method}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00083}00083 \textcolor{stringliteral}{        This method operate users input }\textcolor{keyword}{with} event.type pyGame attributs}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00085}00085         \textcolor{preprocessor}{@param} event Event user input}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00086}00086         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00087}00087 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_accc46dbe7e2981eb80f3b141f4774618}{b\_disable}}:}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00088}00088             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00089}00089         \textcolor{keywordflow}{if} event.type == pygame.MOUSEBUTTONDOWN:}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00090}00090             \textcolor{stringliteral}{"{}"{}"{}mouse click down"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00091}00091             \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}}.collidepoint(event.pos):}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00092}00092                 self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_adb1031dd6fbbd93febcdf01aec74f6b0}{active}} = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00093}00093                 self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4faf3575b3bb12c27b8c3b3a9424c5e8}{color}} = self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a1231f73315e878ce49f2f11c00bb3be9}{active\_color}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00094}00094                 \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_abe959ae3b79bb0e3499895edbfcfe8af}{fun}} \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00095}00095                     self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_abe959ae3b79bb0e3499895edbfcfe8af}{fun}}()}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00096}00096         \textcolor{keywordflow}{elif} event.type == pygame.MOUSEBUTTONUP:}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00097}00097             \textcolor{stringliteral}{"{}"{}"{}mouse click up"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00098}00098             self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_adb1031dd6fbbd93febcdf01aec74f6b0}{active}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00099}00099             \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}}.collidepoint(event.pos):}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00100}00100                 self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4faf3575b3bb12c27b8c3b3a9424c5e8}{color}} = self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a9c51b99435ca26d82986049564a62a8a}{hover\_color}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00101}00101             \textcolor{keywordflow}{else} :}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00102}00102                 self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4faf3575b3bb12c27b8c3b3a9424c5e8}{color}} = self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a0ec3143005f9214af92d7a873b86d618}{inactive\_color}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00103}00103         \textcolor{keywordflow}{elif} event.type == pygame.MOUSEMOTION:}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00104}00104             \textcolor{stringliteral}{"{}"{}"{}mouse hover"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00105}00105 \textcolor{stringliteral}{            }\textcolor{keywordflow}{if} self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}}.collidepoint(event.pos):}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00106}00106                 \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_adb1031dd6fbbd93febcdf01aec74f6b0}{active}}:}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00107}00107                     self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4faf3575b3bb12c27b8c3b3a9424c5e8}{color}} = self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a1231f73315e878ce49f2f11c00bb3be9}{active\_color}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00108}00108                 \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00109}00109                     self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4faf3575b3bb12c27b8c3b3a9424c5e8}{color}} = self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a9c51b99435ca26d82986049564a62a8a}{hover\_color}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00110}00110             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00111}00111                 self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a4faf3575b3bb12c27b8c3b3a9424c5e8}{color}} = self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a0ec3143005f9214af92d7a873b86d618}{inactive\_color}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00112}00112         }
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00113}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ae4783e47a94d269ccbe87d81a2d6eab5}{00113}}     \textcolor{keyword}{def }\mbox{\hyperlink{classbuttons_1_1button_1_1_button_ae4783e47a94d269ccbe87d81a2d6eab5}{get\_pos}}(self):}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00114}00114         \textcolor{stringliteral}{"{}"{}"{}!@brief Get the button top left position}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00115}00115 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@return} A tuple of the position (x, y)}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00116}00116         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00117}00117 \textcolor{stringliteral}{        }\textcolor{keywordflow}{return} (self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}}.x, self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}}.y)}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00119}\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a5defdc21d4d1e10e13a9069450c61fad}{00119}}     \textcolor{keyword}{def }\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a5defdc21d4d1e10e13a9069450c61fad}{get\_size}}(self):}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00120}00120         \textcolor{stringliteral}{"{}"{}"{}!@brief Get the button size}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00121}00121 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@return} A tuple of the size (w, h)}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00122}00122         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{button_8py_source_l00123}00123 \textcolor{stringliteral}{        }\textcolor{keywordflow}{return} (self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}}.w, self.\mbox{\hyperlink{classbuttons_1_1button_1_1_button_a19f0641668aad6262681c379bf335bd5}{rect}}.h)}
+
+\end{DoxyCode}

@@ -1,0 +1,46 @@
+\hypertarget{case_8py_source}{}\doxysubsection{case.\+py}
+\label{case_8py_source}\index{case.py@{case.py}}
+\mbox{\hyperlink{case_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00001}\mbox{\hyperlink{namespacelangton_1_1case}{00001}} \textcolor{stringliteral}{"{}"{}"{}!}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00002}00002 \textcolor{stringliteral}{@brief langton.case package}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00003}00003 \textcolor{stringliteral}{@author Durel Enzo}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00004}00004 \textcolor{stringliteral}{@author Mallepeyre Nourrane}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00005}00005 \textcolor{stringliteral}{@version 1.0}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00006}00006 \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00008}00008 \textcolor{keyword}{import} pygame}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00009}00009 \textcolor{keyword}{from} utils \textcolor{keyword}{import} color}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00011}\mbox{\hyperlink{classlangton_1_1case_1_1_case}{00011}} \textcolor{keyword}{class }\mbox{\hyperlink{classlangton_1_1case_1_1_case}{Case}}:}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00012}00012     \textcolor{stringliteral}{"{}"{}"{}!@brief Represent a Case"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00013}00013     }
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00014}\mbox{\hyperlink{classlangton_1_1case_1_1_case_ad189cb281a6d71f8924e550e02ee8d12}{00014}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1case_1_1_case_ad189cb281a6d71f8924e550e02ee8d12}{\_\_init\_\_}}(self, size=(1, 1)):}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00015}00015         \textcolor{stringliteral}{"{}"{}"{}!@brief Construct Case object}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00016}00016 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} size Pixel size of the case (pygame)}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00017}00017         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00018}\mbox{\hyperlink{classlangton_1_1case_1_1_case_ac12c76d58d65eb861450d45866ce38fe}{00018}} \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1case_1_1_case_ac12c76d58d65eb861450d45866ce38fe}{cur\_color}} = color.dic["{}white"{}}] \textcolor{comment}{\# color for the case}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00019}\mbox{\hyperlink{classlangton_1_1case_1_1_case_aa82e76ebe5d8dbcb5149793dceb37e25}{00019}}         self.\mbox{\hyperlink{classlangton_1_1case_1_1_case_aa82e76ebe5d8dbcb5149793dceb37e25}{w}} = size[0] \textcolor{comment}{\# width of the rect of the case}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00020}\mbox{\hyperlink{classlangton_1_1case_1_1_case_aa304d5caf25a2aec1f28502e2201c705}{00020}}         self.\mbox{\hyperlink{classlangton_1_1case_1_1_case_aa304d5caf25a2aec1f28502e2201c705}{h}} = size[1] \textcolor{comment}{\# height of the rect of the case}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00021}00021         }
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00022}\mbox{\hyperlink{classlangton_1_1case_1_1_case_a6ec5c7b90d247462c24d71ddccb0e2fb}{00022}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1case_1_1_case_a6ec5c7b90d247462c24d71ddccb0e2fb}{set\_color}}(self, colour):}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00023}00023         \textcolor{stringliteral}{"{}"{}"{}!@brief Set a color the the Case}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00024}00024 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} colour A tuple of int representing a rgb color}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00025}00025         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00026}00026 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1case_1_1_case_ac12c76d58d65eb861450d45866ce38fe}{cur\_color}} = self.\mbox{\hyperlink{classlangton_1_1case_1_1_case_ac3c535fbe3cbffd337e2d19cd5861dd4}{validate\_color}}(colour)}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00027}00027 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00028}\mbox{\hyperlink{classlangton_1_1case_1_1_case_ac3c535fbe3cbffd337e2d19cd5861dd4}{00028}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1case_1_1_case_ac3c535fbe3cbffd337e2d19cd5861dd4}{validate\_color}}(self, colour):}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00029}00029         \textcolor{stringliteral}{"{}"{}"{}!@brief Verify if it's a valid colour}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00030}00030 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} colour A tuple of int representing a rgb colour}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00031}00031         \textcolor{preprocessor}{@return} The valide colour}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00032}00032         \textcolor{preprocessor}{@exception} Exception Not a valid colour}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00033}00033         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00034}00034 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} len(colour) == 3:}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00035}00035             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} colour:}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00036}00036                 \textcolor{keywordflow}{if} i < 0 \textcolor{keywordflow}{or} i > 255:}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00037}00037                     raise(Exception(\textcolor{stringliteral}{"{}Invalide element in colour argument"{}}))}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00038}00038         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00039}00039             raise(Exception(\textcolor{stringliteral}{"{}Invalide length of colour argument"{}}))}
+\DoxyCodeLine{\Hypertarget{case_8py_source_l00040}00040         \textcolor{keywordflow}{return} colour}
+
+\end{DoxyCode}

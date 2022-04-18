@@ -1,0 +1,304 @@
+\hypertarget{classinput__box_1_1_input_box}{}\doxysubsection{input\+\_\+box.\+Input\+Box Class Reference}
+\label{classinput__box_1_1_input_box}\index{input\_box.InputBox@{input\_box.InputBox}}
+
+
+Represent an \mbox{\hyperlink{classinput__box_1_1_input_box}{Input\+Box}}.  
+
+
+
+
+Inheritance diagram for input\+\_\+box.\+Input\+Box\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classinput__box_1_1_input_box__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for input\+\_\+box.\+Input\+Box\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classinput__box_1_1_input_box__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classinput__box_1_1_input_box_a157b87acf917c6031dc13f7997b987dd}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, pos, size, \mbox{\hyperlink{classinput__box_1_1_input_box_a8447cea8eec16f0046d7454563659357}{text}}=\textquotesingle{}\textquotesingle{}, \mbox{\hyperlink{classbutton_1_1_button_ac846cb5f2cec0dfb9eae81b5e54e8331}{fun}}=None, \mbox{\hyperlink{classinput__box_1_1_input_box_a4242b99392bc3818d00654f809af7d5f}{max\+\_\+len}}=5)
+\begin{DoxyCompactList}\small\item\em Construct Button object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classinput__box_1_1_input_box_ab0c9c033fd1faf66fbaac23f26283abe}{handle\+\_\+event}} (self, event)
+\begin{DoxyCompactList}\small\item\em User input method This method operate users input with event.\+type py\+Game attributs. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classinput__box_1_1_input_box_a0011f0a2111d3c65b12bbd19fa081670}{draw}} (self, screen)
+\begin{DoxyCompactList}\small\item\em Draw the button This method draw the button rectangle with py\+Game draw.\+rect function and the text with screen.\+blit function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classinput__box_1_1_input_box_acf4ce5e8e137f493495c0e65c9bc69ad}{int\+\_\+rect}}
+\item 
+\mbox{\hyperlink{classinput__box_1_1_input_box_a6dca6d40c0ed56d315d10da8d3240cfd}{color}}
+\item 
+\mbox{\hyperlink{classinput__box_1_1_input_box_aa028f3d2553f122c2399893e82566519}{inactive\+\_\+color}}
+\item 
+\mbox{\hyperlink{classinput__box_1_1_input_box_a171cd8d85127fbe76ff75c2e752d110f}{active\+\_\+color}}
+\item 
+\mbox{\hyperlink{classinput__box_1_1_input_box_af3b7ea1f185a9466c57fb3f9c68c7de3}{disable\+\_\+color}}
+\item 
+\mbox{\hyperlink{classinput__box_1_1_input_box_af8630c583666615bb75a7523db406b34}{int\+\_\+color}}
+\item 
+\mbox{\hyperlink{classinput__box_1_1_input_box_aa3d97e3e889b9e86f05db4ff8b557f1f}{text\+\_\+color}}
+\item 
+\mbox{\hyperlink{classinput__box_1_1_input_box_a4242b99392bc3818d00654f809af7d5f}{max\+\_\+len}}
+\item 
+\mbox{\hyperlink{classinput__box_1_1_input_box_a39bab8dddf83abc4eb0d49422f50a8e8}{active}}
+\item 
+\mbox{\hyperlink{classinput__box_1_1_input_box_a8447cea8eec16f0046d7454563659357}{text}}
+\item 
+\mbox{\hyperlink{classinput__box_1_1_input_box_a408a34cd89247e147d67d25bd4bfc996}{txt\+\_\+surf}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Represent an \mbox{\hyperlink{classinput__box_1_1_input_box}{Input\+Box}}. 
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00012}{12}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+
+
+\doxysubsubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinput__box_1_1_input_box_a157b87acf917c6031dc13f7997b987dd}\label{classinput__box_1_1_input_box_a157b87acf917c6031dc13f7997b987dd}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def input\+\_\+box.\+Input\+Box.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pos,  }\item[{}]{size,  }\item[{}]{text = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{fun = {\ttfamily None},  }\item[{}]{max\+\_\+len = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+
+
+Construct Button object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & A tuple position of top left button corner \\
+\hline
+{\em size} & A tuple represent the size of button (width, height) \\
+\hline
+{\em text} & String affiliate to the button \\
+\hline
+{\em fun} & Function reference for button event \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classbutton_1_1_button_a2ee2d3ffb78be1b8eefa539c1b6db0db}{button.\+Button}}.
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00015}{15}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classinput__box_1_1_input_box_a157b87acf917c6031dc13f7997b987dd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classinput__box_1_1_input_box_a157b87acf917c6031dc13f7997b987dd_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\Hypertarget{classinput__box_1_1_input_box_a0011f0a2111d3c65b12bbd19fa081670}\label{classinput__box_1_1_input_box_a0011f0a2111d3c65b12bbd19fa081670}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!draw@{draw}}
+\index{draw@{draw}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily def input\+\_\+box.\+Input\+Box.\+draw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{screen }\end{DoxyParamCaption})}
+
+
+
+Draw the button This method draw the button rectangle with py\+Game draw.\+rect function and the text with screen.\+blit function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & Pygame screen object where the button with be draw \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Used if py\+Game is under update \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{classbutton_1_1_button_a6fd693c0a7d466ff7e283c5a5ad5c539}{button.\+Button}}.
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00057}{57}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinput__box_1_1_input_box_a0011f0a2111d3c65b12bbd19fa081670_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinput__box_1_1_input_box_ab0c9c033fd1faf66fbaac23f26283abe}\label{classinput__box_1_1_input_box_ab0c9c033fd1faf66fbaac23f26283abe}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!handle\_event@{handle\_event}}
+\index{handle\_event@{handle\_event}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{handle\_event()}{handle\_event()}}
+{\footnotesize\ttfamily def input\+\_\+box.\+Input\+Box.\+handle\+\_\+event (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+
+
+
+User input method This method operate users input with event.\+type py\+Game attributs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Event user input \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classbutton_1_1_button_a8f678134483966ec198d720647e624be}{button.\+Button}}.
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00029}{29}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinput__box_1_1_input_box_ab0c9c033fd1faf66fbaac23f26283abe_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsubsection{Member Data Documentation}
+\mbox{\Hypertarget{classinput__box_1_1_input_box_a39bab8dddf83abc4eb0d49422f50a8e8}\label{classinput__box_1_1_input_box_a39bab8dddf83abc4eb0d49422f50a8e8}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!active@{active}}
+\index{active@{active}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily input\+\_\+box.\+Input\+Box.\+active}
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00034}{34}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+\mbox{\Hypertarget{classinput__box_1_1_input_box_a171cd8d85127fbe76ff75c2e752d110f}\label{classinput__box_1_1_input_box_a171cd8d85127fbe76ff75c2e752d110f}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!active\_color@{active\_color}}
+\index{active\_color@{active\_color}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{active\_color}{active\_color}}
+{\footnotesize\ttfamily input\+\_\+box.\+Input\+Box.\+active\+\_\+color}
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00022}{22}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+\mbox{\Hypertarget{classinput__box_1_1_input_box_a6dca6d40c0ed56d315d10da8d3240cfd}\label{classinput__box_1_1_input_box_a6dca6d40c0ed56d315d10da8d3240cfd}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!color@{color}}
+\index{color@{color}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily input\+\_\+box.\+Input\+Box.\+color}
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00020}{20}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+\mbox{\Hypertarget{classinput__box_1_1_input_box_af3b7ea1f185a9466c57fb3f9c68c7de3}\label{classinput__box_1_1_input_box_af3b7ea1f185a9466c57fb3f9c68c7de3}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!disable\_color@{disable\_color}}
+\index{disable\_color@{disable\_color}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{disable\_color}{disable\_color}}
+{\footnotesize\ttfamily input\+\_\+box.\+Input\+Box.\+disable\+\_\+color}
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00023}{23}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+\mbox{\Hypertarget{classinput__box_1_1_input_box_aa028f3d2553f122c2399893e82566519}\label{classinput__box_1_1_input_box_aa028f3d2553f122c2399893e82566519}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!inactive\_color@{inactive\_color}}
+\index{inactive\_color@{inactive\_color}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{inactive\_color}{inactive\_color}}
+{\footnotesize\ttfamily input\+\_\+box.\+Input\+Box.\+inactive\+\_\+color}
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00021}{21}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+\mbox{\Hypertarget{classinput__box_1_1_input_box_af8630c583666615bb75a7523db406b34}\label{classinput__box_1_1_input_box_af8630c583666615bb75a7523db406b34}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!int\_color@{int\_color}}
+\index{int\_color@{int\_color}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{int\_color}{int\_color}}
+{\footnotesize\ttfamily input\+\_\+box.\+Input\+Box.\+int\+\_\+color}
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00024}{24}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+\mbox{\Hypertarget{classinput__box_1_1_input_box_acf4ce5e8e137f493495c0e65c9bc69ad}\label{classinput__box_1_1_input_box_acf4ce5e8e137f493495c0e65c9bc69ad}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!int\_rect@{int\_rect}}
+\index{int\_rect@{int\_rect}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{int\_rect}{int\_rect}}
+{\footnotesize\ttfamily input\+\_\+box.\+Input\+Box.\+int\+\_\+rect}
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00018}{18}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+\mbox{\Hypertarget{classinput__box_1_1_input_box_a4242b99392bc3818d00654f809af7d5f}\label{classinput__box_1_1_input_box_a4242b99392bc3818d00654f809af7d5f}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!max\_len@{max\_len}}
+\index{max\_len@{max\_len}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{max\_len}{max\_len}}
+{\footnotesize\ttfamily input\+\_\+box.\+Input\+Box.\+max\+\_\+len}
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00027}{27}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+\mbox{\Hypertarget{classinput__box_1_1_input_box_a8447cea8eec16f0046d7454563659357}\label{classinput__box_1_1_input_box_a8447cea8eec16f0046d7454563659357}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!text@{text}}
+\index{text@{text}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily input\+\_\+box.\+Input\+Box.\+text}
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00045}{45}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+\mbox{\Hypertarget{classinput__box_1_1_input_box_aa3d97e3e889b9e86f05db4ff8b557f1f}\label{classinput__box_1_1_input_box_aa3d97e3e889b9e86f05db4ff8b557f1f}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!text\_color@{text\_color}}
+\index{text\_color@{text\_color}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{text\_color}{text\_color}}
+{\footnotesize\ttfamily input\+\_\+box.\+Input\+Box.\+text\+\_\+color}
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00025}{25}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+\mbox{\Hypertarget{classinput__box_1_1_input_box_a408a34cd89247e147d67d25bd4bfc996}\label{classinput__box_1_1_input_box_a408a34cd89247e147d67d25bd4bfc996}} 
+\index{input\_box.InputBox@{input\_box.InputBox}!txt\_surf@{txt\_surf}}
+\index{txt\_surf@{txt\_surf}!input\_box.InputBox@{input\_box.InputBox}}
+\doxyparagraph{\texorpdfstring{txt\_surf}{txt\_surf}}
+{\footnotesize\ttfamily input\+\_\+box.\+Input\+Box.\+txt\+\_\+surf}
+
+
+
+Definition at line \mbox{\hyperlink{input__box_8py_source_l00055}{55}} of file \mbox{\hyperlink{input__box_8py_source}{input\+\_\+box.\+py}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{input__box_8py}{input\+\_\+box.\+py}}\end{DoxyCompactItemize}

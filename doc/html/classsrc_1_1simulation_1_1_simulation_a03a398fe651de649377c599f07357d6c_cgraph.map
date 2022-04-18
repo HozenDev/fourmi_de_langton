@@ -1,0 +1,10 @@
+<map id="src.simulation.Simulation.start" name="src.simulation.Simulation.start">
+<area shape="rect" id="node1" title="Global start, here when ants aren&#39;t running." alt="" coords="5,213,228,240"/>
+<area shape="rect" id="node2" href="$classsrc_1_1simulation_1_1_simulation.html#a35dbcd57e251c0d89da572f03975ead8" title="Draw the map and ants." alt="" coords="560,213,784,240"/>
+<area shape="rect" id="node3" href="$classsrc_1_1simulation_1_1_simulation.html#a340a774900dc76e7df19e7da3f2a7915" title="Event listener user interactions: Button &amp; Keyboard." alt="" coords="276,75,512,117"/>
+<area shape="rect" id="node4" href="$classsrc_1_1button_1_1_button.html#a556f17749562073c17c0775e3846d213" title="User input method This method operate users input with event.type pyGame attributs." alt="" coords="303,141,485,182"/>
+<area shape="rect" id="node5" href="$classsrc_1_1check__box_1_1_check_box.html#ad34f828acb3e5f56a2ad058ba87dd752" title="User input method This method operate users input with event.type pyGame attributs." alt="" coords="279,206,509,247"/>
+<area shape="rect" id="node6" href="$classsrc_1_1input__box_1_1_input_box.html#a98cc6ccf3c2ab479fbbbf23258902a3f" title="User input method This method operate users input with event.type pyGame attributs." alt="" coords="285,271,503,313"/>
+<area shape="rect" id="node7" href="$classsrc_1_1menu_1_1_menu.html#ad3d269b52dbe1d0f160eaa97ee9f04cc" title="Enable some button of Menu." alt="" coords="309,337,479,378"/>
+<area shape="rect" id="node8" href="$classsrc_1_1simulation_1_1_simulation.html#a944be3b577ece919833b71d660fee060" title="Reset the simulation." alt="" coords="281,427,507,453"/>
+</map>

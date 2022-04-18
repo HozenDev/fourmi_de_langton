@@ -1,0 +1,65 @@
+\hypertarget{menu_8py_source}{}\doxysubsection{menu.\+py}
+\label{menu_8py_source}\index{menu.py@{menu.py}}
+\mbox{\hyperlink{menu_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00001}\mbox{\hyperlink{namespacebuttons_1_1menu}{00001}} \textcolor{stringliteral}{"{}"{}"{}!}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00002}00002 \textcolor{stringliteral}{@brief Menu package}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00003}00003 \textcolor{stringliteral}{@author Durel Enzo}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00004}00004 \textcolor{stringliteral}{@author Mallepeyre Nourrane}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00005}00005 \textcolor{stringliteral}{@version 1.0}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00006}00006 \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00008}00008 \textcolor{keyword}{import} pygame}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00009}00009 \textcolor{keyword}{from} utils \textcolor{keyword}{import} color}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00011}\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu}{00011}} \textcolor{keyword}{class }\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu}{Menu}}:}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00012}00012     \textcolor{stringliteral}{"{}"{}"{}!@brief Represent a Menu"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00013}00013 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00014}\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a5be84a9bf5ae5c12ed5329265e0065dc}{00014}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a5be84a9bf5ae5c12ed5329265e0065dc}{\_\_init\_\_}}(self, pos, size, btn\_list=[], color=color.MENU\_COLOR):}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00015}00015         \textcolor{stringliteral}{"{}"{}"{}!@brief Construct a Menu}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00016}00016 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} pos A tuple position of top left Menu corner}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00017}00017         \textcolor{preprocessor}{@param} size A tuple represent the size of Menu (width, height)}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00018}00018         \textcolor{preprocessor}{@param} btn\_list A list of button \textcolor{keywordflow}{in} the Menu}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00019}00019         \textcolor{preprocessor}{@param} color The Color of the Menu}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00020}00020         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00021}\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a1714d27e5935a664d8251b0bb5ef9afb}{00021}} \textcolor{stringliteral}{        self.\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a1714d27e5935a664d8251b0bb5ef9afb}{rect}} = pygame.Rect(pos, size)}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00022}\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_aa1f9db2e2e2c3f043d029268a444308f}{00022}} \textcolor{stringliteral}{        self.\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_aa1f9db2e2e2c3f043d029268a444308f}{color}} = color}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00023}\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a5f0636541dd25294b9877105267e6bc3}{00023}} \textcolor{stringliteral}{        self.\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a5f0636541dd25294b9877105267e6bc3}{btn\_list}} = btn\_list}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00024}00024 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00025}\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a4d4a71c664b0488c338e415e91b3d09b}{00025}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a4d4a71c664b0488c338e415e91b3d09b}{draw}}(self, screen):}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00026}00026         \textcolor{stringliteral}{"{}"{}"{}!@brief Draw the Menu}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00027}00027 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} screen Screen pyGame attributs}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00028}00028         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00029}00029 \textcolor{stringliteral}{        pygame.draw.rect(screen, self.\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_aa1f9db2e2e2c3f043d029268a444308f}{color}}, self.\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a1714d27e5935a664d8251b0bb5ef9afb}{rect}})}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00030}00030 \textcolor{stringliteral}{        }\textcolor{keywordflow}{for} x \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a5f0636541dd25294b9877105267e6bc3}{btn\_list}}:}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00031}00031             x.draw(screen)}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00032}00032     }
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00033}\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a7accee009b7f6eec9350e13bd7dcf6d0}{00033}}     \textcolor{keyword}{def }\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a7accee009b7f6eec9350e13bd7dcf6d0}{disable}}(self, *args):}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00034}00034         \textcolor{stringliteral}{"{}"{}"{}!@brief Disable some button of Menu}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00035}00035 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} args variadic args which need to be disable}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00036}00036         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00037}00037 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} len(args) == 0:}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00038}00038             args = self.\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a5f0636541dd25294b9877105267e6bc3}{btn\_list}}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00039}00039         \textcolor{keywordflow}{for} button \textcolor{keywordflow}{in} args:}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00040}00040             button.disable()}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00042}\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a3e68be3a1fb31ffc0ec411ef06d2dbfc}{00042}}     \textcolor{keyword}{def }\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a3e68be3a1fb31ffc0ec411ef06d2dbfc}{enable}}(self, *args):}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00043}00043         \textcolor{stringliteral}{"{}"{}"{}!@brief Enable some button of Menu}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00044}00044 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} args variadic args which need to be enable}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00045}00045         \textcolor{stringliteral}{"{}"{}"{}        }}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00046}00046 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} len(args) == 0:}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00047}00047             args = self.\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a5f0636541dd25294b9877105267e6bc3}{btn\_list}}         }
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00048}00048         \textcolor{keywordflow}{for} button \textcolor{keywordflow}{in} args:}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00049}00049             button.enable()}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00051}\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a7b126e496238018ea4eaab5c9a739c8a}{00051}}     \textcolor{keyword}{def }\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a7b126e496238018ea4eaab5c9a739c8a}{handle\_event}}(self, event, *args):}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00052}00052         \textcolor{stringliteral}{"{}"{}"{}!@brief Enable some button of Menu}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00053}00053 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} event User event}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00054}00054         \textcolor{preprocessor}{@param} args variadic args which need to be handled}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00055}00055         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00056}00056 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} len(args) == 0:}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00057}00057             args = self.\mbox{\hyperlink{classbuttons_1_1menu_1_1_menu_a5f0636541dd25294b9877105267e6bc3}{btn\_list}}}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00058}00058         \textcolor{keywordflow}{for} button \textcolor{keywordflow}{in} args:}
+\DoxyCodeLine{\Hypertarget{menu_8py_source_l00059}00059             button.handle\_event(event)}
+
+\end{DoxyCode}

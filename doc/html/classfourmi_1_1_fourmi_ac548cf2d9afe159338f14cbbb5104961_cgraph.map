@@ -1,0 +1,5 @@
+<map id="fourmi.Fourmi.rotate" name="fourmi.Fourmi.rotate">
+<area shape="rect" id="node1" title="Rotation the ant This method rotate the ant following the ant&#39;s behavior." alt="" coords="5,35,163,61"/>
+<area shape="rect" id="node2" href="$classfourmi_1_1_fourmi.html#a2f7144eca124417c247cc8dc6fd0edeb" title="Ant rotate left This method rotate the ant in its left." alt="" coords="211,5,397,32"/>
+<area shape="rect" id="node3" href="$classfourmi_1_1_fourmi.html#ac6b14bf8e04f38d81148e756d45d5f17" title="Ant rotate left This method rotate the ant in its right." alt="" coords="225,57,383,98"/>
+</map>

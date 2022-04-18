@@ -1,0 +1,596 @@
+\begin{theindex}
+
+  \item {\_\_init\_\_}
+    \subitem {buttons.button.Button}, \hyperpage{17}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{28}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{48}
+    \subitem {buttons.menu.Menu}, \hyperpage{53}
+    \subitem {langton.case.Case}, \hyperpage{23}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{35}
+    \subitem {langton.plateau.Plateau}, \hyperpage{57}
+    \subitem {langton.simulation.Simulation}, \hyperpage{64}
+  \item {\_\_init\_\_.py}, \hyperpage{80, 81}
+  \item {\_\_iter\_\_}
+    \subitem {langton.simulation.Simulation}, \hyperpage{64}
+  \item {\_\_str\_\_}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{35}
+    \subitem {langton.plateau.Plateau}, \hyperpage{57}
+
+  \indexspace
+
+  \item {active}
+    \subitem {buttons.button.Button}, \hyperpage{20}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{31}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{50}
+  \item {ACTIVE\_BUTTON\_COLOR}
+    \subitem {utils.color}, \hyperpage{11}
+  \item {ACTIVE\_CB\_COLOR}
+    \subitem {utils.color}, \hyperpage{11}
+  \item {active\_color}
+    \subitem {buttons.button.Button}, \hyperpage{20}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{31}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{51}
+  \item {active\_debug}
+    \subitem {langton.simulation.Simulation}, \hyperpage{65}
+  \item {ACTIVE\_IB\_COLOR}
+    \subitem {utils.color}, \hyperpage{11}
+  \item {active\_time}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{31}
+  \item {add\_fourmi}
+    \subitem {langton.simulation.Simulation}, \hyperpage{65}
+
+  \indexspace
+
+  \item {b\_disable}
+    \subitem {buttons.button.Button}, \hyperpage{20}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{31}
+  \item {begin\_direction}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{43}
+  \item {begin\_x}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{43}
+  \item {begin\_y}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{43}
+  \item {behavior}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{43}
+    \subitem {langton.plateau.Plateau}, \hyperpage{61}
+    \subitem {langton.simulation.Simulation}, \hyperpage{71}
+  \item {border\_radius}
+    \subitem {buttons.button.Button}, \hyperpage{20}
+  \item {btn\_add\_f}
+    \subitem {langton.simulation.Simulation}, \hyperpage{71}
+  \item {btn\_debug}
+    \subitem {langton.simulation.Simulation}, \hyperpage{71}
+  \item {btn\_list}
+    \subitem {buttons.menu.Menu}, \hyperpage{55}
+  \item {btn\_next}
+    \subitem {langton.simulation.Simulation}, \hyperpage{71}
+  \item {btn\_play}
+    \subitem {langton.simulation.Simulation}, \hyperpage{71}
+  \item {btn\_reset}
+    \subitem {langton.simulation.Simulation}, \hyperpage{72}
+  \item {btn\_stop}
+    \subitem {langton.simulation.Simulation}, \hyperpage{72}
+  \item {button.py}, \hyperpage{75}
+  \item {BUTTON\_SIZE}
+    \subitem {utils.const}, \hyperpage{13}
+  \item {buttons}, \hyperpage{4}
+  \item {buttons.button}, \hyperpage{4}
+  \item {buttons.button.Button}, \hyperpage{14}
+    \subitem {\_\_init\_\_}, \hyperpage{17}
+    \subitem {active}, \hyperpage{20}
+    \subitem {active\_color}, \hyperpage{20}
+    \subitem {b\_disable}, \hyperpage{20}
+    \subitem {border\_radius}, \hyperpage{20}
+    \subitem {color}, \hyperpage{20}
+    \subitem {disable}, \hyperpage{17}
+    \subitem {disable\_color}, \hyperpage{20}
+    \subitem {draw}, \hyperpage{18}
+    \subitem {enable}, \hyperpage{18}
+    \subitem {font}, \hyperpage{21}
+    \subitem {fun}, \hyperpage{21}
+    \subitem {get\_pos}, \hyperpage{19}
+    \subitem {get\_size}, \hyperpage{19}
+    \subitem {handle\_event}, \hyperpage{19}
+    \subitem {hover\_color}, \hyperpage{21}
+    \subitem {inactive\_color}, \hyperpage{21}
+    \subitem {rect}, \hyperpage{21}
+    \subitem {text}, \hyperpage{21}
+    \subitem {text\_color}, \hyperpage{21}
+    \subitem {txt\_surf}, \hyperpage{21}
+  \item {buttons.check\_box}, \hyperpage{5}
+  \item {buttons.check\_box.CheckBox}, \hyperpage{26}
+    \subitem {\_\_init\_\_}, \hyperpage{28}
+    \subitem {active}, \hyperpage{31}
+    \subitem {active\_color}, \hyperpage{31}
+    \subitem {active\_time}, \hyperpage{31}
+    \subitem {b\_disable}, \hyperpage{31}
+    \subitem {color}, \hyperpage{31}
+    \subitem {delay}, \hyperpage{31}
+    \subitem {disable}, \hyperpage{29}
+    \subitem {disable\_active\_color}, \hyperpage{32}
+    \subitem {disable\_color}, \hyperpage{32}
+    \subitem {draw}, \hyperpage{29}
+    \subitem {font}, \hyperpage{32}
+    \subitem {handle\_event}, \hyperpage{30}
+    \subitem {inactive\_color}, \hyperpage{32}
+    \subitem {text\_color}, \hyperpage{32}
+    \subitem {txt\_surf}, \hyperpage{32}
+  \item {buttons.input\_box}, \hyperpage{5}
+  \item {buttons.input\_box.InputBox}, \hyperpage{45}
+    \subitem {\_\_init\_\_}, \hyperpage{48}
+    \subitem {active}, \hyperpage{50}
+    \subitem {active\_color}, \hyperpage{51}
+    \subitem {color}, \hyperpage{51}
+    \subitem {disable\_color}, \hyperpage{51}
+    \subitem {draw}, \hyperpage{49}
+    \subitem {handle\_event}, \hyperpage{50}
+    \subitem {inactive\_color}, \hyperpage{51}
+    \subitem {int\_color}, \hyperpage{51}
+    \subitem {int\_rect}, \hyperpage{51}
+    \subitem {max\_len}, \hyperpage{51}
+    \subitem {text}, \hyperpage{51}
+    \subitem {text\_color}, \hyperpage{52}
+    \subitem {txt\_surf}, \hyperpage{52}
+  \item {buttons.menu}, \hyperpage{6}
+  \item {buttons.menu.Menu}, \hyperpage{52}
+    \subitem {\_\_init\_\_}, \hyperpage{53}
+    \subitem {btn\_list}, \hyperpage{55}
+    \subitem {color}, \hyperpage{55}
+    \subitem {disable}, \hyperpage{53}
+    \subitem {draw}, \hyperpage{54}
+    \subitem {enable}, \hyperpage{54}
+    \subitem {handle\_event}, \hyperpage{54}
+    \subitem {rect}, \hyperpage{55}
+
+  \indexspace
+
+  \item {case.py}, \hyperpage{81, 82}
+  \item {cb\_infinite}
+    \subitem {langton.simulation.Simulation}, \hyperpage{72}
+  \item {cb\_random\_grid}
+    \subitem {langton.simulation.Simulation}, \hyperpage{72}
+  \item {check\_box.py}, \hyperpage{77}
+  \item {clock}
+    \subitem {langton.simulation.Simulation}, \hyperpage{72}
+  \item {color}
+    \subitem {buttons.button.Button}, \hyperpage{20}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{31}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{51}
+    \subitem {buttons.menu.Menu}, \hyperpage{55}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{43}
+    \subitem {langton.plateau.Plateau}, \hyperpage{61}
+    \subitem {langton.simulation.Simulation}, \hyperpage{72}
+  \item {color.py}, \hyperpage{92}
+  \item {conduct}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{35}
+  \item {const.py}, \hyperpage{93}
+  \item {cur\_color}
+    \subitem {langton.case.Case}, \hyperpage{25}
+
+  \indexspace
+
+  \item {debug}
+    \subitem {langton.simulation.Simulation}, \hyperpage{72}
+  \item {debuging}
+    \subitem {langton.simulation.Simulation}, \hyperpage{65}
+  \item {DEFAULT\_PLATEAU\_SIZE}
+    \subitem {utils.const}, \hyperpage{13}
+  \item {DEFAULT\_RESOLUTION}
+    \subitem {utils.const}, \hyperpage{13}
+  \item {DEFAULT\_SCREEN\_SIZE}
+    \subitem {utils.const}, \hyperpage{14}
+  \item {delay}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{31}
+  \item {dic}
+    \subitem {utils.color}, \hyperpage{11}
+  \item {direction}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{43}
+  \item {disable}
+    \subitem {buttons.button.Button}, \hyperpage{17}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{29}
+    \subitem {buttons.menu.Menu}, \hyperpage{53}
+  \item {DISABLE\_ACTIVE\_CB\_COLOR}
+    \subitem {utils.color}, \hyperpage{11}
+  \item {disable\_active\_color}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{32}
+  \item {DISABLE\_BUTTON\_COLOR}
+    \subitem {utils.color}, \hyperpage{11}
+  \item {DISABLE\_CB\_COLOR}
+    \subitem {utils.color}, \hyperpage{11}
+  \item {disable\_color}
+    \subitem {buttons.button.Button}, \hyperpage{20}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{32}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{51}
+  \item {DISABLE\_IB\_COLOR}
+    \subitem {utils.color}, \hyperpage{11}
+  \item {draw}
+    \subitem {buttons.button.Button}, \hyperpage{18}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{29}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{49}
+    \subitem {buttons.menu.Menu}, \hyperpage{54}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{36}
+    \subitem {langton.plateau.Plateau}, \hyperpage{57}
+    \subitem {langton.simulation.Simulation}, \hyperpage{66}
+  \item {draw\_ant}
+    \subitem {langton.plateau.Plateau}, \hyperpage{58}
+  \item {draw\_case}
+    \subitem {langton.plateau.Plateau}, \hyperpage{58}
+
+  \indexspace
+
+  \item {enable}
+    \subitem {buttons.button.Button}, \hyperpage{18}
+    \subitem {buttons.menu.Menu}, \hyperpage{54}
+  \item {end}
+    \subitem {langton.simulation.Simulation}, \hyperpage{72}
+
+  \indexspace
+
+  \item {font}
+    \subitem {buttons.button.Button}, \hyperpage{21}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{32}
+  \item {fourmi.py}, \hyperpage{82, 83}
+  \item {fourmi\_list}
+    \subitem {langton.simulation.Simulation}, \hyperpage{73}
+  \item {fourmi\_out}
+    \subitem {langton.simulation.Simulation}, \hyperpage{66}
+  \item {fourmi\_step}
+    \subitem {langton.simulation.Simulation}, \hyperpage{66}
+  \item {fun}
+    \subitem {buttons.button.Button}, \hyperpage{21}
+
+  \indexspace
+
+  \item {get\_case}
+    \subitem {langton.plateau.Plateau}, \hyperpage{59}
+  \item {get\_pos}
+    \subitem {buttons.button.Button}, \hyperpage{19}
+  \item {get\_size}
+    \subitem {buttons.button.Button}, \hyperpage{19}
+
+  \indexspace
+
+  \item {h}
+    \subitem {langton.case.Case}, \hyperpage{25}
+    \subitem {langton.plateau.Plateau}, \hyperpage{61}
+  \item {handle\_event}
+    \subitem {buttons.button.Button}, \hyperpage{19}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{30}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{50}
+    \subitem {buttons.menu.Menu}, \hyperpage{54}
+    \subitem {langton.simulation.Simulation}, \hyperpage{67}
+  \item {HOVER\_BUTTON\_COLOR}
+    \subitem {utils.color}, \hyperpage{12}
+  \item {hover\_color}
+    \subitem {buttons.button.Button}, \hyperpage{21}
+
+  \indexspace
+
+  \item {ib\_behavior}
+    \subitem {langton.simulation.Simulation}, \hyperpage{73}
+  \item {ib\_next}
+    \subitem {langton.simulation.Simulation}, \hyperpage{73}
+  \item {INACTIVE\_BUTTON\_COLOR}
+    \subitem {utils.color}, \hyperpage{12}
+  \item {INACTIVE\_CB\_COLOR}
+    \subitem {utils.color}, \hyperpage{12}
+  \item {inactive\_color}
+    \subitem {buttons.button.Button}, \hyperpage{21}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{32}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{51}
+  \item {INACTIVE\_IB\_COLOR}
+    \subitem {utils.color}, \hyperpage{12}
+  \item {index\_direction}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{43}
+  \item {infinite}
+    \subitem {langton.simulation.Simulation}, \hyperpage{67}
+  \item {infinite\_ant}
+    \subitem {langton.simulation.Simulation}, \hyperpage{73}
+  \item {init\_color}
+    \subitem {langton.simulation.Simulation}, \hyperpage{68}
+  \item {input\_box.py}, \hyperpage{78}
+  \item {int\_color}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{51}
+  \item {int\_rect}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{51}
+  \item {inverse\_color\_case}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{36}
+  \item {is\_out}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{37}
+  \item {it}
+    \subitem {langton.simulation.Simulation}, \hyperpage{73}
+  \item {iteration}
+    \subitem {langton.simulation.Simulation}, \hyperpage{73}
+
+  \indexspace
+
+  \item {langton}, \hyperpage{6}
+  \item {langton.case}, \hyperpage{7}
+  \item {langton.case.Case}, \hyperpage{22}
+    \subitem {\_\_init\_\_}, \hyperpage{23}
+    \subitem {cur\_color}, \hyperpage{25}
+    \subitem {h}, \hyperpage{25}
+    \subitem {set\_color}, \hyperpage{23}
+    \subitem {validate\_color}, \hyperpage{23}
+    \subitem {w}, \hyperpage{25}
+  \item {langton.fourmi}, \hyperpage{7}
+  \item {langton.fourmi.Fourmi}, \hyperpage{33}
+    \subitem {\_\_init\_\_}, \hyperpage{35}
+    \subitem {\_\_str\_\_}, \hyperpage{35}
+    \subitem {begin\_direction}, \hyperpage{43}
+    \subitem {begin\_x}, \hyperpage{43}
+    \subitem {begin\_y}, \hyperpage{43}
+    \subitem {behavior}, \hyperpage{43}
+    \subitem {color}, \hyperpage{43}
+    \subitem {conduct}, \hyperpage{35}
+    \subitem {direction}, \hyperpage{43}
+    \subitem {draw}, \hyperpage{36}
+    \subitem {index\_direction}, \hyperpage{43}
+    \subitem {inverse\_color\_case}, \hyperpage{36}
+    \subitem {is\_out}, \hyperpage{37}
+    \subitem {move}, \hyperpage{37}
+    \subitem {move\_down}, \hyperpage{38}
+    \subitem {move\_left}, \hyperpage{38}
+    \subitem {move\_right}, \hyperpage{39}
+    \subitem {move\_up}, \hyperpage{39}
+    \subitem {nb\_direction}, \hyperpage{44}
+    \subitem {one\_step}, \hyperpage{40}
+    \subitem {out}, \hyperpage{44}
+    \subitem {reset}, \hyperpage{41}
+    \subitem {rotate}, \hyperpage{41}
+    \subitem {rotate\_left}, \hyperpage{42}
+    \subitem {rotate\_right}, \hyperpage{42}
+    \subitem {rotation}, \hyperpage{44}
+    \subitem {screen}, \hyperpage{44}
+    \subitem {set\_out}, \hyperpage{42}
+    \subitem {speed}, \hyperpage{44}
+    \subitem {taille}, \hyperpage{44}
+    \subitem {x}, \hyperpage{44}
+    \subitem {y}, \hyperpage{44}
+  \item {langton.plateau}, \hyperpage{8}
+  \item {langton.plateau.Plateau}, \hyperpage{56}
+    \subitem {\_\_init\_\_}, \hyperpage{57}
+    \subitem {\_\_str\_\_}, \hyperpage{57}
+    \subitem {behavior}, \hyperpage{61}
+    \subitem {color}, \hyperpage{61}
+    \subitem {draw}, \hyperpage{57}
+    \subitem {draw\_ant}, \hyperpage{58}
+    \subitem {draw\_case}, \hyperpage{58}
+    \subitem {get\_case}, \hyperpage{59}
+    \subitem {h}, \hyperpage{61}
+    \subitem {random\_schema}, \hyperpage{59}
+    \subitem {reset}, \hyperpage{60}
+    \subitem {schema}, \hyperpage{61}
+    \subitem {screen}, \hyperpage{61}
+    \subitem {set\_behavior}, \hyperpage{60}
+    \subitem {w}, \hyperpage{61}
+  \item {langton.simulation}, \hyperpage{8}
+  \item {langton.simulation.Simulation}, \hyperpage{62}
+    \subitem {\_\_init\_\_}, \hyperpage{64}
+    \subitem {\_\_iter\_\_}, \hyperpage{64}
+    \subitem {active\_debug}, \hyperpage{65}
+    \subitem {add\_fourmi}, \hyperpage{65}
+    \subitem {behavior}, \hyperpage{71}
+    \subitem {btn\_add\_f}, \hyperpage{71}
+    \subitem {btn\_debug}, \hyperpage{71}
+    \subitem {btn\_next}, \hyperpage{71}
+    \subitem {btn\_play}, \hyperpage{71}
+    \subitem {btn\_reset}, \hyperpage{72}
+    \subitem {btn\_stop}, \hyperpage{72}
+    \subitem {cb\_infinite}, \hyperpage{72}
+    \subitem {cb\_random\_grid}, \hyperpage{72}
+    \subitem {clock}, \hyperpage{72}
+    \subitem {color}, \hyperpage{72}
+    \subitem {debug}, \hyperpage{72}
+    \subitem {debuging}, \hyperpage{65}
+    \subitem {draw}, \hyperpage{66}
+    \subitem {end}, \hyperpage{72}
+    \subitem {fourmi\_list}, \hyperpage{73}
+    \subitem {fourmi\_out}, \hyperpage{66}
+    \subitem {fourmi\_step}, \hyperpage{66}
+    \subitem {handle\_event}, \hyperpage{67}
+    \subitem {ib\_behavior}, \hyperpage{73}
+    \subitem {ib\_next}, \hyperpage{73}
+    \subitem {infinite}, \hyperpage{67}
+    \subitem {infinite\_ant}, \hyperpage{73}
+    \subitem {init\_color}, \hyperpage{68}
+    \subitem {it}, \hyperpage{73}
+    \subitem {iteration}, \hyperpage{73}
+    \subitem {menu}, \hyperpage{73}
+    \subitem {nb\_fourmi}, \hyperpage{73}
+    \subitem {next\_step}, \hyperpage{68}
+    \subitem {next\_time}, \hyperpage{74}
+    \subitem {plateau}, \hyperpage{74}
+    \subitem {play}, \hyperpage{68}
+    \subitem {random\_grid}, \hyperpage{74}
+    \subitem {res}, \hyperpage{74}
+    \subitem {reset}, \hyperpage{68}
+    \subitem {run}, \hyperpage{74}
+    \subitem {screen}, \hyperpage{74}
+    \subitem {set\_behavior}, \hyperpage{69}
+    \subitem {set\_next}, \hyperpage{70}
+    \subitem {set\_random\_grid}, \hyperpage{70}
+    \subitem {size\_plateau}, \hyperpage{74}
+    \subitem {size\_screen}, \hyperpage{74}
+    \subitem {start}, \hyperpage{70}, \hyperpage{75}
+    \subitem {stop}, \hyperpage{71}
+
+  \indexspace
+
+  \item {main}, \hyperpage{9}
+    \subitem {simulation}, \hyperpage{9}
+  \item {main.py}, \hyperpage{91}
+  \item {max\_len}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{51}
+  \item {menu}
+    \subitem {langton.simulation.Simulation}, \hyperpage{73}
+  \item {menu.py}, \hyperpage{79, 80}
+  \item {MENU\_COLOR}
+    \subitem {utils.color}, \hyperpage{12}
+  \item {move}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{37}
+  \item {move\_down}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{38}
+  \item {move\_left}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{38}
+  \item {move\_right}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{39}
+  \item {move\_up}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{39}
+
+  \indexspace
+
+  \item {nb\_direction}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{44}
+  \item {nb\_fourmi}
+    \subitem {langton.simulation.Simulation}, \hyperpage{73}
+  \item {next\_step}
+    \subitem {langton.simulation.Simulation}, \hyperpage{68}
+  \item {next\_time}
+    \subitem {langton.simulation.Simulation}, \hyperpage{74}
+
+  \indexspace
+
+  \item {one\_step}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{40}
+  \item {out}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{44}
+
+  \indexspace
+
+  \item {plateau}
+    \subitem {langton.simulation.Simulation}, \hyperpage{74}
+  \item {plateau.py}, \hyperpage{85}
+  \item {play}
+    \subitem {langton.simulation.Simulation}, \hyperpage{68}
+
+  \indexspace
+
+  \item {random\_grid}
+    \subitem {langton.simulation.Simulation}, \hyperpage{74}
+  \item {random\_schema}
+    \subitem {langton.plateau.Plateau}, \hyperpage{59}
+  \item {rect}
+    \subitem {buttons.button.Button}, \hyperpage{21}
+    \subitem {buttons.menu.Menu}, \hyperpage{55}
+  \item {res}
+    \subitem {langton.simulation.Simulation}, \hyperpage{74}
+  \item {reset}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{41}
+    \subitem {langton.plateau.Plateau}, \hyperpage{60}
+    \subitem {langton.simulation.Simulation}, \hyperpage{68}
+  \item {rotate}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{41}
+  \item {rotate\_left}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{42}
+  \item {rotate\_right}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{42}
+  \item {rotation}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{44}
+  \item {run}
+    \subitem {langton.simulation.Simulation}, \hyperpage{74}
+
+  \indexspace
+
+  \item {schema}
+    \subitem {langton.plateau.Plateau}, \hyperpage{61}
+  \item {screen}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{44}
+    \subitem {langton.plateau.Plateau}, \hyperpage{61}
+    \subitem {langton.simulation.Simulation}, \hyperpage{74}
+  \item {set\_behavior}
+    \subitem {langton.plateau.Plateau}, \hyperpage{60}
+    \subitem {langton.simulation.Simulation}, \hyperpage{69}
+  \item {set\_color}
+    \subitem {langton.case.Case}, \hyperpage{23}
+  \item {set\_next}
+    \subitem {langton.simulation.Simulation}, \hyperpage{70}
+  \item {set\_out}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{42}
+  \item {set\_random\_grid}
+    \subitem {langton.simulation.Simulation}, \hyperpage{70}
+  \item {simulation}
+    \subitem {main}, \hyperpage{9}
+  \item {simulation.py}, \hyperpage{86, 87}
+  \item {size\_plateau}
+    \subitem {langton.simulation.Simulation}, \hyperpage{74}
+  \item {size\_screen}
+    \subitem {langton.simulation.Simulation}, \hyperpage{74}
+  \item {speed}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{44}
+  \item {start}
+    \subitem {langton.simulation.Simulation}, \hyperpage{70}, 
+		\hyperpage{75}
+  \item {stop}
+    \subitem {langton.simulation.Simulation}, \hyperpage{71}
+
+  \indexspace
+
+  \item {taille}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{44}
+  \item {text}
+    \subitem {buttons.button.Button}, \hyperpage{21}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{51}
+  \item {TEXT\_BUTTON\_COLOR}
+    \subitem {utils.color}, \hyperpage{12}
+  \item {TEXT\_CB\_COLOR}
+    \subitem {utils.color}, \hyperpage{12}
+  \item {text\_color}
+    \subitem {buttons.button.Button}, \hyperpage{21}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{32}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{52}
+  \item {TEXT\_IB\_COLOR}
+    \subitem {utils.color}, \hyperpage{12}
+  \item {txt\_surf}
+    \subitem {buttons.button.Button}, \hyperpage{21}
+    \subitem {buttons.check\_box.CheckBox}, \hyperpage{32}
+    \subitem {buttons.input\_box.InputBox}, \hyperpage{52}
+
+  \indexspace
+
+  \item {utils}, \hyperpage{9}
+  \item {utils.color}, \hyperpage{10}
+    \subitem {ACTIVE\_BUTTON\_COLOR}, \hyperpage{11}
+    \subitem {ACTIVE\_CB\_COLOR}, \hyperpage{11}
+    \subitem {ACTIVE\_IB\_COLOR}, \hyperpage{11}
+    \subitem {dic}, \hyperpage{11}
+    \subitem {DISABLE\_ACTIVE\_CB\_COLOR}, \hyperpage{11}
+    \subitem {DISABLE\_BUTTON\_COLOR}, \hyperpage{11}
+    \subitem {DISABLE\_CB\_COLOR}, \hyperpage{11}
+    \subitem {DISABLE\_IB\_COLOR}, \hyperpage{11}
+    \subitem {HOVER\_BUTTON\_COLOR}, \hyperpage{12}
+    \subitem {INACTIVE\_BUTTON\_COLOR}, \hyperpage{12}
+    \subitem {INACTIVE\_CB\_COLOR}, \hyperpage{12}
+    \subitem {INACTIVE\_IB\_COLOR}, \hyperpage{12}
+    \subitem {MENU\_COLOR}, \hyperpage{12}
+    \subitem {TEXT\_BUTTON\_COLOR}, \hyperpage{12}
+    \subitem {TEXT\_CB\_COLOR}, \hyperpage{12}
+    \subitem {TEXT\_IB\_COLOR}, \hyperpage{12}
+  \item {utils.const}, \hyperpage{13}
+    \subitem {BUTTON\_SIZE}, \hyperpage{13}
+    \subitem {DEFAULT\_PLATEAU\_SIZE}, \hyperpage{13}
+    \subitem {DEFAULT\_RESOLUTION}, \hyperpage{13}
+    \subitem {DEFAULT\_SCREEN\_SIZE}, \hyperpage{14}
+
+  \indexspace
+
+  \item {validate\_color}
+    \subitem {langton.case.Case}, \hyperpage{23}
+
+  \indexspace
+
+  \item {w}
+    \subitem {langton.case.Case}, \hyperpage{25}
+    \subitem {langton.plateau.Plateau}, \hyperpage{61}
+
+  \indexspace
+
+  \item {x}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{44}
+
+  \indexspace
+
+  \item {y}
+    \subitem {langton.fourmi.Fourmi}, \hyperpage{44}
+
+\end{theindex}

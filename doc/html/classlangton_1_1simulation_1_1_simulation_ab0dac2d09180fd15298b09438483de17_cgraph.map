@@ -1,0 +1,4 @@
+<map id="langton.simulation.Simulation.reset" name="langton.simulation.Simulation.reset">
+<area shape="rect" id="node1" title="Reset the simulation." alt="" coords="5,29,260,56"/>
+<area shape="rect" id="node2" href="$classlangton_1_1simulation_1_1_simulation.html#a51d611a3dfea986207d7d5897b9286e2" title="Draw the map and ants." alt="" coords="308,29,563,56"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="buttons.menu.Menu.handle_event" name="buttons.menu.Menu.handle_event">
+<area shape="rect" id="node1" title="Enable some button of Menu." alt="" coords="305,47,505,88"/>
+<area shape="rect" id="node2" href="$classlangton_1_1simulation_1_1_simulation.html#a9da91713f42652792e9ca626148a5d85" title="Simulation iterator." alt="" coords="20,5,243,47"/>
+<area shape="rect" id="node3" href="$classlangton_1_1simulation_1_1_simulation.html#a74cd4bae2d3d341e664ad6ea2cdcf4c4" title="Global start, here when ants aren&#39;t running." alt="" coords="5,95,257,122"/>
+</map>

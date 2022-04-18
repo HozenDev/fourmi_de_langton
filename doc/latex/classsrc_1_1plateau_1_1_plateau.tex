@@ -1,0 +1,316 @@
+\hypertarget{classsrc_1_1plateau_1_1_plateau}{}\doxysubsection{src.\+plateau.\+Plateau Class Reference}
+\label{classsrc_1_1plateau_1_1_plateau}\index{src.plateau.Plateau@{src.plateau.Plateau}}
+
+
+Represent a \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau}{Plateau}}.  
+
+
+
+
+Collaboration diagram for src.\+plateau.\+Plateau\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classsrc_1_1plateau_1_1_plateau__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_ad4b058af9e92b7484571c18d4a3d5054}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_a00d49178a4b88c8d500cf2856f955190}{behavior}}, \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_ae9d9c01355c78f6470e66b220efe1c12}{color}}, taille=(1, 1), res=(4, 4))
+\begin{DoxyCompactList}\small\item\em Construct \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau}{Plateau}} object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_a437d405e7f17c486eddbe33d6074bdac}{random\+\_\+schema}} (self)
+\begin{DoxyCompactList}\small\item\em Random color schema. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_a0f5fb6194c5b144344bf10d7cf2edb9e}{reset}} (self)
+\begin{DoxyCompactList}\small\item\em default color schema \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_a27406b24191d402817a9787ccbc05182}{draw\+\_\+case}} (self, pos)
+\item 
+def \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_a02ef5e0b7797906b178d9299e66f1386}{draw\+\_\+ant}} (self, pos)
+\item 
+def \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_ac97bf6fb8cc48afb99c52f89332158b3}{draw}} (self, start=\mbox{[}0, 0\mbox{]}, end=\mbox{[}None, None\mbox{]})
+\begin{DoxyCompactList}\small\item\em default color schema \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_a03c78c4cef422670eafedbe92a535cc3}{get\+\_\+case}} (self, x, y, res)
+\begin{DoxyCompactList}\small\item\em Get a Case in a position. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_ace481173c1c60151b18749f67b3ccf01}{set\+\_\+behavior}} (self, \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_ae9d9c01355c78f6470e66b220efe1c12}{color}}, \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_a00d49178a4b88c8d500cf2856f955190}{behavior}})
+\item 
+def \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_a3d7cdb7f88c12fcdb7542bfa44b236c0}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Redefine to\+String() \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau}{Plateau}} method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_aeae6c41b937023fbfb6b6c5d1c944a19}{w}}
+\item 
+\mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_a108acddff7d42101d2c1823cb51f9030}{h}}
+\item 
+\mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_a9d31fcc8c19f655c6fa7e9be17cb808b}{schema}}
+\item 
+\mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_a3d12dcce386dc2ddf67217cad7c22a56}{screen}}
+\item 
+\mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_a00d49178a4b88c8d500cf2856f955190}{behavior}}
+\item 
+\mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau_ae9d9c01355c78f6470e66b220efe1c12}{color}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Represent a \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau}{Plateau}}. 
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00015}{15}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+
+
+\doxysubsubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_ad4b058af9e92b7484571c18d4a3d5054}\label{classsrc_1_1plateau_1_1_plateau_ad4b058af9e92b7484571c18d4a3d5054}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def src.\+plateau.\+Plateau.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{behavior,  }\item[{}]{color,  }\item[{}]{taille = {\ttfamily (1,~1)},  }\item[{}]{res = {\ttfamily (4,~4)} }\end{DoxyParamCaption})}
+
+
+
+Construct \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau}{Plateau}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em behavior} & String representation of the \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau}{Plateau}} behavior \\
+\hline
+{\em color} & A tuple a int reprensent a rgb color \\
+\hline
+{\em taille} & tuple represent number of Case (default (1, 1)) \\
+\hline
+{\em res} & Pixel representation of each Case (default (4, 4)) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00018}{18}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_a3d7cdb7f88c12fcdb7542bfa44b236c0}\label{classsrc_1_1plateau_1_1_plateau_a3d7cdb7f88c12fcdb7542bfa44b236c0}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def src.\+plateau.\+Plateau.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Redefine to\+String() \mbox{\hyperlink{classsrc_1_1plateau_1_1_plateau}{Plateau}} method. 
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00105}{105}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_ac97bf6fb8cc48afb99c52f89332158b3}\label{classsrc_1_1plateau_1_1_plateau_ac97bf6fb8cc48afb99c52f89332158b3}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!draw@{draw}}
+\index{draw@{draw}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily def src.\+plateau.\+Plateau.\+draw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{start = {\ttfamily \mbox{[}0,0\mbox{]}},  }\item[{}]{end = {\ttfamily \mbox{[}None,~None\mbox{]}} }\end{DoxyParamCaption})}
+
+
+
+default color schema 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & list of int index where start to draw (default (0, 0)) \\
+\hline
+{\em end} & list of int index where end to draw (default (None, None)) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00069}{69}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsrc_1_1plateau_1_1_plateau_ac97bf6fb8cc48afb99c52f89332158b3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsrc_1_1plateau_1_1_plateau_ac97bf6fb8cc48afb99c52f89332158b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_a02ef5e0b7797906b178d9299e66f1386}\label{classsrc_1_1plateau_1_1_plateau_a02ef5e0b7797906b178d9299e66f1386}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!draw\_ant@{draw\_ant}}
+\index{draw\_ant@{draw\_ant}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{draw\_ant()}{draw\_ant()}}
+{\footnotesize\ttfamily def src.\+plateau.\+Plateau.\+draw\+\_\+ant (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pos }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00061}{61}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsrc_1_1plateau_1_1_plateau_a02ef5e0b7797906b178d9299e66f1386_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_a27406b24191d402817a9787ccbc05182}\label{classsrc_1_1plateau_1_1_plateau_a27406b24191d402817a9787ccbc05182}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!draw\_case@{draw\_case}}
+\index{draw\_case@{draw\_case}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{draw\_case()}{draw\_case()}}
+{\footnotesize\ttfamily def src.\+plateau.\+Plateau.\+draw\+\_\+case (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pos }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00051}{51}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsrc_1_1plateau_1_1_plateau_a27406b24191d402817a9787ccbc05182_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_a03c78c4cef422670eafedbe92a535cc3}\label{classsrc_1_1plateau_1_1_plateau_a03c78c4cef422670eafedbe92a535cc3}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!get\_case@{get\_case}}
+\index{get\_case@{get\_case}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{get\_case()}{get\_case()}}
+{\footnotesize\ttfamily def src.\+plateau.\+Plateau.\+get\+\_\+case (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{res }\end{DoxyParamCaption})}
+
+
+
+Get a Case in a position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Horizontal position of the Case \\
+\hline
+{\em y} & Vertical position of the Case \\
+\hline
+{\em res} & Resolution of the Case \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00092}{92}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_a437d405e7f17c486eddbe33d6074bdac}\label{classsrc_1_1plateau_1_1_plateau_a437d405e7f17c486eddbe33d6074bdac}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!random\_schema@{random\_schema}}
+\index{random\_schema@{random\_schema}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{random\_schema()}{random\_schema()}}
+{\footnotesize\ttfamily def src.\+plateau.\+Plateau.\+random\+\_\+schema (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Random color schema. 
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00036}{36}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsrc_1_1plateau_1_1_plateau_a437d405e7f17c486eddbe33d6074bdac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_a0f5fb6194c5b144344bf10d7cf2edb9e}\label{classsrc_1_1plateau_1_1_plateau_a0f5fb6194c5b144344bf10d7cf2edb9e}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!reset@{reset}}
+\index{reset@{reset}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def src.\+plateau.\+Plateau.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+default color schema 
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00044}{44}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsrc_1_1plateau_1_1_plateau_a0f5fb6194c5b144344bf10d7cf2edb9e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_ace481173c1c60151b18749f67b3ccf01}\label{classsrc_1_1plateau_1_1_plateau_ace481173c1c60151b18749f67b3ccf01}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!set\_behavior@{set\_behavior}}
+\index{set\_behavior@{set\_behavior}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{set\_behavior()}{set\_behavior()}}
+{\footnotesize\ttfamily def src.\+plateau.\+Plateau.\+set\+\_\+behavior (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{color,  }\item[{}]{behavior }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00101}{101}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+
+
+\doxysubsubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_a00d49178a4b88c8d500cf2856f955190}\label{classsrc_1_1plateau_1_1_plateau_a00d49178a4b88c8d500cf2856f955190}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!behavior@{behavior}}
+\index{behavior@{behavior}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{behavior}{behavior}}
+{\footnotesize\ttfamily src.\+plateau.\+Plateau.\+behavior}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00033}{33}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_ae9d9c01355c78f6470e66b220efe1c12}\label{classsrc_1_1plateau_1_1_plateau_ae9d9c01355c78f6470e66b220efe1c12}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!color@{color}}
+\index{color@{color}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily src.\+plateau.\+Plateau.\+color}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00034}{34}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_a108acddff7d42101d2c1823cb51f9030}\label{classsrc_1_1plateau_1_1_plateau_a108acddff7d42101d2c1823cb51f9030}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!h@{h}}
+\index{h@{h}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily src.\+plateau.\+Plateau.\+h}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00026}{26}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_a9d31fcc8c19f655c6fa7e9be17cb808b}\label{classsrc_1_1plateau_1_1_plateau_a9d31fcc8c19f655c6fa7e9be17cb808b}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!schema@{schema}}
+\index{schema@{schema}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{schema}{schema}}
+{\footnotesize\ttfamily src.\+plateau.\+Plateau.\+schema}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00027}{27}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_a3d12dcce386dc2ddf67217cad7c22a56}\label{classsrc_1_1plateau_1_1_plateau_a3d12dcce386dc2ddf67217cad7c22a56}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!screen@{screen}}
+\index{screen@{screen}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily src.\+plateau.\+Plateau.\+screen}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00031}{31}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classsrc_1_1plateau_1_1_plateau_aeae6c41b937023fbfb6b6c5d1c944a19}\label{classsrc_1_1plateau_1_1_plateau_aeae6c41b937023fbfb6b6c5d1c944a19}} 
+\index{src.plateau.Plateau@{src.plateau.Plateau}!w@{w}}
+\index{w@{w}!src.plateau.Plateau@{src.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily src.\+plateau.\+Plateau.\+w}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00025}{25}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{plateau_8py}{plateau.\+py}}\end{DoxyCompactItemize}

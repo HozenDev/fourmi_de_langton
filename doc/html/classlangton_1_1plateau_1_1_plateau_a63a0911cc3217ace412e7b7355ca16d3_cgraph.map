@@ -1,0 +1,11 @@
+<map id="langton.plateau.Plateau.reset" name="langton.plateau.Plateau.reset">
+<area shape="rect" id="node1" title="default color schema" alt="" coords="5,157,220,184"/>
+<area shape="rect" id="node2" href="$classlangton_1_1fourmi_1_1_fourmi.html#a03b7054b55cf2f31c481e0adcf389db8" title="Ant draw This method draw the ant with pyGame draw.rect function." alt="" coords="294,5,497,32"/>
+<area shape="rect" id="node3" href="$classlangton_1_1simulation_1_1_simulation.html#a51d611a3dfea986207d7d5897b9286e2" title="Draw the map and ants." alt="" coords="268,56,523,83"/>
+<area shape="rect" id="node4" href="$classbuttons_1_1button_1_1_button.html#ac4f99f58b27912deb3b8b884119f736a" title="Draw the button This method draw the button rectangle with pyGame draw.rect function and the text wit..." alt="" coords="295,107,495,133"/>
+<area shape="rect" id="node5" href="$classbuttons_1_1check__box_1_1_check_box.html#a623eaa90ee3cdbd8eb60b8395718b888" title="Draw the button This method draw the button rectangle with pyGame draw.rect function and the text wit..." alt="" coords="271,157,520,184"/>
+<area shape="rect" id="node6" href="$classbuttons_1_1input__box_1_1_input_box.html#a9904d3efc932daa353012866cc1f15fe" title="Draw the button This method draw the button rectangle with pyGame draw.rect function and the text wit..." alt="" coords="277,208,514,235"/>
+<area shape="rect" id="node7" href="$classbuttons_1_1menu_1_1_menu.html#a4d4a71c664b0488c338e415e91b3d09b" title="Draw the Menu." alt="" coords="301,259,489,285"/>
+<area shape="rect" id="node8" href="$classlangton_1_1plateau_1_1_plateau.html#aa519fa85d8aea1c7ba0199cb6c3f9eb3" title="default color schema" alt="" coords="289,309,502,336"/>
+<area shape="rect" id="node9" href="$classlangton_1_1plateau_1_1_plateau.html#a4901f3e6df258fea763776a095b2488d" title=" " alt="" coords="571,309,821,336"/>
+</map>

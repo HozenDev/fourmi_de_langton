@@ -1,0 +1,9 @@
+<map id="langton_package.simulation.Simulation.draw" name="langton_package.simulation.Simulation.draw">
+<area shape="rect" id="node1" title="Draw the map and ants." alt="" coords="579,159,789,200"/>
+<area shape="rect" id="node2" href="$classlangton__package_1_1simulation_1_1_simulation.html#a3c910876f8c67b629a4bfe413c80d8d1" title="Simulation iterator." alt="" coords="292,5,503,47"/>
+<area shape="rect" id="node3" href="$classlangton__package_1_1plateau_1_1_plateau.html#afd6a497bc8deb439cb239fc582575109" title="Random color schema." alt="" coords="302,71,493,112"/>
+<area shape="rect" id="node4" href="$classlangton__package_1_1fourmi_1_1_fourmi.html#a43648c70ad1a0da57c4e514a7cea29aa" title="Reset the Ant This method hard reset the ant at its beginning direction, position." alt="" coords="264,137,531,163"/>
+<area shape="rect" id="node5" href="$classlangton__package_1_1plateau_1_1_plateau.html#af16bb895f0f26456c5841481f92428fe" title="default color schema" alt="" coords="302,188,493,229"/>
+<area shape="rect" id="node6" href="$classlangton__package_1_1simulation_1_1_simulation.html#ac956b1534a716e72b3d800cab0e0ab6d" title="Reset the simulation." alt="" coords="292,277,503,319"/>
+<area shape="rect" id="node7" href="$classlangton__package_1_1simulation_1_1_simulation.html#afd6117ec9d904993603f05738c095f64" title="Global start, here when ants aren&#39;t running." alt="" coords="5,307,216,348"/>
+</map>

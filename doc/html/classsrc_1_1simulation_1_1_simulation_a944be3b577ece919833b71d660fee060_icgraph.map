@@ -1,0 +1,4 @@
+<map id="src.simulation.Simulation.reset" name="src.simulation.Simulation.reset">
+<area shape="rect" id="node1" title="Reset the simulation." alt="" coords="276,29,501,56"/>
+<area shape="rect" id="node2" href="$classsrc_1_1simulation_1_1_simulation.html#a03a398fe651de649377c599f07357d6c" title="Global start, here when ants aren&#39;t running." alt="" coords="5,29,228,56"/>
+</map>

@@ -1,0 +1,814 @@
+\hypertarget{classlangton_1_1simulation_1_1_simulation}{}\doxysubsection{langton.\+simulation.\+Simulation Class Reference}
+\label{classlangton_1_1simulation_1_1_simulation}\index{langton.simulation.Simulation@{langton.simulation.Simulation}}
+
+
+Represent a \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation}{Simulation}}.  
+
+
+
+
+Collaboration diagram for langton.\+simulation.\+Simulation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classlangton_1_1simulation_1_1_simulation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a4662d058d0cdd707a92a10bec25178a7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\+\_\+screen}}=const .DEFAULT\+\_\+\+SCREEN\+\_\+\+SIZE, \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\+\_\+plateau}}=const .DEFAULT\+\_\+\+PLATEAU\+\_\+\+SIZE, \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}}=const .DEFAULT\+\_\+\+RESOLUTION)
+\begin{DoxyCompactList}\small\item\em Construct \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation}{Simulation}} object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4c4}{start}} (self)
+\begin{DoxyCompactList}\small\item\em Global start, here when ants aren\textquotesingle{}t running. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a99acbb2b1e61988f6fb7b0fc488a0c3d}{stop}} (self)
+\begin{DoxyCompactList}\small\item\em Stop the game by set self.\+run to false. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a45418b1fc257cca1d9c0714db4bdc791}{add\+\_\+fourmi}} (self)
+\begin{DoxyCompactList}\small\item\em Add an ant on the grid. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de17}{reset}} (self)
+\begin{DoxyCompactList}\small\item\em Reset the simulation. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af0de351e406a5de695a6c27aba8b91ed}{next\+\_\+step}} (self)
+\begin{DoxyCompactList}\small\item\em Play simulation iterator next\+\_\+number times, (default 1) \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a2b80456b1fc72a33e2a6ca83b26a480f}{play}} (self)
+\begin{DoxyCompactList}\small\item\em Play \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation}{Simulation}} loop. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9da91713f42652792e9ca626148a5d85}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation}{Simulation}} iterator. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286e2}{draw}} (self)
+\begin{DoxyCompactList}\small\item\em Draw the map and ants. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a5bd1badd9fa1819a30e2adc5ace9a443}{fourmi\+\_\+out}} (self)
+\begin{DoxyCompactList}\small\item\em Check if an ant is out of index of the grid. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a2478e6c5471747b59b037f5d80f72294}{fourmi\+\_\+step}} (self)
+\begin{DoxyCompactList}\small\item\em Move all ants once. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851}{handle\+\_\+event}} (self)
+\begin{DoxyCompactList}\small\item\em Event listener user interactions\+: Button \& Keyboard. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a25e7ef7c60a93999cd4c275c77e199d4}{init\+\_\+color}} (self)
+\begin{DoxyCompactList}\small\item\em Init random color from simulation behavior. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aab9b1888a30ff6d12813bf21497178d7}{active\+\_\+debug}} (self)
+\begin{DoxyCompactList}\small\item\em Change boolean value for debug option button. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a21b1164f60b3a232e2400e0d93f6c085}{debuging}} (self)
+\begin{DoxyCompactList}\small\item\em Print the total of iteration since the simulation is running. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac96fdc02a3622151c440dcd2196139ab}{set\+\_\+next}} (self, text)
+\begin{DoxyCompactList}\small\item\em Set the step for next function. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a}{set\+\_\+behavior}} (self, text)
+\begin{DoxyCompactList}\small\item\em Set the behavior before add ants and game start. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a76def25452c459e755c7c77010872fe8}{infinite}} (self)
+\begin{DoxyCompactList}\small\item\em Define if ants are in an infinite place. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ab2fc64bafbdebe6be345ab38a2831e16}{set\+\_\+random\+\_\+grid}} (self)
+\begin{DoxyCompactList}\small\item\em Random Grid Check\+Box function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}{size\+\_\+screen}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}{size\+\_\+plateau}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}{res}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a773c12ae029194e5551af2ab72fde3bf}{screen}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af20973026f33e4fb96ef3cd9dc402fc2}{clock}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a36dbbc66b5b8e122b73455e359baa7ae}{end}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}{run}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a393e9b798bff08aaf71ff3216ecb180d}{debug}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac3344803777f8e212e5b42cc5b650365}{iteration}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a15d6471477fd3fd63e5ba54a09e43cea}{behavior}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a3158144794c0cd8c507d57161f015780}{color}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af1c34b60c5bc9a17d422ec15152cde88}{plateau}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9723a50148dd177e9a7c8299dbc6b8e7}{nb\+\_\+fourmi}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1a1cdd446e7147d61fbdd025e52d08e6}{fourmi\+\_\+list}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a6562952d824855015a6348227e068429}{btn\+\_\+debug}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a3423ebdc5b0b16212881291132bfbba3}{btn\+\_\+play}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a9a738344077ceeb8da798b58bb370e28}{btn\+\_\+stop}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac48b06c521d6f6feee388f78efa8b69b}{btn\+\_\+reset}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_af3ca3a0bbe8ede6535bd15a4fdcbe130}{btn\+\_\+next}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a556d77c166a4c52e7c1652623f564bc0}{btn\+\_\+add\+\_\+f}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a268636dfb561b92ac9ef0c138be257ad}{ib\+\_\+next}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a0d2dc226a9def3a9f31dc716d2ef7b6a}{ib\+\_\+behavior}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a5ddf8dfba8e9ab766aab288276b51777}{cb\+\_\+infinite}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_aa9ec200f0f087914861fc9b527f685d5}{cb\+\_\+random\+\_\+grid}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a44d1ba0614a1a7eb5617558b410228e6}{infinite\+\_\+ant}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ac278df3b69b7433c6e08441c26818ae5}{random\+\_\+grid}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}{menu}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a1e53dde8cab6c40f5807bfefae18710a}{it}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_ad0beaea0860515bb559c291bd6c43491}{next\+\_\+time}}
+\item 
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation_a8c904c65a3ec3a125395e3b74cf9e1fa}{start}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Represent a \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation}{Simulation}}. 
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00016}{16}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+
+
+\doxysubsubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a4662d058d0cdd707a92a10bec25178a7}\label{classlangton_1_1simulation_1_1_simulation_a4662d058d0cdd707a92a10bec25178a7}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{size\+\_\+screen = {\ttfamily const.DEFAULT\+\_\+SCREEN\+\_\+SIZE},  }\item[{}]{size\+\_\+plateau = {\ttfamily const.DEFAULT\+\_\+PLATEAU\+\_\+SIZE},  }\item[{}]{res = {\ttfamily const.DEFAULT\+\_\+RESOLUTION} }\end{DoxyParamCaption})}
+
+
+
+Construct \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation}{Simulation}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\+\_\+screen} & Size of the window \\
+\hline
+{\em size\+\_\+plateau} & Size of the grid where stand ants \\
+\hline
+{\em res} & Number of pixel define size of Case and Fourmi \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00019}{19}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a9da91713f42652792e9ca626148a5d85}\label{classlangton_1_1simulation_1_1_simulation_a9da91713f42652792e9ca626148a5d85}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation}{Simulation}} iterator. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00227}{227}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1simulation_1_1_simulation_a9da91713f42652792e9ca626148a5d85_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_aab9b1888a30ff6d12813bf21497178d7}\label{classlangton_1_1simulation_1_1_simulation_aab9b1888a30ff6d12813bf21497178d7}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!active\_debug@{active\_debug}}
+\index{active\_debug@{active\_debug}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{active\_debug()}{active\_debug()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+active\+\_\+debug (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Change boolean value for debug option button. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00315}{315}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a45418b1fc257cca1d9c0714db4bdc791}\label{classlangton_1_1simulation_1_1_simulation_a45418b1fc257cca1d9c0714db4bdc791}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!add\_fourmi@{add\_fourmi}}
+\index{add\_fourmi@{add\_fourmi}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{add\_fourmi()}{add\_fourmi()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+add\+\_\+fourmi (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Add an ant on the grid. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00150}{150}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a21b1164f60b3a232e2400e0d93f6c085}\label{classlangton_1_1simulation_1_1_simulation_a21b1164f60b3a232e2400e0d93f6c085}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!debuging@{debuging}}
+\index{debuging@{debuging}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{debuging()}{debuging()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+debuging (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Print the total of iteration since the simulation is running. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00319}{319}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286e2}\label{classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286e2}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!draw@{draw}}
+\index{draw@{draw}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+draw (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Draw the map and ants. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00243}{243}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a5bd1badd9fa1819a30e2adc5ace9a443}\label{classlangton_1_1simulation_1_1_simulation_a5bd1badd9fa1819a30e2adc5ace9a443}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!fourmi\_out@{fourmi\_out}}
+\index{fourmi\_out@{fourmi\_out}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{fourmi\_out()}{fourmi\_out()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+fourmi\+\_\+out (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Check if an ant is out of index of the grid. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00250}{250}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1simulation_1_1_simulation_a5bd1badd9fa1819a30e2adc5ace9a443_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a2478e6c5471747b59b037f5d80f72294}\label{classlangton_1_1simulation_1_1_simulation_a2478e6c5471747b59b037f5d80f72294}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!fourmi\_step@{fourmi\_step}}
+\index{fourmi\_step@{fourmi\_step}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{fourmi\_step()}{fourmi\_step()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+fourmi\+\_\+step (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Move all ants once. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00263}{263}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1simulation_1_1_simulation_a2478e6c5471747b59b037f5d80f72294_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851}\label{classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!handle\_event@{handle\_event}}
+\index{handle\_event@{handle\_event}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{handle\_event()}{handle\_event()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+handle\+\_\+event (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Event listener user interactions\+: Button \& Keyboard. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00269}{269}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a76def25452c459e755c7c77010872fe8}\label{classlangton_1_1simulation_1_1_simulation_a76def25452c459e755c7c77010872fe8}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!infinite@{infinite}}
+\index{infinite@{infinite}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{infinite()}{infinite()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+infinite (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Define if ants are in an infinite place. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00355}{355}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a25e7ef7c60a93999cd4c275c77e199d4}\label{classlangton_1_1simulation_1_1_simulation_a25e7ef7c60a93999cd4c275c77e199d4}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!init\_color@{init\_color}}
+\index{init\_color@{init\_color}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{init\_color()}{init\_color()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+init\+\_\+color (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Init random color from simulation behavior. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00303}{303}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1simulation_1_1_simulation_a25e7ef7c60a93999cd4c275c77e199d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_af0de351e406a5de695a6c27aba8b91ed}\label{classlangton_1_1simulation_1_1_simulation_af0de351e406a5de695a6c27aba8b91ed}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!next\_step@{next\_step}}
+\index{next\_step@{next\_step}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{next\_step()}{next\_step()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+next\+\_\+step (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Play simulation iterator next\+\_\+number times, (default 1) 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Stop\+Iteration} & If \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation}{Simulation}} ended \\
+\hline
+{\em Exception} & If \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation}{Simulation}} already run \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00199}{199}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a2b80456b1fc72a33e2a6ca83b26a480f}\label{classlangton_1_1simulation_1_1_simulation_a2b80456b1fc72a33e2a6ca83b26a480f}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!play@{play}}
+\index{play@{play}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+play (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Play \mbox{\hyperlink{classlangton_1_1simulation_1_1_simulation}{Simulation}} loop. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00213}{213}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de17}\label{classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de17}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!reset@{reset}}
+\index{reset@{reset}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reset the simulation. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00179}{179}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de17_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a}\label{classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!set\_behavior@{set\_behavior}}
+\index{set\_behavior@{set\_behavior}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{set\_behavior()}{set\_behavior()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+set\+\_\+behavior (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+
+
+Set the behavior before add ants and game start. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00344}{344}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_ac96fdc02a3622151c440dcd2196139ab}\label{classlangton_1_1simulation_1_1_simulation_ac96fdc02a3622151c440dcd2196139ab}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!set\_next@{set\_next}}
+\index{set\_next@{set\_next}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{set\_next()}{set\_next()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+set\+\_\+next (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+
+
+Set the step for next function. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00336}{336}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_ab2fc64bafbdebe6be345ab38a2831e16}\label{classlangton_1_1simulation_1_1_simulation_ab2fc64bafbdebe6be345ab38a2831e16}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!set\_random\_grid@{set\_random\_grid}}
+\index{set\_random\_grid@{set\_random\_grid}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{set\_random\_grid()}{set\_random\_grid()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+set\+\_\+random\+\_\+grid (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Random Grid Check\+Box function. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00365}{365}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4c4}\label{classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4c4}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!start@{start}}
+\index{start@{start}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+start (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Global start, here when ants aren\textquotesingle{}t running. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00121}{121}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4c4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4c4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a99acbb2b1e61988f6fb7b0fc488a0c3d}\label{classlangton_1_1simulation_1_1_simulation_a99acbb2b1e61988f6fb7b0fc488a0c3d}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!stop@{stop}}
+\index{stop@{stop}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily def langton.\+simulation.\+Simulation.\+stop (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Stop the game by set self.\+run to false. 
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00146}{146}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+
+
+\doxysubsubsection{Member Data Documentation}
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a15d6471477fd3fd63e5ba54a09e43cea}\label{classlangton_1_1simulation_1_1_simulation_a15d6471477fd3fd63e5ba54a09e43cea}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!behavior@{behavior}}
+\index{behavior@{behavior}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{behavior}{behavior}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+behavior}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00046}{46}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a556d77c166a4c52e7c1652623f564bc0}\label{classlangton_1_1simulation_1_1_simulation_a556d77c166a4c52e7c1652623f564bc0}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!btn\_add\_f@{btn\_add\_f}}
+\index{btn\_add\_f@{btn\_add\_f}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{btn\_add\_f}{btn\_add\_f}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+btn\+\_\+add\+\_\+f}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00083}{83}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a6562952d824855015a6348227e068429}\label{classlangton_1_1simulation_1_1_simulation_a6562952d824855015a6348227e068429}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!btn\_debug@{btn\_debug}}
+\index{btn\_debug@{btn\_debug}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{btn\_debug}{btn\_debug}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+btn\+\_\+debug}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00063}{63}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_af3ca3a0bbe8ede6535bd15a4fdcbe130}\label{classlangton_1_1simulation_1_1_simulation_af3ca3a0bbe8ede6535bd15a4fdcbe130}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!btn\_next@{btn\_next}}
+\index{btn\_next@{btn\_next}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{btn\_next}{btn\_next}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+btn\+\_\+next}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00079}{79}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a3423ebdc5b0b16212881291132bfbba3}\label{classlangton_1_1simulation_1_1_simulation_a3423ebdc5b0b16212881291132bfbba3}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!btn\_play@{btn\_play}}
+\index{btn\_play@{btn\_play}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{btn\_play}{btn\_play}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+btn\+\_\+play}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00067}{67}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_ac48b06c521d6f6feee388f78efa8b69b}\label{classlangton_1_1simulation_1_1_simulation_ac48b06c521d6f6feee388f78efa8b69b}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!btn\_reset@{btn\_reset}}
+\index{btn\_reset@{btn\_reset}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{btn\_reset}{btn\_reset}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+btn\+\_\+reset}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00075}{75}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a9a738344077ceeb8da798b58bb370e28}\label{classlangton_1_1simulation_1_1_simulation_a9a738344077ceeb8da798b58bb370e28}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!btn\_stop@{btn\_stop}}
+\index{btn\_stop@{btn\_stop}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{btn\_stop}{btn\_stop}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+btn\+\_\+stop}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00071}{71}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a5ddf8dfba8e9ab766aab288276b51777}\label{classlangton_1_1simulation_1_1_simulation_a5ddf8dfba8e9ab766aab288276b51777}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!cb\_infinite@{cb\_infinite}}
+\index{cb\_infinite@{cb\_infinite}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{cb\_infinite}{cb\_infinite}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+cb\+\_\+infinite}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00098}{98}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_aa9ec200f0f087914861fc9b527f685d5}\label{classlangton_1_1simulation_1_1_simulation_aa9ec200f0f087914861fc9b527f685d5}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!cb\_random\_grid@{cb\_random\_grid}}
+\index{cb\_random\_grid@{cb\_random\_grid}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{cb\_random\_grid}{cb\_random\_grid}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+cb\+\_\+random\+\_\+grid}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00102}{102}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_af20973026f33e4fb96ef3cd9dc402fc2}\label{classlangton_1_1simulation_1_1_simulation_af20973026f33e4fb96ef3cd9dc402fc2}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!clock@{clock}}
+\index{clock@{clock}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{clock}{clock}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+clock}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00035}{35}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a3158144794c0cd8c507d57161f015780}\label{classlangton_1_1simulation_1_1_simulation_a3158144794c0cd8c507d57161f015780}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!color@{color}}
+\index{color@{color}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+color}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00047}{47}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a393e9b798bff08aaf71ff3216ecb180d}\label{classlangton_1_1simulation_1_1_simulation_a393e9b798bff08aaf71ff3216ecb180d}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!debug@{debug}}
+\index{debug@{debug}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+debug}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00042}{42}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a36dbbc66b5b8e122b73455e359baa7ae}\label{classlangton_1_1simulation_1_1_simulation_a36dbbc66b5b8e122b73455e359baa7ae}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!end@{end}}
+\index{end@{end}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+end}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00038}{38}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a1a1cdd446e7147d61fbdd025e52d08e6}\label{classlangton_1_1simulation_1_1_simulation_a1a1cdd446e7147d61fbdd025e52d08e6}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!fourmi\_list@{fourmi\_list}}
+\index{fourmi\_list@{fourmi\_list}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{fourmi\_list}{fourmi\_list}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+fourmi\+\_\+list}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00060}{60}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a0d2dc226a9def3a9f31dc716d2ef7b6a}\label{classlangton_1_1simulation_1_1_simulation_a0d2dc226a9def3a9f31dc716d2ef7b6a}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!ib\_behavior@{ib\_behavior}}
+\index{ib\_behavior@{ib\_behavior}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{ib\_behavior}{ib\_behavior}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+ib\+\_\+behavior}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00092}{92}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a268636dfb561b92ac9ef0c138be257ad}\label{classlangton_1_1simulation_1_1_simulation_a268636dfb561b92ac9ef0c138be257ad}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!ib\_next@{ib\_next}}
+\index{ib\_next@{ib\_next}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{ib\_next}{ib\_next}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+ib\+\_\+next}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00089}{89}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a44d1ba0614a1a7eb5617558b410228e6}\label{classlangton_1_1simulation_1_1_simulation_a44d1ba0614a1a7eb5617558b410228e6}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!infinite\_ant@{infinite\_ant}}
+\index{infinite\_ant@{infinite\_ant}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{infinite\_ant}{infinite\_ant}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+infinite\+\_\+ant}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00106}{106}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a1e53dde8cab6c40f5807bfefae18710a}\label{classlangton_1_1simulation_1_1_simulation_a1e53dde8cab6c40f5807bfefae18710a}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!it@{it}}
+\index{it@{it}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{it}{it}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+it}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00118}{118}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_ac3344803777f8e212e5b42cc5b650365}\label{classlangton_1_1simulation_1_1_simulation_ac3344803777f8e212e5b42cc5b650365}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!iteration@{iteration}}
+\index{iteration@{iteration}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{iteration}{iteration}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+iteration}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00043}{43}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}\label{classlangton_1_1simulation_1_1_simulation_a35e682dc4be72fd500cfb34525bcb609}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!menu@{menu}}
+\index{menu@{menu}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+menu}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00110}{110}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a9723a50148dd177e9a7c8299dbc6b8e7}\label{classlangton_1_1simulation_1_1_simulation_a9723a50148dd177e9a7c8299dbc6b8e7}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!nb\_fourmi@{nb\_fourmi}}
+\index{nb\_fourmi@{nb\_fourmi}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{nb\_fourmi}{nb\_fourmi}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+nb\+\_\+fourmi}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00059}{59}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_ad0beaea0860515bb559c291bd6c43491}\label{classlangton_1_1simulation_1_1_simulation_ad0beaea0860515bb559c291bd6c43491}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!next\_time@{next\_time}}
+\index{next\_time@{next\_time}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{next\_time}{next\_time}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+next\+\_\+time}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00119}{119}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_af1c34b60c5bc9a17d422ec15152cde88}\label{classlangton_1_1simulation_1_1_simulation_af1c34b60c5bc9a17d422ec15152cde88}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!plateau@{plateau}}
+\index{plateau@{plateau}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{plateau}{plateau}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+plateau}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00050}{50}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_ac278df3b69b7433c6e08441c26818ae5}\label{classlangton_1_1simulation_1_1_simulation_ac278df3b69b7433c6e08441c26818ae5}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!random\_grid@{random\_grid}}
+\index{random\_grid@{random\_grid}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{random\_grid}{random\_grid}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+random\+\_\+grid}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00107}{107}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}\label{classlangton_1_1simulation_1_1_simulation_a15f32bc7da23508e7567e612e12636bd}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!res@{res}}
+\index{res@{res}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{res}{res}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+res}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00030}{30}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}\label{classlangton_1_1simulation_1_1_simulation_a83b88b22d9c8bb631c37b8fcaaebc0e0}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!run@{run}}
+\index{run@{run}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{run}{run}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+run}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00039}{39}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a773c12ae029194e5551af2ab72fde3bf}\label{classlangton_1_1simulation_1_1_simulation_a773c12ae029194e5551af2ab72fde3bf}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!screen@{screen}}
+\index{screen@{screen}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+screen}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00033}{33}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}\label{classlangton_1_1simulation_1_1_simulation_a55c409729dba715872d8e7d8424f3be1}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!size\_plateau@{size\_plateau}}
+\index{size\_plateau@{size\_plateau}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{size\_plateau}{size\_plateau}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+size\+\_\+plateau}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00029}{29}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}\label{classlangton_1_1simulation_1_1_simulation_a95b7be489730afa0fb0183d4e305ec14}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!size\_screen@{size\_screen}}
+\index{size\_screen@{size\_screen}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{size\_screen}{size\_screen}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+size\+\_\+screen}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00028}{28}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1simulation_1_1_simulation_a8c904c65a3ec3a125395e3b74cf9e1fa}\label{classlangton_1_1simulation_1_1_simulation_a8c904c65a3ec3a125395e3b74cf9e1fa}} 
+\index{langton.simulation.Simulation@{langton.simulation.Simulation}!start@{start}}
+\index{start@{start}!langton.simulation.Simulation@{langton.simulation.Simulation}}
+\doxyparagraph{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily langton.\+simulation.\+Simulation.\+start}
+
+
+
+Definition at line \mbox{\hyperlink{simulation_8py_source_l00296}{296}} of file \mbox{\hyperlink{simulation_8py_source}{simulation.\+py}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{simulation_8py}{simulation.\+py}}\end{DoxyCompactItemize}

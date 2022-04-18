@@ -1,0 +1,666 @@
+\hypertarget{classlangton_1_1fourmi_1_1_fourmi}{}\doxysubsection{langton.\+fourmi.\+Fourmi Class Reference}
+\label{classlangton_1_1fourmi_1_1_fourmi}\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+
+
+Represent a \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi}{Fourmi}} de Langton.  
+
+
+
+
+Collaboration diagram for langton.\+fourmi.\+Fourmi\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classlangton_1_1fourmi_1_1_fourmi__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_aca72ff73d2081a079351fa72dc64ce91}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, coords=(0, 0), \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a30b1e3bbf50a15a354053651c67fe2d5}{taille}}=4, \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9f9d425c64d2acc52fda78bff01b1b76}{speed}}=1, \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8991458ddec367ffc0416fc89a405e00}{direction}}=0, \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a350a2850675418e715c42277d2545d22}{color}}=\mbox{[}(255, 255, 255),(0, 0, 0)\mbox{]}, \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9f55fe179921c95277120224f18ffe30}{behavior}}=\char`\"{}LR\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constuct \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi}{Fourmi}} object This is the constructor of the \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi}{Fourmi}} object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a0a8bc2946d96905aab032f608268615b}{set\+\_\+out}} (self)
+\begin{DoxyCompactList}\small\item\em Ant is out This method makes the ant out. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ab960d00f0a46420e624031e83204763c}{is\+\_\+out}} (self)
+\begin{DoxyCompactList}\small\item\em Ask if fourmi is out This method return the out state of the ant. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a94f50ddabad6971f3ed75329d4ea028f}{one\+\_\+step}} (self, case)
+\begin{DoxyCompactList}\small\item\em An ant complete movement This method make the ant follows a complete movement (rotate, change color, move). \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8668301bd55f2d65fc909d69091436cc}{reset}} (self)
+\begin{DoxyCompactList}\small\item\em Reset the Ant This method hard reset the ant at its beginning direction, position. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_abd0d697fe07a100233036d8aca30c01e}{inverse\+\_\+color\+\_\+case}} (self, case)
+\begin{DoxyCompactList}\small\item\em Inverse Case color This method change the color of the case where the ant is. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a}{rotate}} (self, case)
+\begin{DoxyCompactList}\small\item\em Rotation the ant This method rotate the ant following the ant\textquotesingle{}s behavior. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc}{conduct}} (self)
+\begin{DoxyCompactList}\small\item\em Move the ant following its conduct This method moves the ant compare to the conduct wanted. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move}} (self, coords=(0, 0))
+\begin{DoxyCompactList}\small\item\em Vectorial ant movement This method reprensent primitive ant movement. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463}{move\+\_\+down}} (self)
+\begin{DoxyCompactList}\small\item\em Ant move down This method calls \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move()}} with a down vector (0, y). \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21}{move\+\_\+up}} (self)
+\begin{DoxyCompactList}\small\item\em Ant move up This method calls \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move()}} with a up vector (0, -\/y). \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2}{move\+\_\+right}} (self)
+\begin{DoxyCompactList}\small\item\em Ant move right This method calls \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move()}} with a right vector (x, 0). \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f}{move\+\_\+left}} (self)
+\begin{DoxyCompactList}\small\item\em Ant move left This method calls \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move()}} with a left vector (-\/x, 0). \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ad1ad1d420abb8c6e559647a02084ae39}{rotate\+\_\+right}} (self)
+\begin{DoxyCompactList}\small\item\em Ant rotate left This method rotate the ant in its right. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a0086306565c8d2d16a39e8d2197c5268}{rotate\+\_\+left}} (self)
+\begin{DoxyCompactList}\small\item\em Ant rotate left This method rotate the ant in its left. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a03b7054b55cf2f31c481e0adcf389db8}{draw}} (self)
+\begin{DoxyCompactList}\small\item\em Ant draw This method draw the ant with py\+Game draw.\+rect function. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a5419b7237e7ae7af9506e5532adcb20e}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Ant string representation This method redefine the ant\textquotesingle{}s to\+String() representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a6236b4ffd47920b0aec6c11be66b5dce}{x}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a54a6cae73d3df178600ef2243792156e}{y}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a835711940be935718c917cc1af3ad7c2}{begin\+\_\+x}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ad7dc38ec85abee535bc134d6beab8d83}{begin\+\_\+y}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9f9d425c64d2acc52fda78bff01b1b76}{speed}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acb5caf0701f8cbda5d7c756866df3731}{rotation}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9ca39b075feaeabe5c70c868bd8d21f1}{nb\+\_\+direction}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a0c82935348276b7a4447d6c48597584e}{begin\+\_\+direction}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acca86b96fd9b3241019a5f6e36688c1c}{index\+\_\+direction}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8991458ddec367ffc0416fc89a405e00}{direction}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a07eafea871c6278efa1ac5f2ea820240}{screen}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a30b1e3bbf50a15a354053651c67fe2d5}{taille}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ad367dff20b5e0292f77aeb6a937b6f38}{out}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a350a2850675418e715c42277d2545d22}{color}}
+\item 
+\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9f55fe179921c95277120224f18ffe30}{behavior}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Represent a \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi}{Fourmi}} de Langton. 
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00011}{11}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+
+
+\doxysubsubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_aca72ff73d2081a079351fa72dc64ce91}\label{classlangton_1_1fourmi_1_1_fourmi_aca72ff73d2081a079351fa72dc64ce91}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{coords = {\ttfamily (0,~0)},  }\item[{}]{taille = {\ttfamily 4},  }\item[{}]{speed = {\ttfamily 1},  }\item[{}]{direction = {\ttfamily 0},  }\item[{}]{color = {\ttfamily \mbox{[}(255,~255,~255),~(0,~0,~0)\mbox{]}},  }\item[{}]{behavior = {\ttfamily \char`\"{}LR\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Constuct \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi}{Fourmi}} object This is the constructor of the \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi}{Fourmi}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & coordinate where ant takes place (default (0, 0)) \\
+\hline
+{\em taille} & number of pixels represent an ant (default 4) \\
+\hline
+{\em speed} & number of case ant moving (default 1) \\
+\hline
+{\em direction} & index of first direction (default 0 (\char`\"{}up\char`\"{})) \\
+\hline
+{\em color} & list of tuple represent the list of color used for behavior (default\+: (255, ...), (0, ...)) \\
+\hline
+{\em behavior} & string representation of the ant behavior (default\+: \textquotesingle{}LR\textquotesingle{}) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00014}{14}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a5419b7237e7ae7af9506e5532adcb20e}\label{classlangton_1_1fourmi_1_1_fourmi_a5419b7237e7ae7af9506e5532adcb20e}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Ant string representation This method redefine the ant\textquotesingle{}s to\+String() representation. 
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00175}{175}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc}\label{classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!conduct@{conduct}}
+\index{conduct@{conduct}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{conduct()}{conduct()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+conduct (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Move the ant following its conduct This method moves the ant compare to the conduct wanted. 
+
+Here the ant move in the direction where it watches. 
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00100}{100}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a03b7054b55cf2f31c481e0adcf389db8}\label{classlangton_1_1fourmi_1_1_fourmi_a03b7054b55cf2f31c481e0adcf389db8}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!draw@{draw}}
+\index{draw@{draw}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+draw (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Ant draw This method draw the ant with py\+Game draw.\+rect function. 
+
+Ant color is red. 
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00165}{165}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_a03b7054b55cf2f31c481e0adcf389db8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_abd0d697fe07a100233036d8aca30c01e}\label{classlangton_1_1fourmi_1_1_fourmi_abd0d697fe07a100233036d8aca30c01e}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!inverse\_color\_case@{inverse\_color\_case}}
+\index{inverse\_color\_case@{inverse\_color\_case}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{inverse\_color\_case()}{inverse\_color\_case()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+inverse\+\_\+color\+\_\+case (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{case }\end{DoxyParamCaption})}
+
+
+
+Inverse Case color This method change the color of the case where the ant is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em case} & Case where the ant is \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00080}{80}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_abd0d697fe07a100233036d8aca30c01e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_ab960d00f0a46420e624031e83204763c}\label{classlangton_1_1fourmi_1_1_fourmi_ab960d00f0a46420e624031e83204763c}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!is\_out@{is\_out}}
+\index{is\_out@{is\_out}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{is\_out()}{is\_out()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+is\+\_\+out (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Ask if fourmi is out This method return the out state of the ant. 
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00053}{53}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}\label{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!move@{move}}
+\index{move@{move}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+move (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{coords = {\ttfamily (0,~0)} }\end{DoxyParamCaption})}
+
+
+
+Vectorial ant movement This method reprensent primitive ant movement. 
+
+It\textquotesingle{}s update the x and y of the ant. 
+\begin{DoxyParams}{Parameters}
+{\em coords} & A tuple represents a movement vector (default (0,0)) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00114}{114}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463}\label{classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!move\_down@{move\_down}}
+\index{move\_down@{move\_down}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{move\_down()}{move\_down()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+move\+\_\+down (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Ant move down This method calls \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move()}} with a down vector (0, y). 
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00123}{123}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f}\label{classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!move\_left@{move\_left}}
+\index{move\_left@{move\_left}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{move\_left()}{move\_left()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+move\+\_\+left (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Ant move left This method calls \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move()}} with a left vector (-\/x, 0). 
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00141}{141}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2}\label{classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!move\_right@{move\_right}}
+\index{move\_right@{move\_right}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{move\_right()}{move\_right()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+move\+\_\+right (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Ant move right This method calls \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move()}} with a right vector (x, 0). 
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00135}{135}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21}\label{classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!move\_up@{move\_up}}
+\index{move\_up@{move\_up}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{move\_up()}{move\_up()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+move\+\_\+up (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Ant move up This method calls \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move()}} with a up vector (0, -\/y). 
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00129}{129}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a94f50ddabad6971f3ed75329d4ea028f}\label{classlangton_1_1fourmi_1_1_fourmi_a94f50ddabad6971f3ed75329d4ea028f}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!one\_step@{one\_step}}
+\index{one\_step@{one\_step}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{one\_step()}{one\_step()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+one\+\_\+step (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{case }\end{DoxyParamCaption})}
+
+
+
+An ant complete movement This method make the ant follows a complete movement (rotate, change color, move). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em case} & Case where the ant begin its step \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00060}{60}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_a94f50ddabad6971f3ed75329d4ea028f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a8668301bd55f2d65fc909d69091436cc}\label{classlangton_1_1fourmi_1_1_fourmi_a8668301bd55f2d65fc909d69091436cc}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!reset@{reset}}
+\index{reset@{reset}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reset the Ant This method hard reset the ant at its beginning direction, position. 
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00070}{70}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_a8668301bd55f2d65fc909d69091436cc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a}\label{classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!rotate@{rotate}}
+\index{rotate@{rotate}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+rotate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{case }\end{DoxyParamCaption})}
+
+
+
+Rotation the ant This method rotate the ant following the ant\textquotesingle{}s behavior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em case} & Case where the ant is. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00088}{88}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a0086306565c8d2d16a39e8d2197c5268}\label{classlangton_1_1fourmi_1_1_fourmi_a0086306565c8d2d16a39e8d2197c5268}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!rotate\_left@{rotate\_left}}
+\index{rotate\_left@{rotate\_left}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{rotate\_left()}{rotate\_left()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+rotate\+\_\+left (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Ant rotate left This method rotate the ant in its left. 
+
+It means the index of the current rotation is decrement by one in the list of rotation. 
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00156}{156}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_a0086306565c8d2d16a39e8d2197c5268_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_ad1ad1d420abb8c6e559647a02084ae39}\label{classlangton_1_1fourmi_1_1_fourmi_ad1ad1d420abb8c6e559647a02084ae39}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!rotate\_right@{rotate\_right}}
+\index{rotate\_right@{rotate\_right}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{rotate\_right()}{rotate\_right()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+rotate\+\_\+right (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Ant rotate left This method rotate the ant in its right. 
+
+It means the index of the current rotation is increment by one in the list of rotation. 
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00147}{147}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1fourmi_1_1_fourmi_ad1ad1d420abb8c6e559647a02084ae39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a0a8bc2946d96905aab032f608268615b}\label{classlangton_1_1fourmi_1_1_fourmi_a0a8bc2946d96905aab032f608268615b}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!set\_out@{set\_out}}
+\index{set\_out@{set\_out}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{set\_out()}{set\_out()}}
+{\footnotesize\ttfamily def langton.\+fourmi.\+Fourmi.\+set\+\_\+out (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Ant is out This method makes the ant out. 
+
+She can\textquotesingle{}t do anything anymore. 
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00047}{47}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+
+
+\doxysubsubsection{Member Data Documentation}
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a0c82935348276b7a4447d6c48597584e}\label{classlangton_1_1fourmi_1_1_fourmi_a0c82935348276b7a4447d6c48597584e}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!begin\_direction@{begin\_direction}}
+\index{begin\_direction@{begin\_direction}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{begin\_direction}{begin\_direction}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+begin\+\_\+direction}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00036}{36}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a835711940be935718c917cc1af3ad7c2}\label{classlangton_1_1fourmi_1_1_fourmi_a835711940be935718c917cc1af3ad7c2}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!begin\_x@{begin\_x}}
+\index{begin\_x@{begin\_x}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{begin\_x}{begin\_x}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+begin\+\_\+x}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00030}{30}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_ad7dc38ec85abee535bc134d6beab8d83}\label{classlangton_1_1fourmi_1_1_fourmi_ad7dc38ec85abee535bc134d6beab8d83}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!begin\_y@{begin\_y}}
+\index{begin\_y@{begin\_y}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{begin\_y}{begin\_y}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+begin\+\_\+y}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00031}{31}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a9f55fe179921c95277120224f18ffe30}\label{classlangton_1_1fourmi_1_1_fourmi_a9f55fe179921c95277120224f18ffe30}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!behavior@{behavior}}
+\index{behavior@{behavior}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{behavior}{behavior}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+behavior}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00045}{45}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a350a2850675418e715c42277d2545d22}\label{classlangton_1_1fourmi_1_1_fourmi_a350a2850675418e715c42277d2545d22}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!color@{color}}
+\index{color@{color}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+color}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00044}{44}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a8991458ddec367ffc0416fc89a405e00}\label{classlangton_1_1fourmi_1_1_fourmi_a8991458ddec367ffc0416fc89a405e00}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!direction@{direction}}
+\index{direction@{direction}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+direction}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00038}{38}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_acca86b96fd9b3241019a5f6e36688c1c}\label{classlangton_1_1fourmi_1_1_fourmi_acca86b96fd9b3241019a5f6e36688c1c}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!index\_direction@{index\_direction}}
+\index{index\_direction@{index\_direction}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{index\_direction}{index\_direction}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+index\+\_\+direction}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00037}{37}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a9ca39b075feaeabe5c70c868bd8d21f1}\label{classlangton_1_1fourmi_1_1_fourmi_a9ca39b075feaeabe5c70c868bd8d21f1}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!nb\_direction@{nb\_direction}}
+\index{nb\_direction@{nb\_direction}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{nb\_direction}{nb\_direction}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+nb\+\_\+direction}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00035}{35}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_ad367dff20b5e0292f77aeb6a937b6f38}\label{classlangton_1_1fourmi_1_1_fourmi_ad367dff20b5e0292f77aeb6a937b6f38}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!out@{out}}
+\index{out@{out}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{out}{out}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+out}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00042}{42}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_acb5caf0701f8cbda5d7c756866df3731}\label{classlangton_1_1fourmi_1_1_fourmi_acb5caf0701f8cbda5d7c756866df3731}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!rotation@{rotation}}
+\index{rotation@{rotation}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+rotation}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00034}{34}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a07eafea871c6278efa1ac5f2ea820240}\label{classlangton_1_1fourmi_1_1_fourmi_a07eafea871c6278efa1ac5f2ea820240}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!screen@{screen}}
+\index{screen@{screen}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+screen}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00040}{40}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a9f9d425c64d2acc52fda78bff01b1b76}\label{classlangton_1_1fourmi_1_1_fourmi_a9f9d425c64d2acc52fda78bff01b1b76}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!speed@{speed}}
+\index{speed@{speed}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+speed}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00033}{33}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a30b1e3bbf50a15a354053651c67fe2d5}\label{classlangton_1_1fourmi_1_1_fourmi_a30b1e3bbf50a15a354053651c67fe2d5}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!taille@{taille}}
+\index{taille@{taille}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{taille}{taille}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+taille}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00041}{41}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a6236b4ffd47920b0aec6c11be66b5dce}\label{classlangton_1_1fourmi_1_1_fourmi_a6236b4ffd47920b0aec6c11be66b5dce}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!x@{x}}
+\index{x@{x}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+x}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00028}{28}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1fourmi_1_1_fourmi_a54a6cae73d3df178600ef2243792156e}\label{classlangton_1_1fourmi_1_1_fourmi_a54a6cae73d3df178600ef2243792156e}} 
+\index{langton.fourmi.Fourmi@{langton.fourmi.Fourmi}!y@{y}}
+\index{y@{y}!langton.fourmi.Fourmi@{langton.fourmi.Fourmi}}
+\doxyparagraph{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily langton.\+fourmi.\+Fourmi.\+y}
+
+
+
+Definition at line \mbox{\hyperlink{fourmi_8py_source_l00029}{29}} of file \mbox{\hyperlink{fourmi_8py_source}{fourmi.\+py}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{fourmi_8py}{fourmi.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+\hypertarget{plateau_8py_source}{}\doxysubsection{plateau.\+py}
+\label{plateau_8py_source}\index{plateau.py@{plateau.py}}
+\mbox{\hyperlink{plateau_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00001}\mbox{\hyperlink{namespacelangton_1_1plateau}{00001}} \textcolor{stringliteral}{"{}"{}"{}!}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00002}00002 \textcolor{stringliteral}{@brief langton.plateau}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00003}00003 \textcolor{stringliteral}{@author Durel Enzo}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00004}00004 \textcolor{stringliteral}{@author Mallepeyre Nourrane}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00005}00005 \textcolor{stringliteral}{@version 1.0}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00006}00006 \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00008}00008 \textcolor{keyword}{import} pygame}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00009}00009 \textcolor{keyword}{import} random}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00010}00010 \textcolor{keyword}{import} numpy \textcolor{keyword}{as} np}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00012}00012 \textcolor{keyword}{from} utils \textcolor{keyword}{import} color}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00014}00014 \textcolor{keyword}{import} langton \textcolor{keyword}{as} lgt}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00016}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau}{00016}} \textcolor{keyword}{class }\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau}{Plateau}} :}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00017}00017     \textcolor{stringliteral}{"{}"{}"{}!@brief Represent a Plateau"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00018}00018 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00019}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ad7e657c1c934f5ec13da4b17eddb691a}{00019}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ad7e657c1c934f5ec13da4b17eddb691a}{\_\_init\_\_}}(self, behavior, color, taille=(1, 1), res=(4, 4)):}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00020}00020         \textcolor{stringliteral}{"{}"{}"{}!@brief Construct Plateau object}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00021}00021 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} behavior String representation of the Plateau behavior}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00022}00022         \textcolor{preprocessor}{@param} color A tuple a int reprensent a rgb color}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00023}00023         \textcolor{preprocessor}{@param} taille tuple represent number of Case (default (1, 1))}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00024}00024         \textcolor{preprocessor}{@param} res Pixel representation of each Case (default (4, 4))}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00025}00025         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00026}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ac46de0eff556cba6d0b8589960f43540}{00026}} \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ac46de0eff556cba6d0b8589960f43540}{w}} = taille[0] }\textcolor{comment}{\# width of plateau}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00027}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a6552e1db91ddb4384dfe37c2e549da84}{00027}}         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a6552e1db91ddb4384dfe37c2e549da84}{h}} = taille[1] \textcolor{comment}{\# height of plateau)}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00028}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}{00028}}         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}{schema}} = [[lgt.Case((res[0], res[1])) \textcolor{comment}{\# schema of plateau}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00029}00029                         \textcolor{keywordflow}{for} j \textcolor{keywordflow}{in} range(self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ac46de0eff556cba6d0b8589960f43540}{w}})]}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00030}00030                        \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a6552e1db91ddb4384dfe37c2e549da84}{h}})]}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00031}00031         \textcolor{comment}{\# SCREEN \#}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00032}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_aeb7ce2e81e21d2e6816f999c51127f53}{00032}}         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_aeb7ce2e81e21d2e6816f999c51127f53}{screen}} = pygame.display.get\_surface()}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00033}00033         \textcolor{comment}{\# BEHAVIOR \#}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00034}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a3ba4d7a8411cd0d33fcce9d3fd6c22a9}{00034}}         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a3ba4d7a8411cd0d33fcce9d3fd6c22a9}{behavior}} = behavior}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00035}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a02832717ac698be525ea750a261fd9b3}{00035}}         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a02832717ac698be525ea750a261fd9b3}{color}} = color}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00036}00036         }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00037}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a327a3f41b922f0502f49c58d4a8a1ced}{00037}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a327a3f41b922f0502f49c58d4a8a1ced}{random\_schema}}(self):}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00038}00038         \textcolor{stringliteral}{"{}"{}"{}!@brief Random color schema"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00039}00039         \textcolor{keywordflow}{for} line \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}{schema}}:}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00040}00040             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} line:}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00041}00041                 r = random.choice(self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a02832717ac698be525ea750a261fd9b3}{color}})}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00042}00042                 i.set\_color(r)}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00043}00043         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3}{draw}}()}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00044}00044                 }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00045}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a63a0911cc3217ace412e7b7355ca16d3}{00045}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a63a0911cc3217ace412e7b7355ca16d3}{reset}}(self):}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00046}00046         \textcolor{stringliteral}{"{}"{}"{}!@brief default color schema"{}"{}"{}}        }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00047}00047         \textcolor{keywordflow}{for} line \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}{schema}}:}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00048}00048             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} line:}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00049}00049                 i.set\_color(color.dic[\textcolor{stringliteral}{"{}white"{}}])}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00050}00050         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3}{draw}}()}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00052}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d}{00052}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d}{draw\_case}}(self, pos):}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00053}00053         x, y = pos}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00054}00054         pygame.draw.rect(}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00055}00055             self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_aeb7ce2e81e21d2e6816f999c51127f53}{screen}},}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00056}00056             self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}{schema}}[x][y].cur\_color,}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00057}00057             pygame.Rect(y*self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}{schema}}[x][y].w,}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00058}00058                         x*self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}{schema}}[x][y].h,}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00059}00059                         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}{schema}}[x][y].w,}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00060}00060                         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}{schema}}[x][y].h))        }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00061}00061         }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00062}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a75bfbd1e8d9afb599e2d3722242dbb62}{00062}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a75bfbd1e8d9afb599e2d3722242dbb62}{draw\_ant}}(self, pos):}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00063}00063         y, x = pos}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00064}00064         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d}{draw\_case}}((x, y))}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00065}00065         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d}{draw\_case}}((x, (y+1)\%self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ac46de0eff556cba6d0b8589960f43540}{w}}))}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00066}00066         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d}{draw\_case}}((x, (y-\/1)\%self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ac46de0eff556cba6d0b8589960f43540}{w}}))}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00067}00067         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d}{draw\_case}}(((x+1)\%self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a6552e1db91ddb4384dfe37c2e549da84}{h}}, y))}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00068}00068         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d}{draw\_case}}(((x-\/1)\%self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a6552e1db91ddb4384dfe37c2e549da84}{h}}, y))}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00069}00069         }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00070}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3}{00070}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3}{draw}}(self, start=[0,0], end=[None, None]):}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00071}00071         \textcolor{stringliteral}{"{}"{}"{}!@brief default color schema}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00072}00072 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} start list of int index where start to draw (default (0, 0))}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00073}00073         \textcolor{preprocessor}{@param} end list of int index where end to draw (default (\textcolor{keywordtype}{None}, \textcolor{keywordtype}{None}))}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00074}00074         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00075}00075 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} end[0] == \textcolor{keywordtype}{None}:      \textcolor{comment}{\# if end\_x not setting in draw()}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00076}00076             end[0] = self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ac46de0eff556cba6d0b8589960f43540}{w}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00077}00077         \textcolor{keywordflow}{if} end[1] == \textcolor{keywordtype}{None}:      \textcolor{comment}{\# if end\_y not setting  in draw()}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00078}00078             end[1] = self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a6552e1db91ddb4384dfe37c2e549da84}{h}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00079}00079         \textcolor{keywordflow}{else} :}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00080}00080             \textcolor{keywordflow}{if} start[0] < 0:}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00081}00081                 start[0] = start[0]\%self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ac46de0eff556cba6d0b8589960f43540}{w}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00082}00082             \textcolor{keywordflow}{if} start[1] < 0:}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00083}00083                 start[1] = start[1]\%self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a6552e1db91ddb4384dfe37c2e549da84}{h}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00084}00084             \textcolor{keywordflow}{if} end[0] > self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ac46de0eff556cba6d0b8589960f43540}{w}}:}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00085}00085                 end[0] = end[0]\%self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ac46de0eff556cba6d0b8589960f43540}{w}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00086}00086             \textcolor{keywordflow}{if} end[1] > self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a6552e1db91ddb4384dfe37c2e549da84}{h}}:}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00087}00087                 end[1] = end[1]\%self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a6552e1db91ddb4384dfe37c2e549da84}{h}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00089}00089             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(start[1], end[1]):}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00090}00090                 \textcolor{keywordflow}{for} j \textcolor{keywordflow}{in} range(start[0], end[0]):}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00091}00091                     self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d}{draw\_case}}((i, j))}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00093}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ac45d681db894fb867127ce8fc40837ff}{00093}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ac45d681db894fb867127ce8fc40837ff}{get\_case}}(self, x, y, res):}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00094}00094         \textcolor{stringliteral}{"{}"{}"{}!@brief Get a Case in a position}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00095}00095 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} x Horizontal position of the Case}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00096}00096         \textcolor{preprocessor}{@param} y Vertical position of the Case}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00097}00097         \textcolor{preprocessor}{@param} res Resolution of the Case}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00098}00098         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00099}00099 \textcolor{stringliteral}{        case = self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}{schema}}[y//res][x//res]}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00100}00100 \textcolor{stringliteral}{        }\textcolor{keywordflow}{return} case}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00102}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ab3e5d646fac4a0d6cef12afc13bdd4d6}{00102}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ab3e5d646fac4a0d6cef12afc13bdd4d6}{set\_behavior}}(self, color, behavior):}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00103}00103         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a02832717ac698be525ea750a261fd9b3}{color}} = color}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00104}00104         self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a3ba4d7a8411cd0d33fcce9d3fd6c22a9}{behavior}} = behavior}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00105}00105     }
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00106}\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_aebd321ef544440def20160c0ac82eacf}{00106}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_aebd321ef544440def20160c0ac82eacf}{\_\_str\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00107}00107         \textcolor{stringliteral}{"{}"{}"{}!@brief Redefine toString() Plateau method"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00108}00108         s = \textcolor{stringliteral}{"{}"{}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00109}00109         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}{schema}}:}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00110}00110             \textcolor{keywordflow}{for} j \textcolor{keywordflow}{in} i:}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00111}00111                 s += f\textcolor{stringliteral}{"{}\{j.cur\_color\} "{}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00112}00112             s += f\textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{plateau_8py_source_l00113}00113         \textcolor{keywordflow}{return} s}
+
+\end{DoxyCode}

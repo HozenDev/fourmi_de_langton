@@ -1,0 +1,186 @@
+\hypertarget{fourmi_8py_source}{}\doxysubsection{fourmi.\+py}
+\label{fourmi_8py_source}\index{fourmi.py@{fourmi.py}}
+\mbox{\hyperlink{fourmi_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00001}\mbox{\hyperlink{namespacelangton_1_1fourmi}{00001}} \textcolor{stringliteral}{"{}"{}"{}!}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00002}00002 \textcolor{stringliteral}{@brief langton.fourmi package}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00003}00003 \textcolor{stringliteral}{@author Durel Enzo}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00004}00004 \textcolor{stringliteral}{@author Mallepeyre Nourrane}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00005}00005 \textcolor{stringliteral}{@version 1.0}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00006}00006 \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00008}00008 \textcolor{keyword}{import} pygame}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00009}00009 \textcolor{keyword}{from} utils \textcolor{keyword}{import} color}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00011}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi}{00011}} \textcolor{keyword}{class }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi}{Fourmi}} :}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00012}00012     \textcolor{stringliteral}{"{}"{}"{}!@brief Represent a Fourmi de Langton"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00013}00013     }
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00014}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_aca72ff73d2081a079351fa72dc64ce91}{00014}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_aca72ff73d2081a079351fa72dc64ce91}{\_\_init\_\_}}(self, coords=(0, 0), taille=4, speed=1, direction=0,}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00015}00015                  color=[(255, 255, 255), (0, 0, 0)], behavior=\textcolor{stringliteral}{"{}LR"{}}):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00016}00016         \textcolor{stringliteral}{"{}"{}"{}!@brief Constuct Fourmi object}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00017}00017 \textcolor{stringliteral}{        This }\textcolor{keywordflow}{is} the constructor of the Fourmi object.}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00018}00018         \textcolor{preprocessor}{@param} coords coordinate where ant takes place (default (0, 0))}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00019}00019         \textcolor{preprocessor}{@param} taille number of pixels represent an ant (default 4)}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00020}00020         \textcolor{preprocessor}{@param} speed number of case ant moving (default 1)}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00021}00021         \textcolor{preprocessor}{@param} direction index of first direction (default 0 (\textcolor{stringliteral}{"{}up"{}}))}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00022}00022         \textcolor{preprocessor}{@param} color list of tuple represent the list of color used \textcolor{keywordflow}{for}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00023}00023         behavior (default: (255, ...), (0, ...))}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00024}00024         \textcolor{preprocessor}{@param} behavior string representation of the ant behavior (default:}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00025}00025         \textcolor{stringliteral}{'LR'})}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00026}00026         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00027}00027 \textcolor{stringliteral}{        }\textcolor{comment}{\# Ant position \#}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00028}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a6236b4ffd47920b0aec6c11be66b5dce}{00028}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a6236b4ffd47920b0aec6c11be66b5dce}{x}} = int(coords[0]) \textcolor{comment}{\# current position}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00029}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a54a6cae73d3df178600ef2243792156e}{00029}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a54a6cae73d3df178600ef2243792156e}{y}} = int(coords[1])}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00030}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a835711940be935718c917cc1af3ad7c2}{00030}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a835711940be935718c917cc1af3ad7c2}{begin\_x}} = int(coords[0]) \textcolor{comment}{\# save begin position}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00031}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ad7dc38ec85abee535bc134d6beab8d83}{00031}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ad7dc38ec85abee535bc134d6beab8d83}{begin\_y}} = int(coords[1])}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00032}00032         \textcolor{comment}{\# Ant movement \#}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00033}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9f9d425c64d2acc52fda78bff01b1b76}{00033}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9f9d425c64d2acc52fda78bff01b1b76}{speed}} = speed \textcolor{comment}{\# ant speed (pixel per movement)}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00034}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acb5caf0701f8cbda5d7c756866df3731}{00034}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acb5caf0701f8cbda5d7c756866df3731}{rotation}} = [\textcolor{stringliteral}{'up'}, \textcolor{stringliteral}{'right'}, \textcolor{stringliteral}{'down'}, \textcolor{stringliteral}{'left'}] \textcolor{comment}{\# ant list rotation}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00035}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9ca39b075feaeabe5c70c868bd8d21f1}{00035}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9ca39b075feaeabe5c70c868bd8d21f1}{nb\_direction}} = len(self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acb5caf0701f8cbda5d7c756866df3731}{rotation}}) \textcolor{comment}{\# length of rotation available}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00036}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a0c82935348276b7a4447d6c48597584e}{00036}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a0c82935348276b7a4447d6c48597584e}{begin\_direction}} = direction\%self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9ca39b075feaeabe5c70c868bd8d21f1}{nb\_direction}} \textcolor{comment}{\#save init direction}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00037}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acca86b96fd9b3241019a5f6e36688c1c}{00037}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acca86b96fd9b3241019a5f6e36688c1c}{index\_direction}} = self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a0c82935348276b7a4447d6c48597584e}{begin\_direction}} \textcolor{comment}{\#current index of direction}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00038}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8991458ddec367ffc0416fc89a405e00}{00038}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8991458ddec367ffc0416fc89a405e00}{direction}} = self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acb5caf0701f8cbda5d7c756866df3731}{rotation}}[self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acca86b96fd9b3241019a5f6e36688c1c}{index\_direction}}]}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00039}00039         \textcolor{comment}{\# Graphics attributes \#}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00040}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a07eafea871c6278efa1ac5f2ea820240}{00040}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a07eafea871c6278efa1ac5f2ea820240}{screen}} = pygame.display.get\_surface()}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00041}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a30b1e3bbf50a15a354053651c67fe2d5}{00041}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a30b1e3bbf50a15a354053651c67fe2d5}{taille}} = taille}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00042}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ad367dff20b5e0292f77aeb6a937b6f38}{00042}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ad367dff20b5e0292f77aeb6a937b6f38}{out}} = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00043}00043         \textcolor{comment}{\# Ant behavior \#}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00044}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a350a2850675418e715c42277d2545d22}{00044}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a350a2850675418e715c42277d2545d22}{color}} = color}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00045}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9f55fe179921c95277120224f18ffe30}{00045}}         self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9f55fe179921c95277120224f18ffe30}{behavior}} = behavior}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00047}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a0a8bc2946d96905aab032f608268615b}{00047}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a0a8bc2946d96905aab032f608268615b}{set\_out}}(self):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00048}00048         \textcolor{stringliteral}{"{}"{}"{}!@brief Ant is out}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00049}00049 \textcolor{stringliteral}{        This method makes the ant out. She can't do anything anymore.}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00050}00050 \textcolor{stringliteral}{        "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00051}00051 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ad367dff20b5e0292f77aeb6a937b6f38}{out}} = }\textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00053}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ab960d00f0a46420e624031e83204763c}{00053}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ab960d00f0a46420e624031e83204763c}{is\_out}}(self):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00054}00054         \textcolor{stringliteral}{"{}"{}"{}!@brief Ask if fourmi is out}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00055}00055 \textcolor{stringliteral}{        This method }\textcolor{keywordflow}{return} the out state of the ant.}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00056}00056         \textcolor{preprocessor}{@return} boolean}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00057}00057         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00058}00058 \textcolor{stringliteral}{        }\textcolor{keywordflow}{return} self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ad367dff20b5e0292f77aeb6a937b6f38}{out}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00059}00059         }
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00060}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a94f50ddabad6971f3ed75329d4ea028f}{00060}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a94f50ddabad6971f3ed75329d4ea028f}{one\_step}}(self, case):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00061}00061         \textcolor{stringliteral}{"{}"{}"{}!@brief An ant complete movement}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00062}00062 \textcolor{stringliteral}{        This method make the ant follows a complete movement (rotate, change}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00063}00063 \textcolor{stringliteral}{        color, move).}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00064}00064 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} case Case where the ant begin its step}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00065}00065         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00066}00066 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a}{rotate}}(case)}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00067}00067 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_abd0d697fe07a100233036d8aca30c01e}{inverse\_color\_case}}(case)}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00068}00068 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc}{conduct}}()}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00069}00069 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00070}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8668301bd55f2d65fc909d69091436cc}{00070}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8668301bd55f2d65fc909d69091436cc}{reset}}(self):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00071}00071         \textcolor{stringliteral}{"{}"{}"{}!@brief Reset the Ant}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00072}00072 \textcolor{stringliteral}{        This method hard reset the ant at its beginning direction, position.}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00073}00073 \textcolor{stringliteral}{        "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00074}00074 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acca86b96fd9b3241019a5f6e36688c1c}{index\_direction}} = self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a0c82935348276b7a4447d6c48597584e}{begin\_direction}}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00075}00075 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a6236b4ffd47920b0aec6c11be66b5dce}{x}} = self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a835711940be935718c917cc1af3ad7c2}{begin\_x}}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00076}00076 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a54a6cae73d3df178600ef2243792156e}{y}} = self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ad7dc38ec85abee535bc134d6beab8d83}{begin\_y}}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00077}00077 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8991458ddec367ffc0416fc89a405e00}{direction}} = self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acb5caf0701f8cbda5d7c756866df3731}{rotation}}[self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acca86b96fd9b3241019a5f6e36688c1c}{index\_direction}}]}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00078}00078 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a03b7054b55cf2f31c481e0adcf389db8}{draw}}()}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00079}00079 \textcolor{stringliteral}{        }}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00080}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_abd0d697fe07a100233036d8aca30c01e}{00080}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_abd0d697fe07a100233036d8aca30c01e}{inverse\_color\_case}}(self, case):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00081}00081         \textcolor{stringliteral}{"{}"{}"{}!@brief Inverse Case color}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00082}00082 \textcolor{stringliteral}{        This method change the color of the case where the ant }\textcolor{keywordflow}{is}.}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00083}00083         \textcolor{preprocessor}{@param} case Case where the ant \textcolor{keywordflow}{is}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00084}00084         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00085}00085 \textcolor{stringliteral}{        index = self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a350a2850675418e715c42277d2545d22}{color}}.index(case.cur\_color)}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00086}00086 \textcolor{stringliteral}{        case.set\_color(self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a350a2850675418e715c42277d2545d22}{color}}[(index+1)\%len(self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a350a2850675418e715c42277d2545d22}{color}})])}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00087}00087 \textcolor{stringliteral}{        }}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00088}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a}{00088}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a}{rotate}}(self, case):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00089}00089         \textcolor{stringliteral}{"{}"{}"{}!@brief Rotation the ant}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00090}00090 \textcolor{stringliteral}{        This method rotate the ant following the ant's behavior.}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00091}00091 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} case Case where the ant \textcolor{keywordflow}{is}.}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00092}00092         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00093}00093 \textcolor{stringliteral}{        index = self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a350a2850675418e715c42277d2545d22}{color}}.index(case.cur\_color)}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00094}00094 \textcolor{stringliteral}{        index\_behavior = self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9f55fe179921c95277120224f18ffe30}{behavior}}[index]}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00095}00095 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} index\_behavior == \textcolor{stringliteral}{'L'}:}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00096}00096             self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a0086306565c8d2d16a39e8d2197c5268}{rotate\_left}}()}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00097}00097         \textcolor{keywordflow}{elif} index\_behavior == \textcolor{stringliteral}{'R'}:}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00098}00098             self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ad1ad1d420abb8c6e559647a02084ae39}{rotate\_right}}()}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00099}00099         }
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00100}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc}{00100}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc}{conduct}}(self) :}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00101}00101         \textcolor{stringliteral}{"{}"{}"{}!@brief Move the ant following its conduct}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00102}00102 \textcolor{stringliteral}{        This method moves the ant compare to the conduct wanted. Here the ant}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00103}00103 \textcolor{stringliteral}{        move }\textcolor{keywordflow}{in} the direction where it watches.}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00104}00104         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00105}00105 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8991458ddec367ffc0416fc89a405e00}{direction}} == \textcolor{stringliteral}{'up'} :}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00106}00106             self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21}{move\_up}}()}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00107}00107         \textcolor{keywordflow}{elif} self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8991458ddec367ffc0416fc89a405e00}{direction}} == \textcolor{stringliteral}{'down'} :}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00108}00108             self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463}{move\_down}}()}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00109}00109         \textcolor{keywordflow}{elif} self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8991458ddec367ffc0416fc89a405e00}{direction}} == \textcolor{stringliteral}{'left'} :}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00110}00110             self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f}{move\_left}}()}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00111}00111         \textcolor{keywordflow}{elif} self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8991458ddec367ffc0416fc89a405e00}{direction}} == \textcolor{stringliteral}{'right'} :}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00112}00112             self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2}{move\_right}}()}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00113}00113             }
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00114}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{00114}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move}}(self, coords=(0, 0)):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00115}00115         \textcolor{stringliteral}{"{}"{}"{}!@brief Vectorial ant movement}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00116}00116 \textcolor{stringliteral}{        This method reprensent primitive ant movement. It's update the x and y}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00117}00117 \textcolor{stringliteral}{        of the ant.}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00118}00118 \textcolor{stringliteral}{        }\textcolor{preprocessor}{@param} coords A tuple represents a movement vector (default (0,0))}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00119}00119         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00120}00120 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a6236b4ffd47920b0aec6c11be66b5dce}{x}} += int(coords[0])}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00121}00121 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a54a6cae73d3df178600ef2243792156e}{y}} += int(coords[1])}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00122}00122 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00123}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463}{00123}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463}{move\_down}}(self):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00124}00124         \textcolor{stringliteral}{"{}"{}"{}!@brief Ant move down}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00125}00125 \textcolor{stringliteral}{        This method calls \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move}}() }\textcolor{keyword}{with} a down vector (0, y).}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00126}00126         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00127}00127 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move}}((0, self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9f9d425c64d2acc52fda78bff01b1b76}{speed}}))}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00128}00128 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00129}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21}{00129}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21}{move\_up}}(self):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00130}00130         \textcolor{stringliteral}{"{}"{}"{}!@brief Ant move up}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00131}00131 \textcolor{stringliteral}{        This method calls \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move}}() }\textcolor{keyword}{with} a up vector (0, -\/y).}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00132}00132         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00133}00133 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move}}((0, -\/self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9f9d425c64d2acc52fda78bff01b1b76}{speed}}))}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00134}00134 \textcolor{stringliteral}{        }}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00135}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2}{00135}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2}{move\_right}}(self):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00136}00136         \textcolor{stringliteral}{"{}"{}"{}!@brief Ant move right}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00137}00137 \textcolor{stringliteral}{        This method calls \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move}}() }\textcolor{keyword}{with} a right vector (x, 0).}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00138}00138         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00139}00139 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move}}((self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9f9d425c64d2acc52fda78bff01b1b76}{speed}}, 0))}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00140}00140 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00141}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f}{00141}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f}{move\_left}}(self):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00142}00142         \textcolor{stringliteral}{"{}"{}"{}!@brief Ant move left}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00143}00143 \textcolor{stringliteral}{        This method calls \mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move}}() }\textcolor{keyword}{with} a left vector (-\/x, 0).}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00144}00144         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00145}00145 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63}{move}}((-\/self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9f9d425c64d2acc52fda78bff01b1b76}{speed}}, 0))}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00146}00146 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00147}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ad1ad1d420abb8c6e559647a02084ae39}{00147}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_ad1ad1d420abb8c6e559647a02084ae39}{rotate\_right}}(self):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00148}00148         \textcolor{stringliteral}{"{}"{}"{}!@brief Ant rotate left}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00149}00149 \textcolor{stringliteral}{        This method rotate the ant }\textcolor{keywordflow}{in} its right. It means the index of the}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00150}00150         current rotation \textcolor{keywordflow}{is} increment by one \textcolor{keywordflow}{in} the list of rotation.}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00151}00151         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00152}00152 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8991458ddec367ffc0416fc89a405e00}{direction}} = \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00153}00153 \textcolor{stringliteral}{            self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acb5caf0701f8cbda5d7c756866df3731}{rotation}}[(self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acca86b96fd9b3241019a5f6e36688c1c}{index\_direction}}+1)\%self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9ca39b075feaeabe5c70c868bd8d21f1}{nb\_direction}}]}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00154}00154 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acca86b96fd9b3241019a5f6e36688c1c}{index\_direction}} += 1}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00155}00155 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00156}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a0086306565c8d2d16a39e8d2197c5268}{00156}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a0086306565c8d2d16a39e8d2197c5268}{rotate\_left}}(self):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00157}00157         \textcolor{stringliteral}{"{}"{}"{}!@brief Ant rotate left}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00158}00158 \textcolor{stringliteral}{        This method rotate the ant }\textcolor{keywordflow}{in} its left. It means the index of the}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00159}00159         current rotation \textcolor{keywordflow}{is} decrement by one \textcolor{keywordflow}{in} the list of rotation.}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00160}00160         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00161}00161 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a8991458ddec367ffc0416fc89a405e00}{direction}} = \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00162}00162 \textcolor{stringliteral}{            self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acb5caf0701f8cbda5d7c756866df3731}{rotation}}[(self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acca86b96fd9b3241019a5f6e36688c1c}{index\_direction}}-\/1)\%self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a9ca39b075feaeabe5c70c868bd8d21f1}{nb\_direction}}]}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00163}00163 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_acca86b96fd9b3241019a5f6e36688c1c}{index\_direction}} -\/= 1}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00164}00164 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00165}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a03b7054b55cf2f31c481e0adcf389db8}{00165}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a03b7054b55cf2f31c481e0adcf389db8}{draw}}(self):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00166}00166         \textcolor{stringliteral}{"{}"{}"{}!@brief Ant draw}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00167}00167 \textcolor{stringliteral}{        This method draw the ant }\textcolor{keyword}{with} pyGame draw.rect function. Ant color \textcolor{keywordflow}{is}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00168}00168         red.}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00169}00169         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00170}00170 \textcolor{stringliteral}{        pygame.draw.rect(self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a07eafea871c6278efa1ac5f2ea820240}{screen}}, color.dic["{}red"{}}], pygame.Rect(self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a6236b4ffd47920b0aec6c11be66b5dce}{x}},}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00171}00171                                                        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a54a6cae73d3df178600ef2243792156e}{y}},}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00172}00172                                                        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a30b1e3bbf50a15a354053651c67fe2d5}{taille}},}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00173}00173                                                        self.\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a30b1e3bbf50a15a354053651c67fe2d5}{taille}}))}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00174}00174         }
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00175}\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a5419b7237e7ae7af9506e5532adcb20e}{00175}}     \textcolor{keyword}{def }\mbox{\hyperlink{classlangton_1_1fourmi_1_1_fourmi_a5419b7237e7ae7af9506e5532adcb20e}{\_\_str\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00176}00176         \textcolor{stringliteral}{"{}"{}"{}!@brief Ant string representation}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00177}00177 \textcolor{stringliteral}{        This method redefine the ant's toString() representation}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00178}00178 \textcolor{stringliteral}{        "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00179}00179 \textcolor{stringliteral}{        }\textcolor{keywordflow}{return} f\textcolor{stringliteral}{"{}Fourmi a coord: \{self.x\}, \{self.y\}"{}} \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{fourmi_8py_source_l00180}00180             + f\textcolor{stringliteral}{"{} rotation \{self.direction\}"{}}}
+
+\end{DoxyCode}

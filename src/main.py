@@ -1,16 +1,20 @@
+"""!
+@brief first program to be execute
+@author Durel Enzo
+@author Mallepeyre Nourrane
+@version 1.0
+"""
+
 import pygame
-from game import Game
+
+from langton import Simulation
 
 if __name__ == '__main__' :
 
     pygame.init()
 
-    game = Game(
-        # size_screen=(1000, 720),
-        # size_plateau=(720, 720),
-        res=4,
-        draw_step=1)
+    simulation = Simulation(res=4)
 
-    game.start()
+    simulation.start()
     
     pygame.quit()

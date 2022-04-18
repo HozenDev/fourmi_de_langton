@@ -1,0 +1,4 @@
+<map id="langton_package.simulation.Simulation.init_color" name="langton_package.simulation.Simulation.init_color">
+<area shape="rect" id="node1" title="Init random color from simulation behavior." alt="" coords="264,29,475,71"/>
+<area shape="rect" id="node2" href="$classlangton__package_1_1simulation_1_1_simulation.html#a62bb1fd5406aa4805446f96dbb705ee6" title="Set the behavior before add ants and game start." alt="" coords="5,29,216,71"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="plateau.Plateau.random_schema" name="plateau.Plateau.random_schema">
+<area shape="rect" id="node1" title="Random color schema." alt="" coords="5,150,184,191"/>
+<area shape="rect" id="node2" href="$classfourmi_1_1_fourmi.html#abc5935608d45602f858df7697ef02e3c" title="Ant draw This method draw the ant with pyGame draw.rect function." alt="" coords="257,5,408,32"/>
+<area shape="rect" id="node3" href="$classsimulation_1_1_simulation.html#a079c1eade452ade295ce99d79f9416f0" title="Draw the map and ants." alt="" coords="232,56,433,83"/>
+<area shape="rect" id="node4" href="$classbutton_1_1_button.html#a6fd693c0a7d466ff7e283c5a5ad5c539" title="Draw the button This method draw the button rectangle with pyGame draw.rect function and the text wit..." alt="" coords="259,107,406,133"/>
+<area shape="rect" id="node5" href="$classcheck__box_1_1_check_box.html#ae99db6f2d9413c9be74273b652e6534e" title="Draw the button This method draw the button rectangle with pyGame draw.rect function and the text wit..." alt="" coords="235,157,431,184"/>
+<area shape="rect" id="node6" href="$classinput__box_1_1_input_box.html#a0011f0a2111d3c65b12bbd19fa081670" title="Draw the button This method draw the button rectangle with pyGame draw.rect function and the text wit..." alt="" coords="241,208,425,235"/>
+<area shape="rect" id="node7" href="$classmenu_1_1_menu.html#a3944e4acb96d4886337a876404803231" title="Draw the Menu." alt="" coords="265,259,400,285"/>
+<area shape="rect" id="node8" href="$classplateau_1_1_plateau.html#aaa186690fb8c15fb3cc8c1e12d8cde4a" title="default color schema" alt="" coords="253,309,413,336"/>
+<area shape="rect" id="node9" href="$classplateau_1_1_plateau.html#aaed9fee22ddf6490f645b1af0dda8fd8" title=" " alt="" coords="481,309,679,336"/>
+</map>

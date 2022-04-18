@@ -1,0 +1,4 @@
+<map id="input_box.InputBox" name="input_box.InputBox">
+<area shape="rect" id="node1" title="Represent an InputBox." alt="" coords="5,409,153,663"/>
+<area shape="rect" id="node2" href="$classbutton_1_1_button.html" title="Represent a Button." alt="" coords="12,5,147,361"/>
+</map>

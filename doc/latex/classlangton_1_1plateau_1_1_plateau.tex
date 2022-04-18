@@ -1,0 +1,316 @@
+\hypertarget{classlangton_1_1plateau_1_1_plateau}{}\doxysubsection{langton.\+plateau.\+Plateau Class Reference}
+\label{classlangton_1_1plateau_1_1_plateau}\index{langton.plateau.Plateau@{langton.plateau.Plateau}}
+
+
+Represent a \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau}{Plateau}}.  
+
+
+
+
+Collaboration diagram for langton.\+plateau.\+Plateau\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classlangton_1_1plateau_1_1_plateau__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ad7e657c1c934f5ec13da4b17eddb691a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a3ba4d7a8411cd0d33fcce9d3fd6c22a9}{behavior}}, \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a02832717ac698be525ea750a261fd9b3}{color}}, taille=(1, 1), res=(4, 4))
+\begin{DoxyCompactList}\small\item\em Construct \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau}{Plateau}} object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a327a3f41b922f0502f49c58d4a8a1ced}{random\+\_\+schema}} (self)
+\begin{DoxyCompactList}\small\item\em Random color schema. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a63a0911cc3217ace412e7b7355ca16d3}{reset}} (self)
+\begin{DoxyCompactList}\small\item\em default color schema \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d}{draw\+\_\+case}} (self, pos)
+\item 
+def \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a75bfbd1e8d9afb599e2d3722242dbb62}{draw\+\_\+ant}} (self, pos)
+\item 
+def \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3}{draw}} (self, start=\mbox{[}0, 0\mbox{]}, end=\mbox{[}None, None\mbox{]})
+\begin{DoxyCompactList}\small\item\em default color schema \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ac45d681db894fb867127ce8fc40837ff}{get\+\_\+case}} (self, x, y, res)
+\begin{DoxyCompactList}\small\item\em Get a Case in a position. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ab3e5d646fac4a0d6cef12afc13bdd4d6}{set\+\_\+behavior}} (self, \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a02832717ac698be525ea750a261fd9b3}{color}}, \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a3ba4d7a8411cd0d33fcce9d3fd6c22a9}{behavior}})
+\item 
+def \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_aebd321ef544440def20160c0ac82eacf}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Redefine to\+String() \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau}{Plateau}} method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_ac46de0eff556cba6d0b8589960f43540}{w}}
+\item 
+\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a6552e1db91ddb4384dfe37c2e549da84}{h}}
+\item 
+\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}{schema}}
+\item 
+\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_aeb7ce2e81e21d2e6816f999c51127f53}{screen}}
+\item 
+\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a3ba4d7a8411cd0d33fcce9d3fd6c22a9}{behavior}}
+\item 
+\mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau_a02832717ac698be525ea750a261fd9b3}{color}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Represent a \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau}{Plateau}}. 
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00016}{16}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+
+
+\doxysubsubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_ad7e657c1c934f5ec13da4b17eddb691a}\label{classlangton_1_1plateau_1_1_plateau_ad7e657c1c934f5ec13da4b17eddb691a}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def langton.\+plateau.\+Plateau.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{behavior,  }\item[{}]{color,  }\item[{}]{taille = {\ttfamily (1,~1)},  }\item[{}]{res = {\ttfamily (4,~4)} }\end{DoxyParamCaption})}
+
+
+
+Construct \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau}{Plateau}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em behavior} & String representation of the \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau}{Plateau}} behavior \\
+\hline
+{\em color} & A tuple a int reprensent a rgb color \\
+\hline
+{\em taille} & tuple represent number of Case (default (1, 1)) \\
+\hline
+{\em res} & Pixel representation of each Case (default (4, 4)) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00019}{19}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_aebd321ef544440def20160c0ac82eacf}\label{classlangton_1_1plateau_1_1_plateau_aebd321ef544440def20160c0ac82eacf}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def langton.\+plateau.\+Plateau.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Redefine to\+String() \mbox{\hyperlink{classlangton_1_1plateau_1_1_plateau}{Plateau}} method. 
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00106}{106}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3}\label{classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!draw@{draw}}
+\index{draw@{draw}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily def langton.\+plateau.\+Plateau.\+draw (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{start = {\ttfamily \mbox{[}0,0\mbox{]}},  }\item[{}]{end = {\ttfamily \mbox{[}None,~None\mbox{]}} }\end{DoxyParamCaption})}
+
+
+
+default color schema 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & list of int index where start to draw (default (0, 0)) \\
+\hline
+{\em end} & list of int index where end to draw (default (None, None)) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00070}{70}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_a75bfbd1e8d9afb599e2d3722242dbb62}\label{classlangton_1_1plateau_1_1_plateau_a75bfbd1e8d9afb599e2d3722242dbb62}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!draw\_ant@{draw\_ant}}
+\index{draw\_ant@{draw\_ant}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{draw\_ant()}{draw\_ant()}}
+{\footnotesize\ttfamily def langton.\+plateau.\+Plateau.\+draw\+\_\+ant (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pos }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00062}{62}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1plateau_1_1_plateau_a75bfbd1e8d9afb599e2d3722242dbb62_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d}\label{classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!draw\_case@{draw\_case}}
+\index{draw\_case@{draw\_case}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{draw\_case()}{draw\_case()}}
+{\footnotesize\ttfamily def langton.\+plateau.\+Plateau.\+draw\+\_\+case (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pos }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00052}{52}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_ac45d681db894fb867127ce8fc40837ff}\label{classlangton_1_1plateau_1_1_plateau_ac45d681db894fb867127ce8fc40837ff}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!get\_case@{get\_case}}
+\index{get\_case@{get\_case}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{get\_case()}{get\_case()}}
+{\footnotesize\ttfamily def langton.\+plateau.\+Plateau.\+get\+\_\+case (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{res }\end{DoxyParamCaption})}
+
+
+
+Get a Case in a position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Horizontal position of the Case \\
+\hline
+{\em y} & Vertical position of the Case \\
+\hline
+{\em res} & Resolution of the Case \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00093}{93}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_a327a3f41b922f0502f49c58d4a8a1ced}\label{classlangton_1_1plateau_1_1_plateau_a327a3f41b922f0502f49c58d4a8a1ced}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!random\_schema@{random\_schema}}
+\index{random\_schema@{random\_schema}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{random\_schema()}{random\_schema()}}
+{\footnotesize\ttfamily def langton.\+plateau.\+Plateau.\+random\+\_\+schema (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Random color schema. 
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00037}{37}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1plateau_1_1_plateau_a327a3f41b922f0502f49c58d4a8a1ced_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_a63a0911cc3217ace412e7b7355ca16d3}\label{classlangton_1_1plateau_1_1_plateau_a63a0911cc3217ace412e7b7355ca16d3}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!reset@{reset}}
+\index{reset@{reset}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def langton.\+plateau.\+Plateau.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+default color schema 
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00045}{45}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlangton_1_1plateau_1_1_plateau_a63a0911cc3217ace412e7b7355ca16d3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_ab3e5d646fac4a0d6cef12afc13bdd4d6}\label{classlangton_1_1plateau_1_1_plateau_ab3e5d646fac4a0d6cef12afc13bdd4d6}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!set\_behavior@{set\_behavior}}
+\index{set\_behavior@{set\_behavior}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{set\_behavior()}{set\_behavior()}}
+{\footnotesize\ttfamily def langton.\+plateau.\+Plateau.\+set\+\_\+behavior (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{color,  }\item[{}]{behavior }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00102}{102}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+
+
+\doxysubsubsection{Member Data Documentation}
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_a3ba4d7a8411cd0d33fcce9d3fd6c22a9}\label{classlangton_1_1plateau_1_1_plateau_a3ba4d7a8411cd0d33fcce9d3fd6c22a9}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!behavior@{behavior}}
+\index{behavior@{behavior}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{behavior}{behavior}}
+{\footnotesize\ttfamily langton.\+plateau.\+Plateau.\+behavior}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00034}{34}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_a02832717ac698be525ea750a261fd9b3}\label{classlangton_1_1plateau_1_1_plateau_a02832717ac698be525ea750a261fd9b3}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!color@{color}}
+\index{color@{color}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily langton.\+plateau.\+Plateau.\+color}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00035}{35}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_a6552e1db91ddb4384dfe37c2e549da84}\label{classlangton_1_1plateau_1_1_plateau_a6552e1db91ddb4384dfe37c2e549da84}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!h@{h}}
+\index{h@{h}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily langton.\+plateau.\+Plateau.\+h}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00027}{27}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}\label{classlangton_1_1plateau_1_1_plateau_a9f5d4e886adfc87b1c80bb20850549a7}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!schema@{schema}}
+\index{schema@{schema}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{schema}{schema}}
+{\footnotesize\ttfamily langton.\+plateau.\+Plateau.\+schema}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00028}{28}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_aeb7ce2e81e21d2e6816f999c51127f53}\label{classlangton_1_1plateau_1_1_plateau_aeb7ce2e81e21d2e6816f999c51127f53}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!screen@{screen}}
+\index{screen@{screen}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily langton.\+plateau.\+Plateau.\+screen}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00032}{32}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+\mbox{\Hypertarget{classlangton_1_1plateau_1_1_plateau_ac46de0eff556cba6d0b8589960f43540}\label{classlangton_1_1plateau_1_1_plateau_ac46de0eff556cba6d0b8589960f43540}} 
+\index{langton.plateau.Plateau@{langton.plateau.Plateau}!w@{w}}
+\index{w@{w}!langton.plateau.Plateau@{langton.plateau.Plateau}}
+\doxyparagraph{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily langton.\+plateau.\+Plateau.\+w}
+
+
+
+Definition at line \mbox{\hyperlink{plateau_8py_source_l00026}{26}} of file \mbox{\hyperlink{plateau_8py_source}{plateau.\+py}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{plateau_8py}{plateau.\+py}}\end{DoxyCompactItemize}

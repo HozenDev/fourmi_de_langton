@@ -1,0 +1,11 @@
+<map id="langton.plateau.Plateau.valide_intervalle" name="langton.plateau.Plateau.valide_intervalle">
+<area shape="rect" id="node1" title="valide start &amp; end in schema" alt="" coords="855,108,1076,150"/>
+<area shape="rect" id="node2" href="$classlangton_1_1plateau_1_1_plateau.html#aa519fa85d8aea1c7ba0199cb6c3f9eb3" title="default color schema" alt="" coords="593,116,807,142"/>
+<area shape="rect" id="node7" href="$classlangton_1_1plateau_1_1_plateau.html#a4a1a7c14b8a4e52c83b59ed5ec2e33bc" title="random color schema" alt="" coords="11,61,241,88"/>
+<area shape="rect" id="node8" href="$classlangton_1_1plateau_1_1_plateau.html#a6a67a68056488a76424f92b245d97a66" title="reset schema in white" alt="" coords="19,246,233,273"/>
+<area shape="rect" id="node3" href="$classlangton_1_1simulation_1_1_simulation.html#a9da91713f42652792e9ca626148a5d85" title="Simulation iterator." alt="" coords="309,79,531,120"/>
+<area shape="rect" id="node4" href="$classlangton_1_1plateau_1_1_plateau.html#a4901f3e6df258fea763776a095b2488d" title="draw a case in specific schema position" alt="" coords="295,196,545,222"/>
+<area shape="rect" id="node6" href="$classlangton_1_1plateau_1_1_plateau.html#a7ef36e6162676469a22dd4415175e787" title="draw multiprocessing" alt="" coords="299,145,541,172"/>
+<area shape="rect" id="node9" href="$classlangton_1_1fourmi_1_1_fourmi.html#a8668301bd55f2d65fc909d69091436cc" title="Reset the Ant This method hard reset the ant at its beginning direction, position." alt="" coords="318,28,522,54"/>
+<area shape="rect" id="node5" href="$classlangton_1_1plateau_1_1_plateau.html#a75bfbd1e8d9afb599e2d3722242dbb62" title="draw optimize cases near ant" alt="" coords="5,196,247,222"/>
+</map>

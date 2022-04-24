@@ -11,5 +11,6 @@ var searchData=
   ['color_2epy_8',['color.py',['../color_8py.html',1,'']]],
   ['conduct_9',['conduct',['../classlangton_1_1fourmi_1_1_fourmi.html#a63c2c0c35691f57c64224df4d96f8edc',1,'langton::fourmi::Fourmi']]],
   ['const_2epy_10',['const.py',['../const_8py.html',1,'']]],
-  ['cur_5fcolor_11',['cur_color',['../classlangton_1_1case_1_1_case.html#ac12c76d58d65eb861450d45866ce38fe',1,'langton::case::Case']]]
+  ['cpu_11',['cpu',['../classlangton_1_1plateau_1_1_plateau.html#adeb5743fc1b0b1d60ea35f5a9ae088ad',1,'langton::plateau::Plateau']]],
+  ['cur_5fcolor_12',['cur_color',['../classlangton_1_1case_1_1_case.html#ac12c76d58d65eb861450d45866ce38fe',1,'langton::case::Case']]]
 ];

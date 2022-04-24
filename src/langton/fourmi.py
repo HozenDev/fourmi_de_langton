@@ -82,7 +82,7 @@ class Fourmi :
         This method change the color of the case where the ant is.
         @param case Case where the ant is
         """
-        index = self.color.index(case.cur_color)
+        index = self.color.index(case.get_color())
         case.set_color(self.color[(index+1)%len(self.color)])
         
     def rotate(self, case):
@@ -90,7 +90,7 @@ class Fourmi :
         This method rotate the ant following the ant's behavior.
         @param case Case where the ant is.
         """
-        index = self.color.index(case.cur_color)
+        index = self.color.index(case.get_color())
         index_behavior = self.behavior[index]
         if index_behavior == 'L':
             self.rotate_left()

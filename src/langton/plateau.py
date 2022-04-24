@@ -7,6 +7,9 @@
 import pygame
 import random
 import numpy as np
+import time
+from multiprocessing import Process, Manager
+from multiprocessing import cpu_count
 
 from utils import color
 
@@ -22,9 +25,8 @@ class Plateau :
         @param taille tuple represent number of Case (default (1, 1))
         @param res Pixel representation of each Case (default (4, 4))
         """
-        self.w = taille[0] # width of plateau
-        self.h = taille[1] # height of plateau)
-        self.schema = [[Case((res[0], res[1])) # schema of plateau
+        self.w, self.h = taille
+        self.schema = [[Case(res, (j, i))
                         for j in range(self.w)]
                        for i in range(self.h)]
         # SCREEN #
@@ -32,44 +34,73 @@ class Plateau :
         # BEHAVIOR #
         self.behavior = behavior
         self.color = color
-        
-    def random_schema(self):
-        """!@brief Random color schema"""
-        for line in self.schema:
-            for i in line:
-                r = random.choice(self.color)
-                i.set_color(r)
-        self.draw()
-                
-    def reset(self):
-        """!@brief default color schema"""        
-        for line in self.schema:
-            for i in line:
-                i.set_color(color.dic["white"])
-        self.draw()
+        # MULTIPROCESSING #
+        self.cpu = cpu_count()
+        self.ratio = int(self.w/self.cpu)
+        self.intervalles = [([i*self.ratio, 0],
+                             [(i+1)*self.ratio, self.h])
+                            for i in range(self.cpu-1)]
+        self.intervalles.append(([self.ratio*(self.cpu-1), 0],
+                                 [self.w, self.h]))
 
-    def draw_case(self, pos):
-        x, y = pos
-        pygame.draw.rect(
-            self.screen,
-            self.schema[x][y].cur_color,
-            pygame.Rect(y*self.schema[x][y].w,
-                        x*self.schema[x][y].h,
-                        self.schema[x][y].w,
-                        self.schema[x][y].h))        
-        
-    def draw_ant(self, pos):
-        y, x = pos
-        self.draw_case((x, y))
-        self.draw_case((x, (y+1)%self.w))
-        self.draw_case((x, (y-1)%self.w))
-        self.draw_case(((x+1)%self.h, y))
-        self.draw_case(((x-1)%self.h, y))
-        
-    def draw(self, start=[0,0], end=[None, None]):
-        """!@brief default color schema
+    def multiprocessing(self, fun):
+        """!@brief create a multiprocess
+        @param fun function reference which call in process
+        """
+        process = [Process(target=fun,
+                           args=self.intervalles[i])
+                   for i in range(self.cpu)]
+        for x in process: x.start()
+        for x in process: x.join()
+
+    def draw_mp(self):
+        """!@brief draw multiprocessing
+        """
+        self.multiprocessing(self.draw)
+
+    def reset(self, start=[0, 0], end=[None, None]):
+        """!@brief reset schema in white
         @param start list of int index where start to draw (default (0, 0))
         @param end list of int index where end to draw (default (None, None))
+        """
+        start, end = self.valide_intervalle(start, end)
+        for i in range(start[1], end[1]):
+            for j in range(start[0], end[0]):
+                self.set_color_case((i, j), color.dic["white"])
+        self.draw_mp()
+        
+    def random(self, start=[0, 0], end=[None, None]):
+        """!@brief random color schema
+        @param start list of int index where start to draw (default (0, 0))
+        @param end list of int index where end to draw (default (None, None))
+        """
+        start, end = self.valide_intervalle(start, end)
+        for i in range(start[1], end[1]):
+            for j in range(start[0], end[0]):
+                r = random.choice(self.color)
+                self.set_color_case((i, j), r)
+        self.draw_mp()
+            
+    def set_color_case(self, pos, colour):
+        """!@brief set color in a Case
+        @param pos tuple of position of the Case
+        @param colour colour to set in the Case
+        """
+        x, y = pos
+        self.schema[x][y].set_color(colour)
+    
+    def draw_case(self, pos):
+        """!@brief draw a case in specific schema position
+        @param pos tuple of position of the Case
+        """
+        x, y = pos
+        self.schema[x][y].draw()
+
+    def valide_intervalle(self, start, end):
+        """!@brief valide start & end in schema
+        @param start list of int index where start to draw (default (0, 0))
+        @param end list of int index where end to draw (default (None, None))
+        @return a valid couple of start & end (valid index)
         """
         if end[0] == None:      # if end_x not setting in draw()
             end[0] = self.w
@@ -84,11 +115,30 @@ class Plateau :
                 end[0] = end[0]%self.w
             if end[1] > self.h:
                 end[1] = end[1]%self.h
-
-            for i in range(start[1], end[1]):
-                for j in range(start[0], end[0]):
-                    self.draw_case((i, j))
-
+        return start, end
+        
+    def draw_ant(self, pos):
+        """!@brief draw optimize cases near ant
+        @param pos postion of the ant
+        """
+        y, x = pos
+        self.draw_case((x, y))
+        self.draw_case((x, (y+1)%self.w))
+        self.draw_case((x, (y-1)%self.w))
+        self.draw_case(((x+1)%self.h, y))
+        self.draw_case(((x-1)%self.h, y))
+        
+    def draw(self, start=[0,0], end=[None, None]):
+        """!@brief default color schema
+        @param start list of int index where start to draw (default (0, 0))
+        @param end list of int index where end to draw (default (None, None))
+        """
+        start, end = self.valide_intervalle(start, end)
+        for i in range(start[1], end[1]):
+            for j in range(start[0], end[0]):
+                # self.draw_case((i, j))
+                self.schema[i][j].draw()
+                
     def get_case(self, x, y, res):
         """!@brief Get a Case in a position
         @param x Horizontal position of the Case
@@ -99,6 +149,10 @@ class Plateau :
         return case
 
     def set_behavior(self, color, behavior):
+        """!@brief Modify grid color & behavior
+        @param color list of color
+        @param behavior string of the simulation behavior
+        """
         self.color = color
         self.behavior = behavior
     

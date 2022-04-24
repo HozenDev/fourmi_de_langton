@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['w_0',['w',['../classlangton_1_1case_1_1_case.html#aa82e76ebe5d8dbcb5149793dceb37e25',1,'langton.case.Case.w()'],['../classlangton_1_1plateau_1_1_plateau.html#ac46de0eff556cba6d0b8589960f43540',1,'langton.plateau.Plateau.w()']]]
+  ['x_0',['x',['../classlangton_1_1fourmi_1_1_fourmi.html#a6236b4ffd47920b0aec6c11be66b5dce',1,'langton::fourmi::Fourmi']]]
 ];

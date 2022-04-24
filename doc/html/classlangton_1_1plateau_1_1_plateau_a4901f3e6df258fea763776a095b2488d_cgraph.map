@@ -1,0 +1,5 @@
+<map id="langton.plateau.Plateau.draw_case" name="langton.plateau.Plateau.draw_case">
+<area shape="rect" id="node1" title="draw a case in specific schema position" alt="" coords="5,29,256,56"/>
+<area shape="rect" id="node2" href="$classlangton_1_1plateau_1_1_plateau.html#aa519fa85d8aea1c7ba0199cb6c3f9eb3" title="default color schema" alt="" coords="304,29,517,56"/>
+<area shape="rect" id="node3" href="$classlangton_1_1plateau_1_1_plateau.html#a8d020cf5b9240ea9e00e2628c5fb4cab" title="valide start &amp; end in schema" alt="" coords="565,22,787,63"/>
+</map>

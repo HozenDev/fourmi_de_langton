@@ -128,13 +128,14 @@ class Simulation:
         """!@brief Global start, here when ants aren't running"""
         
         self.plateau.reset()
-        self.plateau.draw()
         self.menu.draw(self.screen)
 
+        # self.plateau.compare_fun(self.plateau.draw, self.plateau.draw_mp)
+        
         while self.start:
 
             self.menu.enable() # enable all buttons in the menu
-
+            
             if self.nb_fourmi <= 0:
                 self.menu.disable(self.btn_play,
                                   self.btn_next,
@@ -188,15 +189,12 @@ class Simulation:
         """!@brief Reset the simulation"""
         if not self.run :
             if self.random_grid:
-                self.plateau.random_schema()
+                self.plateau.random()
             else :
                 self.plateau.reset()
-
+                
             self.fourmi_list = [].copy()
             self.nb_fourmi = 0
-
-            for f in self.fourmi_list:
-                f.reset()
             
             self.iteration = 0
             self.end = False

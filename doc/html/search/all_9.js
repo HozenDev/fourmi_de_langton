@@ -14,8 +14,9 @@ var searchData=
   ['inputbox_11',['InputBox',['../classbuttons_1_1input__box_1_1_input_box.html',1,'buttons::input_box']]],
   ['int_5fcolor_12',['int_color',['../classbuttons_1_1input__box_1_1_input_box.html#a0b1e52ef5867b7f4d903afc92852fb06',1,'buttons::input_box::InputBox']]],
   ['int_5frect_13',['int_rect',['../classbuttons_1_1input__box_1_1_input_box.html#a926bfb0a39d87eab35c1e3fb9ece9bf1',1,'buttons::input_box::InputBox']]],
-  ['inverse_5fcolor_5fcase_14',['inverse_color_case',['../classlangton_1_1fourmi_1_1_fourmi.html#abd0d697fe07a100233036d8aca30c01e',1,'langton::fourmi::Fourmi']]],
-  ['is_5fout_15',['is_out',['../classlangton_1_1fourmi_1_1_fourmi.html#ab960d00f0a46420e624031e83204763c',1,'langton::fourmi::Fourmi']]],
-  ['it_16',['it',['../classlangton_1_1simulation_1_1_simulation.html#a1e53dde8cab6c40f5807bfefae18710a',1,'langton::simulation::Simulation']]],
-  ['iteration_17',['iteration',['../classlangton_1_1simulation_1_1_simulation.html#ac3344803777f8e212e5b42cc5b650365',1,'langton::simulation::Simulation']]]
+  ['intervalles_14',['intervalles',['../classlangton_1_1plateau_1_1_plateau.html#ae9120bf50a5ec2ad10a26cdf60edc8c8',1,'langton::plateau::Plateau']]],
+  ['inverse_5fcolor_5fcase_15',['inverse_color_case',['../classlangton_1_1fourmi_1_1_fourmi.html#abd0d697fe07a100233036d8aca30c01e',1,'langton::fourmi::Fourmi']]],
+  ['is_5fout_16',['is_out',['../classlangton_1_1fourmi_1_1_fourmi.html#ab960d00f0a46420e624031e83204763c',1,'langton::fourmi::Fourmi']]],
+  ['it_17',['it',['../classlangton_1_1simulation_1_1_simulation.html#a1e53dde8cab6c40f5807bfefae18710a',1,'langton::simulation::Simulation']]],
+  ['iteration_18',['iteration',['../classlangton_1_1simulation_1_1_simulation.html#ac3344803777f8e212e5b42cc5b650365',1,'langton::simulation::Simulation']]]
 ];

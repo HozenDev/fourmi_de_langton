@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.15)  18 APR 2022 21:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.15)  24 APR 2022 21:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -874,30 +874,34 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 Package hyperref Info: Option `pageanchor' set `true' on input line 171.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 173.
-
-(./namespaces.tex
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 1.
- [1]) (./hierarchy.tex) (./annotated.tex [2]) (./files.tex
-[3]) (./namespacebuttons.tex
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-1.
-
+ (./index.tex
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 3
+.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 11.
+(Font)              scaled to size 8.99994pt on input line 3.
+ [1]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 8.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 8.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 8.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 8.
+)
+(./namespaces.tex [2]) (./hierarchy.tex) (./annotated.tex [3]) (./files.tex)
+(./namespacebuttons.tex [4]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.09995pt on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 12.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 14.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 14.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 8.99994pt on input line 24.
 
@@ -915,12 +919,12 @@ Underfull \hbox (badness 10000) detected at line 18
 [][][]
  []
 
-[4]
+
 Underfull \hbox (badness 10000) detected at line 23
 [][][]
  []
 
-) (./namespacebuttons_1_1check__box.tex
+) (./namespacebuttons_1_1check__box.tex [5]
 Underfull \hbox (badness 10000) detected at line 18
 [][][]
  []
@@ -940,7 +944,7 @@ Underfull \hbox (badness 10000) detected at line 23
 [][][]
  []
 
-) (./namespacebuttons_1_1menu.tex [5]
+) (./namespacebuttons_1_1menu.tex [6]
 Underfull \hbox (badness 10000) detected at line 18
 [][][]
  []
@@ -955,12 +959,12 @@ Underfull \hbox (badness 10000) detected at line 24
 [][][]
  []
 
-[6]
+
 Underfull \hbox (badness 10000) detected at line 29
 [][][]
  []
 
-) (./namespacelangton_1_1case.tex
+) (./namespacelangton_1_1case.tex [7]
 Underfull \hbox (badness 10000) detected at line 18
 [][][]
  []
@@ -980,7 +984,7 @@ Underfull \hbox (badness 10000) detected at line 23
 [][][]
  []
 
-) (./namespacelangton_1_1plateau.tex [7]
+) (./namespacelangton_1_1plateau.tex [8]
 Underfull \hbox (badness 10000) detected at line 18
 [][][]
  []
@@ -1000,7 +1004,7 @@ Underfull \hbox (badness 10000) detected at line 23
 [][][]
  []
 
-) (./namespacemain.tex [8]
+) (./namespacemain.tex [9]
 Underfull \hbox (badness 10000) detected at line 18
 [][][]
  []
@@ -1017,7 +1021,7 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 33
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ))
-(./namespaceutils.tex [9]
+(./namespaceutils.tex
 Underfull \hbox (badness 10000) detected at line 20
 [][][]
  []
@@ -1027,7 +1031,7 @@ Underfull \hbox (badness 10000) detected at line 25
 [][][]
  []
 
-) (./namespaceutils_1_1color.tex
+) (./namespaceutils_1_1color.tex [10]
 Underfull \hbox (badness 10000) detected at line 48
 [][][]
  []
@@ -1037,7 +1041,7 @@ Underfull \hbox (badness 10000) detected at line 53
 [][][]
  []
 
-[10] [11]) (./namespaceutils_1_1const.tex [12]
+[11] [12]) (./namespaceutils_1_1const.tex [13]
 Underfull \hbox (badness 10000) detected at line 24
 [][][]
  []
@@ -1054,7 +1058,7 @@ pdfTeX warning: pdflatex (file ./classbuttons_1_1button_1_1_button__inherit__gr
 aph.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
 e
 >
-<classbuttons_1_1button_1_1_button__inherit__graph.pdf, id=946, 411.5375pt x 59
+<classbuttons_1_1button_1_1_button__inherit__graph.pdf, id=980, 411.5375pt x 59
 7.23125pt>
 File: classbuttons_1_1button_1_1_button__inherit__graph.pdf Graphic file (type 
 pdf)
@@ -1062,25 +1066,25 @@ pdf)
 Package pdftex.def Info: classbuttons_1_1button_1_1_button__inherit__graph.pdf 
  used on input line 14.
 (pdftex.def)             Requested size: 350.0pt x 507.93146pt.
- [13] [14] <./classbuttons_1_1button_1_1_button__coll__graph.pdf
+ [14] [15] <./classbuttons_1_1button_1_1_button__coll__graph.pdf
 
 pdfTeX warning: pdflatex (file ./classbuttons_1_1button_1_1_button__coll__graph
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<classbuttons_1_1button_1_1_button__coll__graph.pdf, id=979, 203.76125pt x 348.
-30125pt>
+<classbuttons_1_1button_1_1_button__coll__graph.pdf, id=1013, 203.76125pt x 348
+.30125pt>
 File: classbuttons_1_1button_1_1_button__coll__graph.pdf Graphic file (type pdf
 )
 <use classbuttons_1_1button_1_1_button__coll__graph.pdf>
 Package pdftex.def Info: classbuttons_1_1button_1_1_button__coll__graph.pdf  us
 ed on input line 23.
 (pdftex.def)             Requested size: 203.0pt x 347.01425pt.
- [15]
+ [16]
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
 (Font)              Font shape `TS1/phv/m/sl' tried instead on input line 34.
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 34.
- [16]
+ [17]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 88.
 LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 8
@@ -1090,7 +1094,7 @@ File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
 LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <8> not available
 (Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 88.
- [17] <./classbuttons_1_1button_1_1_button_ac4f99f58b27912deb3b8b884119f736a_ic
+ [18] <./classbuttons_1_1button_1_1_button_ac4f99f58b27912deb3b8b884119f736a_ic
 graph.pdf
 
 pdfTeX warning: pdflatex (file ./classbuttons_1_1button_1_1_button_ac4f99f58b27
@@ -1098,57 +1102,108 @@ pdfTeX warning: pdflatex (file ./classbuttons_1_1button_1_1_button_ac4f99f58b27
 p included in a single page
 >
 <classbuttons_1_1button_1_1_button_ac4f99f58b27912deb3b8b884119f736a_icgraph.pd
-f, id=1074, 440.64626pt x 237.88875pt>
+f, id=1109, 658.46pt x 188.705pt>
 File: classbuttons_1_1button_1_1_button_ac4f99f58b27912deb3b8b884119f736a_icgra
 ph.pdf Graphic file (type pdf)
 <use classbuttons_1_1button_1_1_button_ac4f99f58b27912deb3b8b884119f736a_icgrap
 h.pdf>
 Package pdftex.def Info: classbuttons_1_1button_1_1_button_ac4f99f58b27912deb3b
-8b884119f736a_icgraph.pdf  used on input line 166.
-(pdftex.def)             Requested size: 350.0pt x 188.95729pt.
- [18]
-Underfull \hbox (badness 10000) detected at line 193
+8b884119f736a_icgraph.pdf  used on input line 167.
+(pdftex.def)             Requested size: 350.0pt x 100.30685pt.
+ [19]
+Underfull \hbox (badness 10000) detected at line 194
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 210
+Underfull \hbox (badness 10000) detected at line 211
 [][][]
  []
 
  <./classbuttons_1_1button_1_1_button_a8a596d4166c7736581e88d3dc4e94191_icgraph
 .pdf>
 <classbuttons_1_1button_1_1_button_a8a596d4166c7736581e88d3dc4e94191_icgraph.pd
-f, id=1107, 465.74pt x 168.63pt>
+f, id=1144, 465.74pt x 168.63pt>
 File: classbuttons_1_1button_1_1_button_a8a596d4166c7736581e88d3dc4e94191_icgra
 ph.pdf Graphic file (type pdf)
 <use classbuttons_1_1button_1_1_button_a8a596d4166c7736581e88d3dc4e94191_icgrap
 h.pdf>
 Package pdftex.def Info: classbuttons_1_1button_1_1_button_a8a596d4166c7736581e
-88d3dc4e94191_icgraph.pdf  used on input line 244.
+88d3dc4e94191_icgraph.pdf  used on input line 245.
 (pdftex.def)             Requested size: 350.0pt x 126.72948pt.
- [19] [20]) (./classlangton_1_1case_1_1_case.tex <./classlangton_1_1case_1_1_ca
-se__coll__graph.pdf>
-<classlangton_1_1case_1_1_case__coll__graph.pdf, id=1177, 186.6975pt x 182.6825
-pt>
+ [20] [21]) (./classlangton_1_1case_1_1_case.tex <./classlangton_1_1case_1_1_ca
+se__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classlangton_1_1case_1_1_case__coll__graph.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>
+<classlangton_1_1case_1_1_case__coll__graph.pdf, id=1215, 186.6975pt x 215.8062
+4pt>
 File: classlangton_1_1case_1_1_case__coll__graph.pdf Graphic file (type pdf)
 <use classlangton_1_1case_1_1_case__coll__graph.pdf>
 Package pdftex.def Info: classlangton_1_1case_1_1_case__coll__graph.pdf  used o
-n input line 14.
-(pdftex.def)             Requested size: 186.0pt x 182.00745pt.
- [21] [22] <./classlangton_1_1case_1_1_case_a6ec5c7b90d247462c24d71ddccb0e2fb_c
+n input line 15.
+(pdftex.def)             Requested size: 186.0pt x 215.00882pt.
+ [22] [23] <./classlangton_1_1case_1_1_case_a6c6ce1a5c7ef0782f0610a0e04638d88_c
 graph.pdf>
+<classlangton_1_1case_1_1_case_a6c6ce1a5c7ef0782f0610a0e04638d88_cgraph.pdf, id
+=1284, 375.4025pt x 111.41624pt>
+File: classlangton_1_1case_1_1_case_a6c6ce1a5c7ef0782f0610a0e04638d88_cgraph.pd
+f Graphic file (type pdf)
+<use classlangton_1_1case_1_1_case_a6c6ce1a5c7ef0782f0610a0e04638d88_cgraph.pdf
+>
+Package pdftex.def Info: classlangton_1_1case_1_1_case_a6c6ce1a5c7ef0782f0610a0
+e04638d88_cgraph.pdf  used on input line 95.
+(pdftex.def)             Requested size: 350.0pt x 103.88293pt.
+ <./classlangton_1_1case_1_1_case_a6c6ce1a5c7ef0782f0610a0e04638d88_icgraph.pdf
+
+
+pdfTeX warning: pdflatex (file ./classlangton_1_1case_1_1_case_a6c6ce1a5c7ef078
+2f0610a0e04638d88_icgraph.pdf): PDF inclusion: multiple pdfs with page group in
+cluded in a single page
+>
+<classlangton_1_1case_1_1_case_a6c6ce1a5c7ef0782f0610a0e04638d88_icgraph.pdf, i
+d=1292, 641.39626pt x 188.705pt>
+File: classlangton_1_1case_1_1_case_a6c6ce1a5c7ef0782f0610a0e04638d88_icgraph.p
+df Graphic file (type pdf)
+<use classlangton_1_1case_1_1_case_a6c6ce1a5c7ef0782f0610a0e04638d88_icgraph.pd
+f>
+Package pdftex.def Info: classlangton_1_1case_1_1_case_a6c6ce1a5c7ef0782f0610a0
+e04638d88_icgraph.pdf  used on input line 103.
+(pdftex.def)             Requested size: 350.0pt x 102.97607pt.
+ [24]
+Underfull \hbox (badness 10000) detected at line 116
+[][][]
+ []
+
+ <./classlangton_1_1case_1_1_case_a2d8eb0322e8f4b11e2ea5ed8e32a01e8_icgraph.pdf
+>
+<classlangton_1_1case_1_1_case_a2d8eb0322e8f4b11e2ea5ed8e32a01e8_icgraph.pdf, i
+d=1316, 803.0pt x 188.705pt>
+File: classlangton_1_1case_1_1_case_a2d8eb0322e8f4b11e2ea5ed8e32a01e8_icgraph.p
+df Graphic file (type pdf)
+<use classlangton_1_1case_1_1_case_a2d8eb0322e8f4b11e2ea5ed8e32a01e8_icgraph.pd
+f>
+Package pdftex.def Info: classlangton_1_1case_1_1_case_a2d8eb0322e8f4b11e2ea5ed
+8e32a01e8_icgraph.pdf  used on input line 128.
+(pdftex.def)             Requested size: 350.0pt x 82.25012pt.
+ <./classlangton_1_1case_1_1_case_a6ec5c7b90d247462c24d71ddccb0e2fb_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classlangton_1_1case_1_1_case_a6ec5c7b90d24746
+2c24d71ddccb0e2fb_cgraph.pdf): PDF inclusion: multiple pdfs with page group inc
+luded in a single page
+>
 <classlangton_1_1case_1_1_case_a6ec5c7b90d247462c24d71ddccb0e2fb_cgraph.pdf, id
-=1242, 390.45876pt x 111.41624pt>
+=1327, 390.45876pt x 111.41624pt>
 File: classlangton_1_1case_1_1_case_a6ec5c7b90d247462c24d71ddccb0e2fb_cgraph.pd
 f Graphic file (type pdf)
 <use classlangton_1_1case_1_1_case_a6ec5c7b90d247462c24d71ddccb0e2fb_cgraph.pdf
 >
 Package pdftex.def Info: classlangton_1_1case_1_1_case_a6ec5c7b90d247462c24d71d
-dccb0e2fb_cgraph.pdf  used on input line 90.
+dccb0e2fb_cgraph.pdf  used on input line 154.
 (pdftex.def)             Requested size: 350.0pt x 99.87587pt.
- [23] [24]
-Underfull \hbox (badness 10000) detected at line 108
+ [25] [26]
+Underfull \hbox (badness 10000) detected at line 172
 [][][]
  []
 
@@ -1160,22 +1215,17 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1case_1_1_case_ac3c535fbe3cbffd
 cluded in a single page
 >
 <classlangton_1_1case_1_1_case_ac3c535fbe3cbffd337e2d19cd5861dd4_icgraph.pdf, i
-d=1269, 390.45876pt x 111.41624pt>
+d=1355, 390.45876pt x 111.41624pt>
 File: classlangton_1_1case_1_1_case_ac3c535fbe3cbffd337e2d19cd5861dd4_icgraph.p
 df Graphic file (type pdf)
 <use classlangton_1_1case_1_1_case_ac3c535fbe3cbffd337e2d19cd5861dd4_icgraph.pd
 f>
 Package pdftex.def Info: classlangton_1_1case_1_1_case_ac3c535fbe3cbffd337e2d19
-cd5861dd4_icgraph.pdf  used on input line 124.
+cd5861dd4_icgraph.pdf  used on input line 188.
 (pdftex.def)             Requested size: 350.0pt x 99.87587pt.
-) (./classbuttons_1_1check__box_1_1_check_box.tex <./classbuttons_1_1check__box
-_1_1_check_box__inherit__graph.pdf
-
-pdfTeX warning: pdflatex (file ./classbuttons_1_1check__box_1_1_check_box__inhe
-rit__graph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
-gle page
->
-<classbuttons_1_1check__box_1_1_check_box__inherit__graph.pdf, id=1285, 240.9pt
+) (./classbuttons_1_1check__box_1_1_check_box.tex [27] <./classbuttons_1_1check
+__box_1_1_check_box__inherit__graph.pdf>
+<classbuttons_1_1check__box_1_1_check_box__inherit__graph.pdf, id=1388, 240.9pt
  x 597.23125pt>
 File: classbuttons_1_1check__box_1_1_check_box__inherit__graph.pdf Graphic file
  (type pdf)
@@ -1183,8 +1233,13 @@ File: classbuttons_1_1check__box_1_1_check_box__inherit__graph.pdf Graphic file
 Package pdftex.def Info: classbuttons_1_1check__box_1_1_check_box__inherit__gra
 ph.pdf  used on input line 14.
 (pdftex.def)             Requested size: 221.86226pt x 550.0pt.
- [25] <./classbuttons_1_1check__box_1_1_check_box__coll__graph.pdf>
-<classbuttons_1_1check__box_1_1_check_box__coll__graph.pdf, id=1308, 240.9pt x 
+ [28] <./classbuttons_1_1check__box_1_1_check_box__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classbuttons_1_1check__box_1_1_check_box__coll
+__graph.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>
+<classbuttons_1_1check__box_1_1_check_box__coll__graph.pdf, id=1403, 240.9pt x 
 597.23125pt>
 File: classbuttons_1_1check__box_1_1_check_box__coll__graph.pdf Graphic file (t
 ype pdf)
@@ -1192,11 +1247,10 @@ ype pdf)
 Package pdftex.def Info: classbuttons_1_1check__box_1_1_check_box__coll__graph.
 pdf  used on input line 23.
 (pdftex.def)             Requested size: 221.86226pt x 550.0pt.
- [26]
-[27] <./classbuttons_1_1check__box_1_1_check_box_aa6e7ab9862e039488c493e7c2ef53
-015_cgraph.pdf>
+ [29] [30] <./classbuttons_1_1check__box_1_1_check_box_aa6e7ab9862e039488c493e7
+c2ef53015_cgraph.pdf>
 <classbuttons_1_1check__box_1_1_check_box_aa6e7ab9862e039488c493e7c2ef53015_cgr
-aph.pdf, id=1353, 243.91125pt x 129.48375pt>
+aph.pdf, id=1448, 243.91125pt x 129.48375pt>
 File: classbuttons_1_1check__box_1_1_check_box_aa6e7ab9862e039488c493e7c2ef5301
 5_cgraph.pdf Graphic file (type pdf)
 <use classbuttons_1_1check__box_1_1_check_box_aa6e7ab9862e039488c493e7c2ef53015
@@ -1204,7 +1258,7 @@ _cgraph.pdf>
 Package pdftex.def Info: classbuttons_1_1check__box_1_1_check_box_aa6e7ab9862e0
 39488c493e7c2ef53015_cgraph.pdf  used on input line 107.
 (pdftex.def)             Requested size: 243.0pt x 129.00133pt.
- [28] <./classbuttons_1_1check__box_1_1_check_box_aa6e7ab9862e039488c493e7c2ef5
+ [31] <./classbuttons_1_1check__box_1_1_check_box_aa6e7ab9862e039488c493e7c2ef5
 3015_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classbuttons_1_1check__box_1_1_check_box_aa6e7
@@ -1212,7 +1266,7 @@ ab9862e039488c493e7c2ef53015_icgraph.pdf): PDF inclusion: multiple pdfs with pa
 ge group included in a single page
 >
 <classbuttons_1_1check__box_1_1_check_box_aa6e7ab9862e039488c493e7c2ef53015_icg
-raph.pdf, id=1385, 243.91125pt x 129.48375pt>
+raph.pdf, id=1479, 243.91125pt x 129.48375pt>
 File: classbuttons_1_1check__box_1_1_check_box_aa6e7ab9862e039488c493e7c2ef5301
 5_icgraph.pdf Graphic file (type pdf)
 <use classbuttons_1_1check__box_1_1_check_box_aa6e7ab9862e039488c493e7c2ef53015
@@ -1220,17 +1274,17 @@ _icgraph.pdf>
 Package pdftex.def Info: classbuttons_1_1check__box_1_1_check_box_aa6e7ab9862e0
 39488c493e7c2ef53015_icgraph.pdf  used on input line 114.
 (pdftex.def)             Requested size: 243.0pt x 129.00133pt.
- [29] <./classbuttons_1_1check__box_1_1_check_box_a623eaa90ee3cdbd8eb60b8395718
+ [32] <./classbuttons_1_1check__box_1_1_check_box_a623eaa90ee3cdbd8eb60b8395718
 b888_icgraph.pdf>
 <classbuttons_1_1check__box_1_1_check_box_a623eaa90ee3cdbd8eb60b8395718b888_icg
-raph.pdf, id=1409, 477.785pt x 237.88875pt>
+raph.pdf, id=1503, 695.59875pt x 188.705pt>
 File: classbuttons_1_1check__box_1_1_check_box_a623eaa90ee3cdbd8eb60b8395718b88
 8_icgraph.pdf Graphic file (type pdf)
 <use classbuttons_1_1check__box_1_1_check_box_a623eaa90ee3cdbd8eb60b8395718b888
 _icgraph.pdf>
 Package pdftex.def Info: classbuttons_1_1check__box_1_1_check_box_a623eaa90ee3c
-dbd8eb60b8395718b888_icgraph.pdf  used on input line 170.
-(pdftex.def)             Requested size: 350.0pt x 174.26352pt.
+dbd8eb60b8395718b888_icgraph.pdf  used on input line 171.
+(pdftex.def)             Requested size: 350.0pt x 94.94829pt.
  <./classbuttons_1_1check__box_1_1_check_box_a3b5ec6ccbf3e322e76bd8718f01b3a0a_
 icgraph.pdf
 
@@ -1239,17 +1293,21 @@ c6ccbf3e322e76bd8718f01b3a0a_icgraph.pdf): PDF inclusion: multiple pdfs with pa
 ge group included in a single page
 >
 <classbuttons_1_1check__box_1_1_check_box_a3b5ec6ccbf3e322e76bd8718f01b3a0a_icg
-raph.pdf, id=1420, 502.87875pt x 168.63pt>
+raph.pdf, id=1514, 502.87875pt x 168.63pt>
 File: classbuttons_1_1check__box_1_1_check_box_a3b5ec6ccbf3e322e76bd8718f01b3a0
 a_icgraph.pdf Graphic file (type pdf)
 <use classbuttons_1_1check__box_1_1_check_box_a3b5ec6ccbf3e322e76bd8718f01b3a0a
 _icgraph.pdf>
 Package pdftex.def Info: classbuttons_1_1check__box_1_1_check_box_a3b5ec6ccbf3e
-322e76bd8718f01b3a0a_icgraph.pdf  used on input line 200.
+322e76bd8718f01b3a0a_icgraph.pdf  used on input line 201.
 (pdftex.def)             Requested size: 350.0pt x 117.36346pt.
- [30] [31]) (./classlangton_1_1fourmi_1_1_fourmi.tex <./classlangton_1_1fourmi_
-1_1_fourmi__coll__graph.pdf>
-<classlangton_1_1fourmi_1_1_fourmi__coll__graph.pdf, id=1483, 208.78pt x 469.75
+ [33] [34]) (./classlangton_1_1fourmi_1_1_fourmi.tex <./classlangton_1_1fourmi_
+1_1_fourmi__coll__graph.pdf
+
+pdfTeX warning: pdflatex (file ./classlangton_1_1fourmi_1_1_fourmi__coll__graph
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>
+<classlangton_1_1fourmi_1_1_fourmi__coll__graph.pdf, id=1580, 208.78pt x 469.75
 5pt>
 File: classlangton_1_1fourmi_1_1_fourmi__coll__graph.pdf Graphic file (type pdf
 )
@@ -1257,13 +1315,13 @@ File: classlangton_1_1fourmi_1_1_fourmi__coll__graph.pdf Graphic file (type pdf
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi__coll__graph.pdf  us
 ed on input line 14.
 (pdftex.def)             Requested size: 208.0pt x 468.0264pt.
- [32]
+ [35]
 Underfull \hbox (badness 1348) in paragraph at lines 20--21
 []\T1/phv/m/n/10 def [] (self, co-ords=(0, 0), []=4, []=1, []=0, []=[](255, 255
 , 255),(0, 0, 0)[],
  []
 
-[33] [34] <./classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8ed
+[36] [37] <./classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8ed
 c_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classlangton_1_1fourmi_1_1_fourmi_a63c2c0c3569
@@ -1271,7 +1329,7 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1fourmi_1_1_fourmi_a63c2c0c3569
  included in a single page
 >
 <classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc_cgraph.pdf
-, id=1610, 665.48625pt x 226.8475pt>
+, id=1703, 665.48625pt x 226.8475pt>
 File: classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc_cgrap
 h.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc_cgraph
@@ -1279,7 +1337,7 @@ h.pdf Graphic file (type pdf)
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c642
 24df4d96f8edc_cgraph.pdf  used on input line 161.
 (pdftex.def)             Requested size: 350.0pt x 119.30786pt.
- [35] <./classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc_ic
+ [38] <./classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc_ic
 graph.pdf
 
 pdfTeX warning: pdflatex (file ./classlangton_1_1fourmi_1_1_fourmi_a63c2c0c3569
@@ -1287,7 +1345,7 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1fourmi_1_1_fourmi_a63c2c0c3569
 p included in a single page
 >
 <classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc_icgraph.pd
-f, id=1630, 457.71pt x 100.375pt>
+f, id=1722, 457.71pt x 100.375pt>
 File: classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc_icgra
 ph.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_a63c2c0c35691f57c64224df4d96f8edc_icgrap
@@ -1303,27 +1361,27 @@ f2f31c481e0adcf389db8_icgraph.pdf): PDF inclusion: multiple pdfs with page grou
 p included in a single page
 >
 <classlangton_1_1fourmi_1_1_fourmi_a03b7054b55cf2f31c481e0adcf389db8_icgraph.pd
-f, id=1640, 442.65375pt x 237.88875pt>
+f, id=1732, 660.4675pt x 188.705pt>
 File: classlangton_1_1fourmi_1_1_fourmi_a03b7054b55cf2f31c481e0adcf389db8_icgra
 ph.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_a03b7054b55cf2f31c481e0adcf389db8_icgrap
 h.pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_a03b7054b55cf2f31c48
-1e0adcf389db8_icgraph.pdf  used on input line 189.
-(pdftex.def)             Requested size: 350.0pt x 188.10426pt.
- [36] <./classlangton_1_1fourmi_1_1_fourmi_abd0d697fe07a100233036d8aca30c01e_ic
+1e0adcf389db8_icgraph.pdf  used on input line 190.
+(pdftex.def)             Requested size: 350.0pt x 100.00165pt.
+ [39] <./classlangton_1_1fourmi_1_1_fourmi_abd0d697fe07a100233036d8aca30c01e_ic
 graph.pdf>
 <classlangton_1_1fourmi_1_1_fourmi_abd0d697fe07a100233036d8aca30c01e_icgraph.pd
-f, id=1660, 454.69875pt x 111.41624pt>
+f, id=1754, 454.69875pt x 111.41624pt>
 File: classlangton_1_1fourmi_1_1_fourmi_abd0d697fe07a100233036d8aca30c01e_icgra
 ph.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_abd0d697fe07a100233036d8aca30c01e_icgrap
 h.pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_abd0d697fe07a1002330
-36d8aca30c01e_icgraph.pdf  used on input line 215.
+36d8aca30c01e_icgraph.pdf  used on input line 216.
 (pdftex.def)             Requested size: 350.0pt x 85.76187pt.
 
-Underfull \hbox (badness 10000) detected at line 228
+Underfull \hbox (badness 10000) detected at line 229
 [][][]
  []
 
@@ -1335,24 +1393,24 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1fourmi_1_1_fourmi_a653f86d31de
 p included in a single page
 >
 <classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63_icgraph.pd
-f, id=1672, 875.27pt x 226.8475pt>
+f, id=1766, 875.27pt x 226.8475pt>
 File: classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63_icgra
 ph.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007da91cd82080e63_icgrap
 h.pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_a653f86d31de2c1e007d
-a91cd82080e63_icgraph.pdf  used on input line 258.
+a91cd82080e63_icgraph.pdf  used on input line 259.
 (pdftex.def)             Requested size: 350.0pt x 90.70969pt.
- [37] <./classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463_cg
+ [40] <./classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463_cg
 raph.pdf>
 <classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463_cgraph.pdf
-, id=1697, 461.725pt x 100.375pt>
+, id=1791, 461.725pt x 100.375pt>
 File: classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463_cgrap
 h.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463_cgraph
 .pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7
-361ba53940463_cgraph.pdf  used on input line 279.
+361ba53940463_cgraph.pdf  used on input line 280.
 (pdftex.def)             Requested size: 350.0pt x 76.08667pt.
  <./classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463_icgraph
 .pdf
@@ -1362,13 +1420,13 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1fourmi_1_1_fourmi_a4114e638584
 p included in a single page
 >
 <classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463_icgraph.pd
-f, id=1705, 682.55pt x 100.375pt>
+f, id=1799, 682.55pt x 100.375pt>
 File: classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463_icgra
 ph.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7361ba53940463_icgrap
 h.pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_a4114e63858489c625b7
-361ba53940463_icgraph.pdf  used on input line 286.
+361ba53940463_icgraph.pdf  used on input line 287.
 (pdftex.def)             Requested size: 350.0pt x 51.47084pt.
  <./classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f_cgraph.
 pdf
@@ -1378,13 +1436,13 @@ e11b5dfdb399c6cb05d8f_cgraph.pdf): PDF inclusion: multiple pdfs with page group
  included in a single page
 >
 <classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f_cgraph.pdf
-, id=1716, 451.6875pt x 100.375pt>
+, id=1810, 451.6875pt x 100.375pt>
 File: classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f_cgrap
 h.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f_cgraph
 .pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfd
-b399c6cb05d8f_cgraph.pdf  used on input line 307.
+b399c6cb05d8f_cgraph.pdf  used on input line 308.
 (pdftex.def)             Requested size: 350.0pt x 77.78215pt.
  <./classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f_icgraph
 .pdf
@@ -1394,24 +1452,24 @@ e11b5dfdb399c6cb05d8f_icgraph.pdf): PDF inclusion: multiple pdfs with page grou
 p included in a single page
 >
 <classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f_icgraph.pd
-f, id=1724, 672.5125pt x 100.375pt>
+f, id=1818, 672.5125pt x 100.375pt>
 File: classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f_icgra
 ph.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfdb399c6cb05d8f_icgrap
 h.pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_adf2ac14b2cbe11b5dfd
-b399c6cb05d8f_icgraph.pdf  used on input line 314.
+b399c6cb05d8f_icgraph.pdf  used on input line 315.
 (pdftex.def)             Requested size: 350.0pt x 52.23817pt.
- [38] <./classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2_cg
+ [41] <./classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2_cg
 raph.pdf>
 <classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2_cgraph.pdf
-, id=1748, 429.605pt x 111.41624pt>
+, id=1841, 429.605pt x 111.41624pt>
 File: classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2_cgrap
 h.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2_cgraph
 .pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51
-973b7f35a56e2_cgraph.pdf  used on input line 335.
+973b7f35a56e2_cgraph.pdf  used on input line 336.
 (pdftex.def)             Requested size: 350.0pt x 90.77197pt.
  <./classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2_icgraph
 .pdf
@@ -1421,13 +1479,13 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1fourmi_1_1_fourmi_aeeb149c2725
 p included in a single page
 >
 <classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2_icgraph.pd
-f, id=1756, 650.43pt x 111.41624pt>
+f, id=1849, 650.43pt x 111.41624pt>
 File: classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2_icgra
 ph.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51973b7f35a56e2_icgrap
 h.pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_aeeb149c272549bb7e51
-973b7f35a56e2_icgraph.pdf  used on input line 342.
+973b7f35a56e2_icgraph.pdf  used on input line 343.
 (pdftex.def)             Requested size: 350.0pt x 59.95476pt.
  <./classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21_cgraph.
 pdf
@@ -1437,24 +1495,24 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e
  included in a single page
 >
 <classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21_cgraph.pdf
-, id=1767, 446.66875pt x 100.375pt>
+, id=1860, 446.66875pt x 100.375pt>
 File: classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21_cgrap
 h.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21_cgraph
 .pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212
-485db531f8c21_cgraph.pdf  used on input line 363.
+485db531f8c21_cgraph.pdf  used on input line 364.
 (pdftex.def)             Requested size: 350.0pt x 78.65363pt.
- [39] <./classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21_ic
+ [42] <./classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21_ic
 graph.pdf>
 <classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21_icgraph.pd
-f, id=1786, 667.49374pt x 100.375pt>
+f, id=1880, 667.49374pt x 100.375pt>
 File: classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21_icgra
 ph.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212485db531f8c21_icgrap
 h.pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_a95f1c25b25e8b992212
-485db531f8c21_icgraph.pdf  used on input line 370.
+485db531f8c21_icgraph.pdf  used on input line 371.
 (pdftex.def)             Requested size: 350.0pt x 52.63332pt.
  <./classlangton_1_1fourmi_1_1_fourmi_a94f50ddabad6971f3ed75329d4ea028f_cgraph.
 pdf
@@ -1464,25 +1522,25 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1fourmi_1_1_fourmi_a94f50ddabad
  included in a single page
 >
 <classlangton_1_1fourmi_1_1_fourmi_a94f50ddabad6971f3ed75329d4ea028f_cgraph.pdf
-, id=1796, 875.27pt x 318.18875pt>
+, id=1890, 875.27pt x 318.18875pt>
 File: classlangton_1_1fourmi_1_1_fourmi_a94f50ddabad6971f3ed75329d4ea028f_cgrap
 h.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_a94f50ddabad6971f3ed75329d4ea028f_cgraph
 .pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_a94f50ddabad6971f3ed
-75329d4ea028f_cgraph.pdf  used on input line 396.
+75329d4ea028f_cgraph.pdf  used on input line 397.
 (pdftex.def)             Requested size: 350.0pt x 127.23439pt.
- [40] <./classlangton_1_1fourmi_1_1_fourmi_a8668301bd55f2d65fc909d69091436cc_cg
+ [43] <./classlangton_1_1fourmi_1_1_fourmi_a8668301bd55f2d65fc909d69091436cc_cg
 raph.pdf>
 <classlangton_1_1fourmi_1_1_fourmi_a8668301bd55f2d65fc909d69091436cc_cgraph.pdf
-, id=1820, 686.565pt x 329.23pt>
+, id=1913, 664.4825pt x 396.48125pt>
 File: classlangton_1_1fourmi_1_1_fourmi_a8668301bd55f2d65fc909d69091436cc_cgrap
 h.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_a8668301bd55f2d65fc909d69091436cc_cgraph
 .pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_a8668301bd55f2d65fc9
-09d69091436cc_cgraph.pdf  used on input line 417.
-(pdftex.def)             Requested size: 350.0pt x 167.83473pt.
+09d69091436cc_cgraph.pdf  used on input line 419.
+(pdftex.def)             Requested size: 350.0pt x 208.83939pt.
  <./classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a_cgraph.
 pdf
 
@@ -1491,40 +1549,40 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1fourmi_1_1_fourmi_a55dbd634f43
  included in a single page
 >
 <classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a_cgraph.pdf
-, id=1830, 454.69875pt x 150.5625pt>
+, id=1923, 454.69875pt x 150.5625pt>
 File: classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a_cgrap
 h.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a_cgraph
 .pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b7
-56b130ef9189a_cgraph.pdf  used on input line 443.
+56b130ef9189a_cgraph.pdf  used on input line 445.
 (pdftex.def)             Requested size: 350.0pt x 115.89441pt.
- <./classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a_icgraph
-.pdf
-
-pdfTeX warning: pdflatex (file ./classlangton_1_1fourmi_1_1_fourmi_a55dbd634f43
-3ff3b2b756b130ef9189a_icgraph.pdf): PDF inclusion: multiple pdfs with page grou
-p included in a single page
->
+ [44] <./classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a_ic
+graph.pdf>
 <classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a_icgraph.pd
-f, id=1838, 448.67625pt x 100.375pt>
+f, id=1942, 448.67625pt x 100.375pt>
 File: classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a_icgra
 ph.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b756b130ef9189a_icgrap
 h.pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_a55dbd634f433ff3b2b7
-56b130ef9189a_icgraph.pdf  used on input line 450.
+56b130ef9189a_icgraph.pdf  used on input line 452.
 (pdftex.def)             Requested size: 350.0pt x 78.30289pt.
- [41] <./classlangton_1_1fourmi_1_1_fourmi_a0086306565c8d2d16a39e8d2197c5268_ic
-graph.pdf>
+ <./classlangton_1_1fourmi_1_1_fourmi_a0086306565c8d2d16a39e8d2197c5268_icgraph
+.pdf
+
+pdfTeX warning: pdflatex (file ./classlangton_1_1fourmi_1_1_fourmi_a0086306565c
+8d2d16a39e8d2197c5268_icgraph.pdf): PDF inclusion: multiple pdfs with page grou
+p included in a single page
+>
 <classlangton_1_1fourmi_1_1_fourmi_a0086306565c8d2d16a39e8d2197c5268_icgraph.pd
-f, id=1860, 664.4825pt x 100.375pt>
+f, id=1952, 664.4825pt x 100.375pt>
 File: classlangton_1_1fourmi_1_1_fourmi_a0086306565c8d2d16a39e8d2197c5268_icgra
 ph.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_a0086306565c8d2d16a39e8d2197c5268_icgrap
 h.pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_a0086306565c8d2d16a3
-9e8d2197c5268_icgraph.pdf  used on input line 471.
+9e8d2197c5268_icgraph.pdf  used on input line 473.
 (pdftex.def)             Requested size: 350.0pt x 52.87073pt.
  <./classlangton_1_1fourmi_1_1_fourmi_ad1ad1d420abb8c6e559647a02084ae39_icgraph
 .pdf
@@ -1534,22 +1592,22 @@ b8c6e559647a02084ae39_icgraph.pdf): PDF inclusion: multiple pdfs with page grou
 p included in a single page
 >
 <classlangton_1_1fourmi_1_1_fourmi_ad1ad1d420abb8c6e559647a02084ae39_icgraph.pd
-f, id=1871, 643.40375pt x 111.41624pt>
+f, id=1962, 643.40375pt x 111.41624pt>
 File: classlangton_1_1fourmi_1_1_fourmi_ad1ad1d420abb8c6e559647a02084ae39_icgra
 ph.pdf Graphic file (type pdf)
 <use classlangton_1_1fourmi_1_1_fourmi_ad1ad1d420abb8c6e559647a02084ae39_icgrap
 h.pdf>
 Package pdftex.def Info: classlangton_1_1fourmi_1_1_fourmi_ad1ad1d420abb8c6e559
-647a02084ae39_icgraph.pdf  used on input line 492.
+647a02084ae39_icgraph.pdf  used on input line 494.
 (pdftex.def)             Requested size: 350.0pt x 60.60928pt.
- [42] [43]) (./classbuttons_1_1input__box_1_1_input_box.tex <./classbuttons_1_1
-input__box_1_1_input_box__inherit__graph.pdf
+ [45] [46] [47]) (./classbuttons_1_1input__box_1_1_input_box.tex <./classbutton
+s_1_1input__box_1_1_input_box__inherit__graph.pdf
 
 pdfTeX warning: pdflatex (file ./classbuttons_1_1input__box_1_1_input_box__inhe
 rit__graph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
 >
-<classbuttons_1_1input__box_1_1_input_box__inherit__graph.pdf, id=1943, 231.866
+<classbuttons_1_1input__box_1_1_input_box__inherit__graph.pdf, id=2052, 231.866
 26pt x 575.14874pt>
 File: classbuttons_1_1input__box_1_1_input_box__inherit__graph.pdf Graphic file
  (type pdf)
@@ -1557,13 +1615,13 @@ File: classbuttons_1_1input__box_1_1_input_box__inherit__graph.pdf Graphic file
 Package pdftex.def Info: classbuttons_1_1input__box_1_1_input_box__inherit__gra
 ph.pdf  used on input line 14.
 (pdftex.def)             Requested size: 221.73286pt x 550.0pt.
- [44] [45] <./classbuttons_1_1input__box_1_1_input_box__coll__graph.pdf
+ [48] <./classbuttons_1_1input__box_1_1_input_box__coll__graph.pdf
 
 pdfTeX warning: pdflatex (file ./classbuttons_1_1input__box_1_1_input_box__coll
 __graph.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >
-<classbuttons_1_1input__box_1_1_input_box__coll__graph.pdf, id=1978, 231.86626p
+<classbuttons_1_1input__box_1_1_input_box__coll__graph.pdf, id=2072, 231.86626p
 t x 575.14874pt>
 File: classbuttons_1_1input__box_1_1_input_box__coll__graph.pdf Graphic file (t
 ype pdf)
@@ -1571,13 +1629,13 @@ ype pdf)
 Package pdftex.def Info: classbuttons_1_1input__box_1_1_input_box__coll__graph.
 pdf  used on input line 23.
 (pdftex.def)             Requested size: 221.73286pt x 550.0pt.
- [46] [47]
+ [49] [50]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 74.
  <./classbuttons_1_1input__box_1_1_input_box_ae74a5fc50f0af93ccf25812f0d0b329a_
 cgraph.pdf>
 <classbuttons_1_1input__box_1_1_input_box_ae74a5fc50f0af93ccf25812f0d0b329a_cgr
-aph.pdf, id=2025, 234.8775pt x 129.48375pt>
+aph.pdf, id=2118, 234.8775pt x 129.48375pt>
 File: classbuttons_1_1input__box_1_1_input_box_ae74a5fc50f0af93ccf25812f0d0b329
 a_cgraph.pdf Graphic file (type pdf)
 <use classbuttons_1_1input__box_1_1_input_box_ae74a5fc50f0af93ccf25812f0d0b329a
@@ -1585,7 +1643,7 @@ _cgraph.pdf>
 Package pdftex.def Info: classbuttons_1_1input__box_1_1_input_box_ae74a5fc50f0a
 f93ccf25812f0d0b329a_cgraph.pdf  used on input line 103.
 (pdftex.def)             Requested size: 234.0pt x 128.99934pt.
- [48] <./classbuttons_1_1input__box_1_1_input_box_ae74a5fc50f0af93ccf25812f0d0b
+ [51] <./classbuttons_1_1input__box_1_1_input_box_ae74a5fc50f0af93ccf25812f0d0b
 329a_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classbuttons_1_1input__box_1_1_input_box_ae74a
@@ -1593,7 +1651,7 @@ pdfTeX warning: pdflatex (file ./classbuttons_1_1input__box_1_1_input_box_ae74a
 ge group included in a single page
 >
 <classbuttons_1_1input__box_1_1_input_box_ae74a5fc50f0af93ccf25812f0d0b329a_icg
-raph.pdf, id=2052, 234.8775pt x 129.48375pt>
+raph.pdf, id=2146, 234.8775pt x 129.48375pt>
 File: classbuttons_1_1input__box_1_1_input_box_ae74a5fc50f0af93ccf25812f0d0b329
 a_icgraph.pdf Graphic file (type pdf)
 <use classbuttons_1_1input__box_1_1_input_box_ae74a5fc50f0af93ccf25812f0d0b329a
@@ -1609,64 +1667,60 @@ d3efc932daa353012866cc1f15fe_icgraph.pdf): PDF inclusion: multiple pdfs with pa
 ge group included in a single page
 >
 <classbuttons_1_1input__box_1_1_input_box_a9904d3efc932daa353012866cc1f15fe_icg
-raph.pdf, id=2063, 468.75125pt x 237.88875pt>
+raph.pdf, id=2157, 686.565pt x 188.705pt>
 File: classbuttons_1_1input__box_1_1_input_box_a9904d3efc932daa353012866cc1f15f
 e_icgraph.pdf Graphic file (type pdf)
 <use classbuttons_1_1input__box_1_1_input_box_a9904d3efc932daa353012866cc1f15fe
 _icgraph.pdf>
 Package pdftex.def Info: classbuttons_1_1input__box_1_1_input_box_a9904d3efc932
-daa353012866cc1f15fe_icgraph.pdf  used on input line 148.
-(pdftex.def)             Requested size: 350.0pt x 177.62115pt.
- [49] <./classbuttons_1_1input__box_1_1_input_box_ae477bf312c1c943fc39c59458024
+daa353012866cc1f15fe_icgraph.pdf  used on input line 149.
+(pdftex.def)             Requested size: 350.0pt x 96.19795pt.
+ [52] <./classbuttons_1_1input__box_1_1_input_box_ae477bf312c1c943fc39c59458024
 5d9b_icgraph.pdf>
 <classbuttons_1_1input__box_1_1_input_box_ae477bf312c1c943fc39c594580245d9b_icg
-raph.pdf, id=2085, 493.845pt x 168.63pt>
+raph.pdf, id=2180, 493.845pt x 168.63pt>
 File: classbuttons_1_1input__box_1_1_input_box_ae477bf312c1c943fc39c594580245d9
 b_icgraph.pdf Graphic file (type pdf)
 <use classbuttons_1_1input__box_1_1_input_box_ae477bf312c1c943fc39c594580245d9b
 _icgraph.pdf>
 Package pdftex.def Info: classbuttons_1_1input__box_1_1_input_box_ae477bf312c1c
-943fc39c594580245d9b_icgraph.pdf  used on input line 178.
+943fc39c594580245d9b_icgraph.pdf  used on input line 179.
 (pdftex.def)             Requested size: 350.0pt x 119.51198pt.
- [50]) (./classbuttons_1_1menu_1_1_menu.tex [51] <./classbuttons_1_1menu_1_1_me
-nu__coll__graph.pdf
-
-pdfTeX warning: pdflatex (file ./classbuttons_1_1menu_1_1_menu__coll__graph.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
->
-<classbuttons_1_1menu_1_1_menu__coll__graph.pdf, id=2148, 194.7275pt x 204.765p
+ [53]) (./classbuttons_1_1menu_1_1_menu.tex <./classbuttons_1_1menu_1_1_menu__c
+oll__graph.pdf>
+<classbuttons_1_1menu_1_1_menu__coll__graph.pdf, id=2224, 194.7275pt x 204.765p
 t>
 File: classbuttons_1_1menu_1_1_menu__coll__graph.pdf Graphic file (type pdf)
 <use classbuttons_1_1menu_1_1_menu__coll__graph.pdf>
 Package pdftex.def Info: classbuttons_1_1menu_1_1_menu__coll__graph.pdf  used o
 n input line 14.
 (pdftex.def)             Requested size: 194.0pt x 204.00835pt.
- [52] [53] <./classbuttons_1_1menu_1_1_menu_a4d4a71c664b0488c338e415e91b3d09b_i
-cgraph.pdf
+ [54] [55] [56] <./classbuttons_1_1menu_1_1_menu_a4d4a71c664b0488c338e415e91b3d
+09b_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classbuttons_1_1menu_1_1_menu_a4d4a71c664b0488
 c338e415e91b3d09b_icgraph.pdf): PDF inclusion: multiple pdfs with page group in
 cluded in a single page
 >
 <classbuttons_1_1menu_1_1_menu_a4d4a71c664b0488c338e415e91b3d09b_icgraph.pdf, i
-d=2231, 431.6125pt x 237.88875pt>
+d=2325, 649.42625pt x 188.705pt>
 File: classbuttons_1_1menu_1_1_menu_a4d4a71c664b0488c338e415e91b3d09b_icgraph.p
 df Graphic file (type pdf)
 <use classbuttons_1_1menu_1_1_menu_a4d4a71c664b0488c338e415e91b3d09b_icgraph.pd
 f>
 Package pdftex.def Info: classbuttons_1_1menu_1_1_menu_a4d4a71c664b0488c338e415
-e91b3d09b_icgraph.pdf  used on input line 119.
-(pdftex.def)             Requested size: 350.0pt x 192.91386pt.
- [54] <./classbuttons_1_1menu_1_1_menu_a7b126e496238018ea4eaab5c9a739c8a_icgrap
+e91b3d09b_icgraph.pdf  used on input line 120.
+(pdftex.def)             Requested size: 350.0pt x 101.70049pt.
+ [57] <./classbuttons_1_1menu_1_1_menu_a7b126e496238018ea4eaab5c9a739c8a_icgrap
 h.pdf>
 <classbuttons_1_1menu_1_1_menu_a7b126e496238018ea4eaab5c9a739c8a_icgraph.pdf, i
-d=2259, 456.70625pt x 168.63pt>
+d=2353, 456.70625pt x 168.63pt>
 File: classbuttons_1_1menu_1_1_menu_a7b126e496238018ea4eaab5c9a739c8a_icgraph.p
 df Graphic file (type pdf)
 <use classbuttons_1_1menu_1_1_menu_a7b126e496238018ea4eaab5c9a739c8a_icgraph.pd
 f>
 Package pdftex.def Info: classbuttons_1_1menu_1_1_menu_a7b126e496238018ea4eaab5
-c9a739c8a_icgraph.pdf  used on input line 166.
+c9a739c8a_icgraph.pdf  used on input line 167.
 (pdftex.def)             Requested size: 350.0pt x 129.23567pt.
 ) (./classlangton_1_1plateau_1_1_plateau.tex <./classlangton_1_1plateau_1_1_pla
 teau__coll__graph.pdf
@@ -1675,15 +1729,15 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1plateau_1_1_plateau__coll__gra
 ph.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
 >
-<classlangton_1_1plateau_1_1_plateau__coll__graph.pdf, id=2275, 213.79875pt x 2
-82.05376pt>
+<classlangton_1_1plateau_1_1_plateau__coll__graph.pdf, id=2369, 213.79875pt x 3
+48.30125pt>
 File: classlangton_1_1plateau_1_1_plateau__coll__graph.pdf Graphic file (type p
 df)
 <use classlangton_1_1plateau_1_1_plateau__coll__graph.pdf>
 Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau__coll__graph.pdf  
-used on input line 14.
-(pdftex.def)             Requested size: 213.0pt x 280.99863pt.
- [55] [56] [57] <./classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199c
+used on input line 15.
+(pdftex.def)             Requested size: 213.0pt x 346.9983pt.
+ [58] [59] [60] <./classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199c
 b6c3f9eb3_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classlangton_1_1plateau_1_1_plateau_aa519fa85d
@@ -1691,14 +1745,14 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1plateau_1_1_plateau_aa519fa85d
 up included in a single page
 >
 <classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3_cgraph.p
-df, id=2369, 465.74pt x 100.375pt>
+df, id=2471, 443.6575pt x 124.465pt>
 File: classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3_cgr
 aph.pdf Graphic file (type pdf)
 <use classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3_cgra
 ph.pdf>
 Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7b
-a0199cb6c3f9eb3_cgraph.pdf  used on input line 130.
-(pdftex.def)             Requested size: 350.0pt x 75.4342pt.
+a0199cb6c3f9eb3_cgraph.pdf  used on input line 144.
+(pdftex.def)             Requested size: 350.0pt x 98.18951pt.
  <./classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3_icgra
 ph.pdf
 
@@ -1707,71 +1761,156 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1plateau_1_1_plateau_aa519fa85d
 oup included in a single page
 >
 <classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3_icgraph.
-pdf, id=2377, 450.68375pt x 237.88875pt>
+pdf, id=2479, 683.55376pt x 226.8475pt>
 File: classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3_icg
 raph.pdf Graphic file (type pdf)
 <use classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7ba0199cb6c3f9eb3_icgr
 aph.pdf>
 Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_aa519fa85d8aea1c7b
-a0199cb6c3f9eb3_icgraph.pdf  used on input line 137.
-(pdftex.def)             Requested size: 350.0pt x 184.75389pt.
- <./classlangton_1_1plateau_1_1_plateau_a75bfbd1e8d9afb599e2d3722242dbb62_cgrap
-h.pdf
-
-pdfTeX warning: pdflatex (file ./classlangton_1_1plateau_1_1_plateau_a75bfbd1e8
-d9afb599e2d3722242dbb62_cgraph.pdf): PDF inclusion: multiple pdfs with page gro
-up included in a single page
->
+a0199cb6c3f9eb3_icgraph.pdf  used on input line 152.
+(pdftex.def)             Requested size: 350.0pt x 116.15451pt.
+ [61] <./classlangton_1_1plateau_1_1_plateau_a75bfbd1e8d9afb599e2d3722242dbb62_
+cgraph.pdf>
 <classlangton_1_1plateau_1_1_plateau_a75bfbd1e8d9afb599e2d3722242dbb62_cgraph.p
-df, id=2387, 486.81876pt x 100.375pt>
+df, id=2503, 886.31125pt x 124.465pt>
 File: classlangton_1_1plateau_1_1_plateau_a75bfbd1e8d9afb599e2d3722242dbb62_cgr
 aph.pdf Graphic file (type pdf)
 <use classlangton_1_1plateau_1_1_plateau_a75bfbd1e8d9afb599e2d3722242dbb62_cgra
 ph.pdf>
 Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_a75bfbd1e8d9afb599
-e2d3722242dbb62_cgraph.pdf  used on input line 154.
-(pdftex.def)             Requested size: 350.0pt x 72.16425pt.
- [58] <./classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d_
-icgraph.pdf>
+e2d3722242dbb62_cgraph.pdf  used on input line 179.
+(pdftex.def)             Requested size: 350.0pt x 49.15079pt.
+ <./classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d_cgrap
+h.pdf
+
+pdfTeX warning: pdflatex (file ./classlangton_1_1plateau_1_1_plateau_a4901f3e6d
+f258fea763776a095b2488d_cgraph.pdf): PDF inclusion: multiple pdfs with page gro
+up included in a single page
+>
+<classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d_cgraph.p
+df, id=2513, 668.4975pt x 124.465pt>
+File: classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d_cgr
+aph.pdf Graphic file (type pdf)
+<use classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d_cgra
+ph.pdf>
+Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea7
+63776a095b2488d_cgraph.pdf  used on input line 206.
+(pdftex.def)             Requested size: 350.0pt x 65.16656pt.
+ <./classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d_icgra
+ph.pdf
+
+pdfTeX warning: pdflatex (file ./classlangton_1_1plateau_1_1_plateau_a4901f3e6d
+f258fea763776a095b2488d_icgraph.pdf): PDF inclusion: multiple pdfs with page gr
+oup included in a single page
+>
 <classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d_icgraph.
-pdf, id=2410, 696.6025pt x 237.88875pt>
+pdf, id=2521, 486.81876pt x 100.375pt>
 File: classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d_icg
 raph.pdf Graphic file (type pdf)
 <use classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea763776a095b2488d_icgr
 aph.pdf>
 Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_a4901f3e6df258fea7
-63776a095b2488d_icgraph.pdf  used on input line 171.
-(pdftex.def)             Requested size: 350.0pt x 119.52486pt.
- <./classlangton_1_1plateau_1_1_plateau_a327a3f41b922f0502f49c58d4a8a1ced_cgrap
+63776a095b2488d_icgraph.pdf  used on input line 214.
+(pdftex.def)             Requested size: 350.0pt x 72.16425pt.
+ [62] <./classlangton_1_1plateau_1_1_plateau_a7ef36e6162676469a22dd4415175e787_
+cgraph.pdf>
+<classlangton_1_1plateau_1_1_plateau_a7ef36e6162676469a22dd4415175e787_cgraph.p
+df, id=2544, 715.67375pt x 429.605pt>
+File: classlangton_1_1plateau_1_1_plateau_a7ef36e6162676469a22dd4415175e787_cgr
+aph.pdf Graphic file (type pdf)
+<use classlangton_1_1plateau_1_1_plateau_a7ef36e6162676469a22dd4415175e787_cgra
+ph.pdf>
+Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_a7ef36e6162676469a
+22dd4415175e787_cgraph.pdf  used on input line 236.
+(pdftex.def)             Requested size: 350.0pt x 210.10185pt.
+ <./classlangton_1_1plateau_1_1_plateau_a7ef36e6162676469a22dd4415175e787_icgra
+ph.pdf
+
+pdfTeX warning: pdflatex (file ./classlangton_1_1plateau_1_1_plateau_a7ef36e616
+2676469a22dd4415175e787_icgraph.pdf): PDF inclusion: multiple pdfs with page gr
+oup included in a single page
+>
+<classlangton_1_1plateau_1_1_plateau_a7ef36e6162676469a22dd4415175e787_icgraph.
+pdf, id=2552, 471.7625pt x 138.5175pt>
+File: classlangton_1_1plateau_1_1_plateau_a7ef36e6162676469a22dd4415175e787_icg
+raph.pdf Graphic file (type pdf)
+<use classlangton_1_1plateau_1_1_plateau_a7ef36e6162676469a22dd4415175e787_icgr
+aph.pdf>
+Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_a7ef36e6162676469a
+22dd4415175e787_icgraph.pdf  used on input line 244.
+(pdftex.def)             Requested size: 350.0pt x 102.76764pt.
+ [63] <./classlangton_1_1plateau_1_1_plateau_a87a158bfa97b40bc455e248704e77d91_
+icgraph.pdf>
+<classlangton_1_1plateau_1_1_plateau_a87a158bfa97b40bc455e248704e77d91_icgraph.
+pdf, id=2574, 722.7pt x 138.5175pt>
+File: classlangton_1_1plateau_1_1_plateau_a87a158bfa97b40bc455e248704e77d91_icg
+raph.pdf Graphic file (type pdf)
+<use classlangton_1_1plateau_1_1_plateau_a87a158bfa97b40bc455e248704e77d91_icgr
+aph.pdf>
+Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_a87a158bfa97b40bc4
+55e248704e77d91_icgraph.pdf  used on input line 294.
+(pdftex.def)             Requested size: 350.0pt x 67.08366pt.
+
+Overfull \vbox (15.1844pt too high) has occurred while \output is active []
+
+
+[64] <./classlangton_1_1plateau_1_1_plateau_a4a1a7c14b8a4e52c83b59ed5ec2e33bc_c
+graph.pdf>
+<classlangton_1_1plateau_1_1_plateau_a4a1a7c14b8a4e52c83b59ed5ec2e33bc_cgraph.p
+df, id=2599, 925.4575pt x 516.93124pt>
+File: classlangton_1_1plateau_1_1_plateau_a4a1a7c14b8a4e52c83b59ed5ec2e33bc_cgr
+aph.pdf Graphic file (type pdf)
+<use classlangton_1_1plateau_1_1_plateau_a4a1a7c14b8a4e52c83b59ed5ec2e33bc_cgra
+ph.pdf>
+Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_a4a1a7c14b8a4e52c8
+3b59ed5ec2e33bc_cgraph.pdf  used on input line 323.
+(pdftex.def)             Requested size: 350.0pt x 195.49727pt.
+ <./classlangton_1_1plateau_1_1_plateau_a6a67a68056488a76424f92b245d97a66_cgrap
 h.pdf
 
-pdfTeX warning: pdflatex (file ./classlangton_1_1plateau_1_1_plateau_a327a3f41b
-922f0502f49c58d4a8a1ced_cgraph.pdf): PDF inclusion: multiple pdfs with page gro
+pdfTeX warning: pdflatex (file ./classlangton_1_1plateau_1_1_plateau_a6a67a6805
+6488a76424f92b245d97a66_cgraph.pdf): PDF inclusion: multiple pdfs with page gro
 up included in a single page
 >
-<classlangton_1_1plateau_1_1_plateau_a327a3f41b922f0502f49c58d4a8a1ced_cgraph.p
-df, id=2422, 706.64pt x 329.23pt>
-File: classlangton_1_1plateau_1_1_plateau_a327a3f41b922f0502f49c58d4a8a1ced_cgr
+<classlangton_1_1plateau_1_1_plateau_a6a67a68056488a76424f92b245d97a66_cgraph.p
+df, id=2609, 913.4125pt x 516.93124pt>
+File: classlangton_1_1plateau_1_1_plateau_a6a67a68056488a76424f92b245d97a66_cgr
 aph.pdf Graphic file (type pdf)
-<use classlangton_1_1plateau_1_1_plateau_a327a3f41b922f0502f49c58d4a8a1ced_cgra
+<use classlangton_1_1plateau_1_1_plateau_a6a67a68056488a76424f92b245d97a66_cgra
 ph.pdf>
-Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_a327a3f41b922f0502
-f49c58d4a8a1ced_cgraph.pdf  used on input line 215.
-(pdftex.def)             Requested size: 350.0pt x 163.0673pt.
- [59] <./classlangton_1_1plateau_1_1_plateau_a63a0911cc3217ace412e7b7355ca16d3_
-cgraph.pdf>
-<classlangton_1_1plateau_1_1_plateau_a63a0911cc3217ace412e7b7355ca16d3_cgraph.p
-df, id=2445, 694.595pt x 329.23pt>
-File: classlangton_1_1plateau_1_1_plateau_a63a0911cc3217ace412e7b7355ca16d3_cgr
-aph.pdf Graphic file (type pdf)
-<use classlangton_1_1plateau_1_1_plateau_a63a0911cc3217ace412e7b7355ca16d3_cgra
+Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_a6a67a68056488a764
+24f92b245d97a66_cgraph.pdf  used on input line 352.
+(pdftex.def)             Requested size: 350.0pt x 198.07655pt.
+ [65] <./classlangton_1_1plateau_1_1_plateau_a0fbaba34658fb57b0cc06ef635e2dfdc_
+icgraph.pdf>
+<classlangton_1_1plateau_1_1_plateau_a0fbaba34658fb57b0cc06ef635e2dfdc_icgraph.
+pdf, id=2631, 441.65pt x 138.5175pt>
+File: classlangton_1_1plateau_1_1_plateau_a0fbaba34658fb57b0cc06ef635e2dfdc_icg
+raph.pdf Graphic file (type pdf)
+<use classlangton_1_1plateau_1_1_plateau_a0fbaba34658fb57b0cc06ef635e2dfdc_icgr
+aph.pdf>
+Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_a0fbaba34658fb57b0
+cc06ef635e2dfdc_icgraph.pdf  used on input line 402.
+(pdftex.def)             Requested size: 350.0pt x 109.77847pt.
+ [66]
+Underfull \hbox (badness 10000) detected at line 422
+[][][]
+ []
+
+ <./classlangton_1_1plateau_1_1_plateau_a8d020cf5b9240ea9e00e2628c5fb4cab_icgra
 ph.pdf>
-Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_a63a0911cc3217ace4
-12e7b7355ca16d3_cgraph.pdf  used on input line 236.
-(pdftex.def)             Requested size: 350.0pt x 165.90063pt.
- [60]) (./classlangton_1_1simulation_1_1_simulation.tex <./classlangton_1_1simu
+<classlangton_1_1plateau_1_1_plateau_a8d020cf5b9240ea9e00e2628c5fb4cab_icgraph.
+pdf, id=2654, 886.31125pt x 282.05376pt>
+File: classlangton_1_1plateau_1_1_plateau_a8d020cf5b9240ea9e00e2628c5fb4cab_icg
+raph.pdf Graphic file (type pdf)
+<use classlangton_1_1plateau_1_1_plateau_a8d020cf5b9240ea9e00e2628c5fb4cab_icgr
+aph.pdf>
+Package pdftex.def Info: classlangton_1_1plateau_1_1_plateau_a8d020cf5b9240ea9e
+00e2628c5fb4cab_icgraph.pdf  used on input line 434.
+(pdftex.def)             Requested size: 350.0pt x 111.38203pt.
+ [67]) (./classlangton_1_1simulation_1_1_simulation.tex <./classlangton_1_1simu
 lation_1_1_simulation__coll__graph.pdf>
-<classlangton_1_1simulation_1_1_simulation__coll__graph.pdf, id=2480, 244.915pt
+<classlangton_1_1simulation_1_1_simulation__coll__graph.pdf, id=2690, 244.915pt
  x 657.45625pt>
 File: classlangton_1_1simulation_1_1_simulation__coll__graph.pdf Graphic file (
 type pdf)
@@ -1779,13 +1918,13 @@ type pdf)
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation__coll__graph
 .pdf  used on input line 14.
 (pdftex.def)             Requested size: 204.89006pt x 550.0pt.
- [61]
+ [68]
 Underfull \hbox (badness 4595) in paragraph at lines 20--21
 []\T1/phv/m/n/10 def [] (self, []=const .DEFAULT[]_[][]SCREEN[]_[][]SIZE, []=co
 nst .DEFAULT[]_[][]
  []
 
-[62] [63] [64] <./classlangton_1_1simulation_1_1_simulation_a9da91713f42652792e
+[69] [70] [71] <./classlangton_1_1simulation_1_1_simulation_a9da91713f42652792e
 9ca626148a5d85_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classlangton_1_1simulation_1_1_simulation_a9da
@@ -1793,25 +1932,25 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1simulation_1_1_simulation_a9da
 ge group included in a single page
 >
 <classlangton_1_1simulation_1_1_simulation_a9da91713f42652792e9ca626148a5d85_cg
-raph.pdf, id=2642, 734.745pt x 670.505pt>
+raph.pdf, id=2856, 712.6625pt x 731.73375pt>
 File: classlangton_1_1simulation_1_1_simulation_a9da91713f42652792e9ca626148a5d
 85_cgraph.pdf Graphic file (type pdf)
 <use classlangton_1_1simulation_1_1_simulation_a9da91713f42652792e9ca626148a5d8
 5_cgraph.pdf>
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation_a9da91713f42
-652792e9ca626148a5d85_cgraph.pdf  used on input line 175.
-(pdftex.def)             Requested size: 350.0pt x 319.40375pt.
- [65] <./classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9
+652792e9ca626148a5d85_cgraph.pdf  used on input line 176.
+(pdftex.def)             Requested size: 350.0pt x 359.36774pt.
+ [72] <./classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9
 286e2_icgraph.pdf>
 <classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286e2_ic
-graph.pdf, id=2671, 725.71124pt x 322.20375pt>
+graph.pdf, id=2884, 725.71124pt x 268.00125pt>
 File: classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286
 e2_icgraph.pdf Graphic file (type pdf)
 <use classlangton_1_1simulation_1_1_simulation_a51d611a3dfea986207d7d5897b9286e
 2_icgraph.pdf>
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation_a51d611a3dfe
-a986207d7d5897b9286e2_icgraph.pdf  used on input line 238.
-(pdftex.def)             Requested size: 350.0pt x 155.39842pt.
+a986207d7d5897b9286e2_icgraph.pdf  used on input line 240.
+(pdftex.def)             Requested size: 350.0pt x 129.25662pt.
  <./classlangton_1_1simulation_1_1_simulation_a5bd1badd9fa1819a30e2adc5ace9a443
 _icgraph.pdf
 
@@ -1820,13 +1959,13 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1simulation_1_1_simulation_a5bd
 age group included in a single page
 >
 <classlangton_1_1simulation_1_1_simulation_a5bd1badd9fa1819a30e2adc5ace9a443_ic
-graph.pdf, id=2681, 504.88625pt x 111.41624pt>
+graph.pdf, id=2894, 504.88625pt x 111.41624pt>
 File: classlangton_1_1simulation_1_1_simulation_a5bd1badd9fa1819a30e2adc5ace9a4
 43_icgraph.pdf Graphic file (type pdf)
 <use classlangton_1_1simulation_1_1_simulation_a5bd1badd9fa1819a30e2adc5ace9a44
 3_icgraph.pdf>
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation_a5bd1badd9fa
-1819a30e2adc5ace9a443_icgraph.pdf  used on input line 259.
+1819a30e2adc5ace9a443_icgraph.pdf  used on input line 261.
 (pdftex.def)             Requested size: 350.0pt x 77.2377pt.
  <./classlangton_1_1simulation_1_1_simulation_a2478e6c5471747b59b037f5d80f72294
 _icgraph.pdf
@@ -1836,24 +1975,24 @@ pdfTeX warning: pdflatex (file ./classlangton_1_1simulation_1_1_simulation_a247
 age group included in a single page
 >
 <classlangton_1_1simulation_1_1_simulation_a2478e6c5471747b59b037f5d80f72294_ic
-graph.pdf, id=2691, 509.905pt x 111.41624pt>
+graph.pdf, id=2904, 509.905pt x 111.41624pt>
 File: classlangton_1_1simulation_1_1_simulation_a2478e6c5471747b59b037f5d80f722
 94_icgraph.pdf Graphic file (type pdf)
 <use classlangton_1_1simulation_1_1_simulation_a2478e6c5471747b59b037f5d80f7229
 4_icgraph.pdf>
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation_a2478e6c5471
-747b59b037f5d80f72294_icgraph.pdf  used on input line 280.
+747b59b037f5d80f72294_icgraph.pdf  used on input line 282.
 (pdftex.def)             Requested size: 350.0pt x 76.47946pt.
- [66] <./classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36ca
+ [73] <./classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36ca
 a7851_cgraph.pdf>
 <classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851_cg
-raph.pdf, id=2714, 281.05pt x 129.48375pt>
+raph.pdf, id=2928, 281.05pt x 129.48375pt>
 File: classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa78
 51_cgraph.pdf Graphic file (type pdf)
 <use classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa785
 1_cgraph.pdf>
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation_a29fec66fd82
-b9bdc5597a6a36caa7851_cgraph.pdf  used on input line 301.
+b9bdc5597a6a36caa7851_cgraph.pdf  used on input line 303.
 (pdftex.def)             Requested size: 280.0pt x 129.00725pt.
  <./classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851
 _icgraph.pdf
@@ -1863,35 +2002,35 @@ ec66fd82b9bdc5597a6a36caa7851_icgraph.pdf): PDF inclusion: multiple pdfs with p
 age group included in a single page
 >
 <classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa7851_ic
-graph.pdf, id=2722, 506.89375pt x 168.63pt>
+graph.pdf, id=2936, 506.89375pt x 168.63pt>
 File: classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa78
 51_icgraph.pdf Graphic file (type pdf)
 <use classlangton_1_1simulation_1_1_simulation_a29fec66fd82b9bdc5597a6a36caa785
 1_icgraph.pdf>
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation_a29fec66fd82
-b9bdc5597a6a36caa7851_icgraph.pdf  used on input line 308.
+b9bdc5597a6a36caa7851_icgraph.pdf  used on input line 310.
 (pdftex.def)             Requested size: 350.0pt x 116.43715pt.
- [67] <./classlangton_1_1simulation_1_1_simulation_a25e7ef7c60a93999cd4c275c77e
+ [74] <./classlangton_1_1simulation_1_1_simulation_a25e7ef7c60a93999cd4c275c77e
 199d4_icgraph.pdf>
 <classlangton_1_1simulation_1_1_simulation_a25e7ef7c60a93999cd4c275c77e199d4_ic
-graph.pdf, id=2746, 481.8pt x 129.48375pt>
+graph.pdf, id=2960, 481.8pt x 129.48375pt>
 File: classlangton_1_1simulation_1_1_simulation_a25e7ef7c60a93999cd4c275c77e199
 d4_icgraph.pdf Graphic file (type pdf)
 <use classlangton_1_1simulation_1_1_simulation_a25e7ef7c60a93999cd4c275c77e199d
 4_icgraph.pdf>
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation_a25e7ef7c60a
-93999cd4c275c77e199d4_icgraph.pdf  used on input line 343.
+93999cd4c275c77e199d4_icgraph.pdf  used on input line 345.
 (pdftex.def)             Requested size: 350.0pt x 94.06395pt.
- [68] <./classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b0943848
+ [75] <./classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b0943848
 3de17_cgraph.pdf>
 <classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de17_cg
-raph.pdf, id=2783, 499.8675pt x 118.4425pt>
+raph.pdf, id=2996, 499.8675pt x 118.4425pt>
 File: classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de
 17_cgraph.pdf Graphic file (type pdf)
 <use classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de1
 7_cgraph.pdf>
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation_ab0dac2d0918
-0fd15298b09438483de17_cgraph.pdf  used on input line 399.
+0fd15298b09438483de17_cgraph.pdf  used on input line 401.
 (pdftex.def)             Requested size: 350.0pt x 82.93448pt.
  <./classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de17
 _icgraph.pdf
@@ -1901,13 +2040,13 @@ ac2d09180fd15298b09438483de17_icgraph.pdf): PDF inclusion: multiple pdfs with p
 age group included in a single page
 >
 <classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de17_ic
-graph.pdf, id=2791, 497.86pt x 118.4425pt>
+graph.pdf, id=3004, 497.86pt x 118.4425pt>
 File: classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de
 17_icgraph.pdf Graphic file (type pdf)
 <use classlangton_1_1simulation_1_1_simulation_ab0dac2d09180fd15298b09438483de1
 7_icgraph.pdf>
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation_ab0dac2d0918
-0fd15298b09438483de17_icgraph.pdf  used on input line 406.
+0fd15298b09438483de17_icgraph.pdf  used on input line 408.
 (pdftex.def)             Requested size: 350.0pt x 83.26701pt.
  <./classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a
 _cgraph.pdf
@@ -1917,13 +2056,13 @@ a81a41e0519fa9695baa02cb6a77a_cgraph.pdf): PDF inclusion: multiple pdfs with pa
 ge group included in a single page
 >
 <classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a_cg
-raph.pdf, id=2801, 481.8pt x 129.48375pt>
+raph.pdf, id=3014, 481.8pt x 129.48375pt>
 File: classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a7
 7a_cgraph.pdf Graphic file (type pdf)
 <use classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77
 a_cgraph.pdf>
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation_aa19a81a41e0
-519fa9695baa02cb6a77a_cgraph.pdf  used on input line 427.
+519fa9695baa02cb6a77a_cgraph.pdf  used on input line 429.
 (pdftex.def)             Requested size: 350.0pt x 94.06395pt.
  <./classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a
 _icgraph.pdf
@@ -1933,24 +2072,24 @@ a81a41e0519fa9695baa02cb6a77a_icgraph.pdf): PDF inclusion: multiple pdfs with p
 age group included in a single page
 >
 <classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77a_ic
-graph.pdf, id=2809, 262.9825pt x 129.48375pt>
+graph.pdf, id=3022, 262.9825pt x 129.48375pt>
 File: classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a7
 7a_icgraph.pdf Graphic file (type pdf)
 <use classlangton_1_1simulation_1_1_simulation_aa19a81a41e0519fa9695baa02cb6a77
 a_icgraph.pdf>
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation_aa19a81a41e0
-519fa9695baa02cb6a77a_icgraph.pdf  used on input line 434.
+519fa9695baa02cb6a77a_icgraph.pdf  used on input line 436.
 (pdftex.def)             Requested size: 262.0pt x 129.00528pt.
- [69] <./classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cd
+ [76] <./classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cd
 cf4c4_cgraph.pdf>
 <classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4c4_cg
-raph.pdf, id=2835, 734.745pt x 419.5675pt>
+raph.pdf, id=3050, 734.745pt x 419.5675pt>
 File: classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4
 c4_cgraph.pdf Graphic file (type pdf)
 <use classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4c
 4_cgraph.pdf>
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3
-d341e664ad6ea2cdcf4c4_cgraph.pdf  used on input line 483.
+d341e664ad6ea2cdcf4c4_cgraph.pdf  used on input line 485.
 (pdftex.def)             Requested size: 350.0pt x 199.86641pt.
  <./classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4c4
 _icgraph.pdf
@@ -1960,47 +2099,48 @@ d4bae2d3d341e664ad6ea2cdcf4c4_icgraph.pdf): PDF inclusion: multiple pdfs with p
 age group included in a single page
 >
 <classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4c4_ic
-graph.pdf, id=2843, 270.00874pt x 118.4425pt>
+graph.pdf, id=3058, 270.00874pt x 118.4425pt>
 File: classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4
 c4_icgraph.pdf Graphic file (type pdf)
 <use classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3d341e664ad6ea2cdcf4c
 4_icgraph.pdf>
 Package pdftex.def Info: classlangton_1_1simulation_1_1_simulation_a74cd4bae2d3
-d341e664ad6ea2cdcf4c4_icgraph.pdf  used on input line 490.
+d341e664ad6ea2cdcf4c4_icgraph.pdf  used on input line 492.
 (pdftex.def)             Requested size: 269.0pt x 118.00302pt.
- [70] [71] [72] [73]) (./button_8py.tex [74]) (./button_8py_source.tex
-[75] [76]) (./check__box_8py.tex) (./check__box_8py_source.tex [77])
-(./input__box_8py.tex) (./input__box_8py_source.tex [78]) (./menu_8py.tex)
-(./menu_8py_source.tex [79]) (./buttons_2____init_____8py.tex)
-(./buttons_2____init_____8py_source.tex [80]) (./langton_2____init_____8py.tex)
-(./langton_2____init_____8py_source.tex) (./utils_2____init_____8py.tex)
-(./utils_2____init_____8py_source.tex) (./case_8py.tex) (./case_8py_source.tex
-[81]) (./fourmi_8py.tex) (./fourmi_8py_source.tex [82] [83] [84])
-(./plateau_8py.tex) (./plateau_8py_source.tex [85]) (./simulation_8py.tex
-[86]) (./simulation_8py_source.tex [87] [88] [89] [90]) (./main_8py.tex)
-(./main_8py_source.tex) (./color_8py.tex [91]) (./color_8py_source.tex)
-(./const_8py.tex [92]) (./const_8py_source.tex) [93] [94
+ [77] [78] [79] [80]) (./_r_e_a_d_m_e_8md.tex) (./button_8py.tex [81])
+(./button_8py_source.tex [82] [83]) (./check__box_8py.tex)
+(./check__box_8py_source.tex [84]) (./input__box_8py.tex)
+(./input__box_8py_source.tex [85]) (./menu_8py.tex) (./menu_8py_source.tex
+[86]) (./buttons_2____init_____8py.tex) (./buttons_2____init_____8py_source.tex
+[87]) (./langton_2____init_____8py.tex) (./langton_2____init_____8py_source.tex
+) (./utils_2____init_____8py.tex) (./utils_2____init_____8py_source.tex)
+(./case_8py.tex) (./case_8py_source.tex [88]) (./fourmi_8py.tex [89])
+(./fourmi_8py_source.tex [90] [91]) (./plateau_8py.tex)
+(./plateau_8py_source.tex [92] [93]) (./simulation_8py.tex)
+(./simulation_8py_source.tex [94] [95] [96] [97] [98]) (./main_8py.tex)
+(./main_8py_source.tex) (./color_8py.tex [99]) (./color_8py_source.tex)
+(./const_8py.tex [100]) (./const_8py_source.tex) [101] [102
 
 ] (./refman.ind
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 
-[95
+[103
 
-] [96] [97] [98] [99])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
+] [104] [105] [106] [107])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: A0AFDF7CD4CFD2BD852C3936286B2A01;23866.
+(rerunfilecheck)             Checksum: BC7C2EDA716D830609B01E25790DC6CC;24580.
  ) 
 Here is how much of TeX's memory you used:
- 19711 strings out of 481239
- 348094 string characters out of 5920377
- 612933 words of memory out of 5000000
- 32637 multiletter control sequences out of 15000+600000
+ 19931 strings out of 481239
+ 356816 string characters out of 5920377
+ 616431 words of memory out of 5000000
+ 32721 multiletter control sequences out of 15000+600000
  580523 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,96p,1030b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2014,10 +2154,10 @@ ro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (102 pages, 768236 bytes).
+Output written on refman.pdf (110 pages, 849468 bytes).
 PDF statistics:
- 5870 PDF objects out of 6186 (max. 8388607)
- 5483 compressed objects within 55 object streams
- 1908 named destinations out of 2073 (max. 500000)
- 1204 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6237 PDF objects out of 7423 (max. 8388607)
+ 5810 compressed objects within 59 object streams
+ 2040 named destinations out of 2073 (max. 500000)
+ 1289 words of extra memory for PDF output out of 10000 (max. 10000000)
 

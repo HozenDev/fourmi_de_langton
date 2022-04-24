@@ -10,6 +10,7 @@ var searchData=
   ['infinite_5fant_7',['infinite_ant',['../classlangton_1_1simulation_1_1_simulation.html#a44d1ba0614a1a7eb5617558b410228e6',1,'langton::simulation::Simulation']]],
   ['int_5fcolor_8',['int_color',['../classbuttons_1_1input__box_1_1_input_box.html#a0b1e52ef5867b7f4d903afc92852fb06',1,'buttons::input_box::InputBox']]],
   ['int_5frect_9',['int_rect',['../classbuttons_1_1input__box_1_1_input_box.html#a926bfb0a39d87eab35c1e3fb9ece9bf1',1,'buttons::input_box::InputBox']]],
-  ['it_10',['it',['../classlangton_1_1simulation_1_1_simulation.html#a1e53dde8cab6c40f5807bfefae18710a',1,'langton::simulation::Simulation']]],
-  ['iteration_11',['iteration',['../classlangton_1_1simulation_1_1_simulation.html#ac3344803777f8e212e5b42cc5b650365',1,'langton::simulation::Simulation']]]
+  ['intervalles_10',['intervalles',['../classlangton_1_1plateau_1_1_plateau.html#ae9120bf50a5ec2ad10a26cdf60edc8c8',1,'langton::plateau::Plateau']]],
+  ['it_11',['it',['../classlangton_1_1simulation_1_1_simulation.html#a1e53dde8cab6c40f5807bfefae18710a',1,'langton::simulation::Simulation']]],
+  ['iteration_12',['iteration',['../classlangton_1_1simulation_1_1_simulation.html#ac3344803777f8e212e5b42cc5b650365',1,'langton::simulation::Simulation']]]
 ];

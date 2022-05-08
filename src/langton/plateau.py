@@ -6,10 +6,7 @@
 """
 import pygame
 import random
-import numpy as np
-import time
-from multiprocessing import Process, Manager
-from multiprocessing import cpu_count
+from multiprocessing import Process, cpu_count
 
 from utils import color
 

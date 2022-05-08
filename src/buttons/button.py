@@ -76,7 +76,8 @@ class Button:
         text_w = self.txt_surf.get_width()
         text_h = self.txt_surf.get_height()
         screen.blit(self.txt_surf,
-                    (self.rect.x+self.rect.w/2-text_w/2, self.rect.y+self.rect.h/2-text_h/2))
+                    (self.rect.x+self.rect.w/2-text_w/2,
+                     self.rect.y+self.rect.h/2-text_h/2))
 
     def handle_event(self, event):
         """!@brief User input method

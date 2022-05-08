@@ -6,7 +6,6 @@
 """
 
 import pygame
-import time
 import random
 
 import langton as lgt
@@ -37,6 +36,7 @@ class Simulation:
         # STATES #
         self.end = False # if simulation end
         self.run = False # simulation loop
+        self.done = False
 
         # DEBUG #
         self.debug = False
@@ -97,7 +97,7 @@ class Simulation:
         self.ib_behavior = InputBox((self.size_screen[0]-260, 160),
                                     (240, 50),
                                     fun=self.set_behavior,
-                                    max_len=10)
+                                    max_len=12)
 
         # CheckBox #
         self.cb_infinite = CheckBox((self.size_screen[0]-260, 230),
@@ -132,7 +132,7 @@ class Simulation:
 
         # self.plateau.compare_fun(self.plateau.draw, self.plateau.draw_mp)
         
-        while self.start:
+        while not self.done:
 
             self.menu.enable() # enable all buttons in the menu
             
@@ -227,8 +227,8 @@ class Simulation:
                 if self.end :
                     print("Simulation ended.")
         except Exception:
-            raise(Exception)
             print("Already playing")
+            raise(Exception)
             
     def __iter__(self):
         """!@brief Simulation iterator"""
@@ -299,7 +299,8 @@ class Simulation:
                 
             if event.type == pygame.QUIT:
                 self.run = False
-                self.start = False
+                self.end = True
+                self.done = True
 
         self.menu.draw(self.screen)
                 
@@ -338,13 +339,16 @@ class Simulation:
         pos = (self.size_screen[0]-70-text_w//2,
                20 + size[1]//2 - text_h//2),
 
-        self.screen.blit(txt_surf, pos)    
+        self.screen.blit(txt_surf, tuple(pos))    
 
     def set_next(self, text):
         """!@brief Set the step for next function"""
         try:
-            self.next_time = int(text)
-            print(f"Set next step to {self.next_time}")
+            if int(text) < 500:
+                self.next_time = int(text)
+                print(f"Set next step to {self.next_time}")
+            else:
+                print("Le nombre de pas en 1 fois doit être < 500")
         except Exception:
             print("Invalide next value.")
         

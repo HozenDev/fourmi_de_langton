@@ -49,11 +49,13 @@ class InputBox(Button):
                 elif event.key == pygame.K_BACKSPACE:
                     self.text = self.text[:-1]
                 else:
-                    if len(self.text) < self.max_len:
-                        self.text += event.unicode
-                    else:
-                        print(f"Maximum of char : {self.max_len}")
-                self.txt_surf = self.font.render(self.text, True, self.text_color)
+                    self.text += event.unicode
+                if len(self.text) > self.max_len:
+                    self.txt_surf = self.font.render("-" + self.text[len(self.text)-self.max_len+1:],
+                                                     True,
+                                                     self.text_color)
+                else:
+                    self.txt_surf = self.font.render(self.text, True, self.text_color)
 
     def draw(self, screen):
         try:            

@@ -6,7 +6,7 @@
 """
 import pygame
 import random
-from multiprocessing import Process, cpu_count
+# from multiprocessing import Process, cpu_count
 
 from utils import color
 
@@ -31,29 +31,29 @@ class Plateau :
         # BEHAVIOR #
         self.behavior = behavior
         self.color = color
-        # MULTIPROCESSING #
-        self.cpu = cpu_count()
-        self.ratio = int(self.w/self.cpu)
-        self.intervalles = [([i*self.ratio, 0],
-                             [(i+1)*self.ratio, self.h])
-                            for i in range(self.cpu-1)]
-        self.intervalles.append(([self.ratio*(self.cpu-1), 0],
-                                 [self.w, self.h]))
+    #     # MULTIPROCESSING #
+    #     self.cpu = cpu_count()
+    #     self.ratio = int(self.w/self.cpu)
+    #     self.intervalles = [([i*self.ratio, 0],
+    #                          [(i+1)*self.ratio, self.h])
+    #                         for i in range(self.cpu-1)]
+    #     self.intervalles.append(([self.ratio*(self.cpu-1), 0],
+    #                              [self.w, self.h]))
 
-    def multiprocessing(self, fun):
-        """!@brief create a multiprocess
-        @param fun function reference which call in process
-        """
-        process = [Process(target=fun,
-                           args=self.intervalles[i])
-                   for i in range(self.cpu)]
-        for x in process: x.start()
-        for x in process: x.join()
+    # def multiprocessing(self, fun):
+    #     """!@brief create a multiprocess
+    #     @param fun function reference which call in process
+    #     """
+    #     process = [Process(target=fun,
+    #                        args=self.intervalles[i])
+    #                for i in range(self.cpu)]
+    #     for x in process: x.start()
+    #     for x in process: x.join()
 
-    def draw_mp(self):
-        """!@brief draw multiprocessing
-        """
-        self.multiprocessing(self.draw)
+    # def draw_mp(self):
+    #     """!@brief draw multiprocessing
+    #     """
+    #     self.multiprocessing(self.draw)
 
     def reset(self, start=[0, 0], end=[None, None]):
         """!@brief reset schema in white
@@ -64,7 +64,8 @@ class Plateau :
         for i in range(start[1], end[1]):
             for j in range(start[0], end[0]):
                 self.set_color_case((i, j), color.dic["white"])
-        self.draw_mp()
+        # self.draw_mp()
+        self.draw()
         
     def random(self, start=[0, 0], end=[None, None]):
         """!@brief random color schema
@@ -76,7 +77,8 @@ class Plateau :
             for j in range(start[0], end[0]):
                 r = random.choice(self.color)
                 self.set_color_case((i, j), r)
-        self.draw_mp()
+        # self.draw_mp()
+        self.draw()
             
     def set_color_case(self, pos, colour):
         """!@brief set color in a Case

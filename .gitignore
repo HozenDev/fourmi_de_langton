@@ -10,6 +10,12 @@
 # not ignore all .py files (config files)
 !/src
 /src/*
+!/src/langton
+!/src/utils
+!/src/buttons
+/src/langton/*
+/src/utils/*
+/src/buttons/*
 !/src/**/*.py
 
 # not ignore executable

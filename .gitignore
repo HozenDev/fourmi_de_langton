@@ -8,6 +8,8 @@
 !/readme.org
 
 # not ignore all .py files (config files)
+!/src
+/src/*
 !/src/**/*.py
 
 # not ignore executable
@@ -15,6 +17,8 @@
 
 # documentation
 # not ignore Doxyfile and researches
+!/doc
+/doc/*
 !/doc/Doxyfile
 !/doc/langton_researches.pdf
 !/doc/README.md

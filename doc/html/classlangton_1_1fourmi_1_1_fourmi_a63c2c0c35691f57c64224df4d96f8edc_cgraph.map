@@ -1,8 +1,0 @@
-<map id="langton.fourmi.Fourmi.conduct" name="langton.fourmi.Fourmi.conduct">
-<area shape="rect" id="node1" title="Move the ant following its conduct This method moves the ant compare to the conduct wanted." alt="" coords="5,85,228,112"/>
-<area shape="rect" id="node2" href="$classlangton_1_1fourmi_1_1_fourmi.html#a4114e63858489c625b7361ba53940463" title="Ant move down This method calls move() with a down vector (0, y)." alt="" coords="276,5,527,32"/>
-<area shape="rect" id="node4" href="$classlangton_1_1fourmi_1_1_fourmi.html#adf2ac14b2cbe11b5dfdb399c6cb05d8f" title="Ant move left This method calls move() with a left vector (&#45;x, 0)." alt="" coords="283,56,520,83"/>
-<area shape="rect" id="node5" href="$classlangton_1_1fourmi_1_1_fourmi.html#aeeb149c272549bb7e51973b7f35a56e2" title="Ant move right This method calls move() with a right vector (x, 0)." alt="" coords="297,107,505,149"/>
-<area shape="rect" id="node6" href="$classlangton_1_1fourmi_1_1_fourmi.html#a95f1c25b25e8b992212485db531f8c21" title="Ant move up This method calls move() with a up vector (0, &#45;y)." alt="" coords="286,173,517,200"/>
-<area shape="rect" id="node3" href="$classlangton_1_1fourmi_1_1_fourmi.html#a653f86d31de2c1e007da91cd82080e63" title="Vectorial ant movement This method reprensent primitive ant movement." alt="" coords="575,85,783,112"/>
-</map>

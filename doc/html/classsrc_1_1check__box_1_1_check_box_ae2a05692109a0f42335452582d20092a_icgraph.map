@@ -1,7 +1,0 @@
-<map id="src.check_box.CheckBox.draw" name="src.check_box.CheckBox.draw">
-<area shape="rect" id="node1" title="Draw the button This method draw the button rectangle with pyGame draw.rect function and the text wit..." alt="" coords="255,107,473,134"/>
-<area shape="rect" id="node2" href="$classsrc_1_1simulation_1_1_simulation.html#a579e4f4de3f36b227cf7a4fa5c0e3b48" title="Simulation iterator." alt="" coords="10,5,202,47"/>
-<area shape="rect" id="node3" href="$classsrc_1_1plateau_1_1_plateau.html#a437d405e7f17c486eddbe33d6074bdac" title="Random color schema." alt="" coords="5,71,207,112"/>
-<area shape="rect" id="node4" href="$classsrc_1_1fourmi_1_1_fourmi.html#abdfe5c1eda5b1638300db57f3613f212" title="Reset the Ant This method hard reset the ant at its beginning direction, position." alt="" coords="19,137,193,163"/>
-<area shape="rect" id="node5" href="$classsrc_1_1plateau_1_1_plateau.html#a0f5fb6194c5b144344bf10d7cf2edb9e" title="default color schema" alt="" coords="14,187,198,214"/>
-</map>

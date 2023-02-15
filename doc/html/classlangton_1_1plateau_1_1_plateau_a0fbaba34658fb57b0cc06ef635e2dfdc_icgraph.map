@@ -1,5 +1,0 @@
-<map id="langton.plateau.Plateau.set_color_case" name="langton.plateau.Plateau.set_color_case">
-<area shape="rect" id="node1" title="set color in a Case" alt="" coords="284,23,485,65"/>
-<area shape="rect" id="node2" href="$classlangton_1_1plateau_1_1_plateau.html#a4a1a7c14b8a4e52c83b59ed5ec2e33bc" title="random color schema" alt="" coords="5,5,236,32"/>
-<area shape="rect" id="node3" href="$classlangton_1_1plateau_1_1_plateau.html#a6a67a68056488a76424f92b245d97a66" title="reset schema in white" alt="" coords="13,56,228,83"/>
-</map>

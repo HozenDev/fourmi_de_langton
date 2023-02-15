@@ -1,5 +1,20 @@
-log.txt
-src/langton/__pycache__
-src/buttons/__pycache__
-src/utils/__pycache__
-*~undo-tree~
+# ignore everything (dirs, files, sub-dirs, sub-files)
+/*
+
+# but do not ignore the .gitignore file
+!/.gitignore
+
+# not ignore readme file
+!/readme.org
+
+# not ignore all .py files (config files)
+!/src/**/*.py
+
+# not ignore executable
+!/exec
+
+# documentation
+# not ignore Doxyfile and researches
+!/doc/Doxyfile
+!/doc/langton_researches.pdf
+!/doc/README.md

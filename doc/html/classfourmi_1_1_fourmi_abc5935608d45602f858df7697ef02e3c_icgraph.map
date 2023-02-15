@@ -1,7 +1,0 @@
-<map id="fourmi.Fourmi.draw" name="fourmi.Fourmi.draw">
-<area shape="rect" id="node1" title="Ant draw This method draw the ant with pyGame draw.rect function." alt="" coords="232,107,383,134"/>
-<area shape="rect" id="node2" href="$classsimulation_1_1_simulation.html#ad118925948111bd6a8c877fd4ebaa49e" title="Simulation iterator." alt="" coords="10,5,179,47"/>
-<area shape="rect" id="node3" href="$classplateau_1_1_plateau.html#a8691169b95c3ae675b930ad0e5a5924a" title="Random color schema." alt="" coords="5,71,184,112"/>
-<area shape="rect" id="node4" href="$classfourmi_1_1_fourmi.html#ae7c48cee61ba23e50c3fc5129fcea74b" title="Reset the Ant This method hard reset the ant at its beginning direction, position." alt="" coords="19,137,170,163"/>
-<area shape="rect" id="node5" href="$classplateau_1_1_plateau.html#a6d8806eed6c8906fc3a88f8e8d8c3132" title="default color schema" alt="" coords="14,187,175,214"/>
-</map>

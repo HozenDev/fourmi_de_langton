@@ -1,5 +1,0 @@
-<map id="buttons_package.button.Button.handle_event" name="buttons_package.button.Button.handle_event">
-<area shape="rect" id="node1" title="User input method This method operate users input with event.type pyGame attributs." alt="" coords="264,51,539,92"/>
-<area shape="rect" id="node2" href="$classlangton__package_1_1simulation_1_1_simulation.html#a3c910876f8c67b629a4bfe413c80d8d1" title="Simulation iterator." alt="" coords="5,5,216,47"/>
-<area shape="rect" id="node3" href="$classlangton__package_1_1simulation_1_1_simulation.html#afd6117ec9d904993603f05738c095f64" title="Global start, here when ants aren&#39;t running." alt="" coords="5,95,216,136"/>
-</map>

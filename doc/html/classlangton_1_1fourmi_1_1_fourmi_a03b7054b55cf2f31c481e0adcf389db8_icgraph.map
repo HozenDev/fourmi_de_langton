@@ -1,8 +1,0 @@
-<map id="langton.fourmi.Fourmi.draw" name="langton.fourmi.Fourmi.draw">
-<area shape="rect" id="node1" title="Ant draw This method draw the ant with pyGame draw.rect function." alt="" coords="573,71,776,98"/>
-<area shape="rect" id="node2" href="$classlangton_1_1simulation_1_1_simulation.html#a9da91713f42652792e9ca626148a5d85" title="Simulation iterator." alt="" coords="293,5,516,47"/>
-<area shape="rect" id="node3" href="$classlangton_1_1plateau_1_1_plateau.html#a7ef36e6162676469a22dd4415175e787" title="draw multiprocessing" alt="" coords="284,71,525,98"/>
-<area shape="rect" id="node6" href="$classlangton_1_1fourmi_1_1_fourmi.html#a8668301bd55f2d65fc909d69091436cc" title="Reset the Ant This method hard reset the ant at its beginning direction, position." alt="" coords="303,122,507,149"/>
-<area shape="rect" id="node4" href="$classlangton_1_1plateau_1_1_plateau.html#a4a1a7c14b8a4e52c83b59ed5ec2e33bc" title="random color schema" alt="" coords="5,46,236,73"/>
-<area shape="rect" id="node5" href="$classlangton_1_1plateau_1_1_plateau.html#a6a67a68056488a76424f92b245d97a66" title="reset schema in white" alt="" coords="13,97,228,123"/>
-</map>

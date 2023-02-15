@@ -1,4 +1,0 @@
-<map id="fourmi.Fourmi.move_down" name="fourmi.Fourmi.move_down">
-<area shape="rect" id="node1" title="Ant move down This method calls move() with a down vector (0, y)." alt="" coords="5,5,203,32"/>
-<area shape="rect" id="node2" href="$classfourmi_1_1_fourmi.html#acac45446e4cff614ac2d7ad12d0afe84" title="Vectorial ant movement This method reprensent primitive ant movement." alt="" coords="251,5,405,32"/>
-</map>

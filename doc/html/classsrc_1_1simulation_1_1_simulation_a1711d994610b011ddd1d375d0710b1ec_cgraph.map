@@ -1,4 +1,0 @@
-<map id="src.simulation.Simulation.set_behavior" name="src.simulation.Simulation.set_behavior">
-<area shape="rect" id="node1" title="Set the behavior before add ants and game start." alt="" coords="5,29,217,71"/>
-<area shape="rect" id="node2" href="$classsrc_1_1simulation_1_1_simulation.html#acf5e52d4f2073a46c515921063c6b079" title="Init random color from simulation behavior." alt="" coords="265,29,479,71"/>
-</map>

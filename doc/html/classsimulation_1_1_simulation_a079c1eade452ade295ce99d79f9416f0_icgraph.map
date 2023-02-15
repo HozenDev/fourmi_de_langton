@@ -1,9 +1,0 @@
-<map id="simulation.Simulation.draw" name="simulation.Simulation.draw">
-<area shape="rect" id="node1" title="Draw the map and ants." alt="" coords="503,162,704,189"/>
-<area shape="rect" id="node2" href="$classsimulation_1_1_simulation.html#ad118925948111bd6a8c877fd4ebaa49e" title="Simulation iterator." alt="" coords="269,5,438,47"/>
-<area shape="rect" id="node3" href="$classplateau_1_1_plateau.html#a8691169b95c3ae675b930ad0e5a5924a" title="Random color schema." alt="" coords="264,71,443,112"/>
-<area shape="rect" id="node4" href="$classfourmi_1_1_fourmi.html#ae7c48cee61ba23e50c3fc5129fcea74b" title="Reset the Ant This method hard reset the ant at its beginning direction, position." alt="" coords="278,137,429,163"/>
-<area shape="rect" id="node5" href="$classplateau_1_1_plateau.html#a6d8806eed6c8906fc3a88f8e8d8c3132" title="default color schema" alt="" coords="273,187,434,214"/>
-<area shape="rect" id="node6" href="$classsimulation_1_1_simulation.html#ac10a24a33dd9bd4c883c6b2e5958672a" title="Reset the simulation." alt="" coords="252,262,455,289"/>
-<area shape="rect" id="node7" href="$classsimulation_1_1_simulation.html#a8f987246d6c37d1c2efc931521e040f9" title="Global start, here when ants aren&#39;t running." alt="" coords="5,287,204,314"/>
-</map>

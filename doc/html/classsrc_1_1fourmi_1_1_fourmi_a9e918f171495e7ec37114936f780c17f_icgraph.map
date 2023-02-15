@@ -1,5 +1,0 @@
-<map id="src.fourmi.Fourmi.move_right" name="src.fourmi.Fourmi.move_right">
-<area shape="rect" id="node1" title="Ant move right This method calls move() with a right vector (x, 0)." alt="" coords="493,5,672,47"/>
-<area shape="rect" id="node2" href="$classsrc_1_1fourmi_1_1_fourmi.html#a1c15f3dee1750a516bda50893347ded3" title="Move the ant following its conduct This method moves the ant compare to the conduct wanted." alt="" coords="253,13,445,39"/>
-<area shape="rect" id="node3" href="$classsrc_1_1fourmi_1_1_fourmi.html#a4735baadfa1beff32926a7213de34aa4" title="An ant complete movement This method make the ant follows a complete movement (rotate,..." alt="" coords="5,13,205,39"/>
-</map>

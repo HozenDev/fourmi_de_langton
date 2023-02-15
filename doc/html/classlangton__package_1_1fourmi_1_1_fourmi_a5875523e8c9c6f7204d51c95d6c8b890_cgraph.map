@@ -1,5 +1,0 @@
-<map id="langton_package.fourmi.Fourmi.rotate" name="langton_package.fourmi.Fourmi.rotate">
-<area shape="rect" id="node1" title="Rotation the ant This method rotate the ant following the ant&#39;s behavior." alt="" coords="5,35,277,61"/>
-<area shape="rect" id="node2" href="$classlangton__package_1_1fourmi_1_1_fourmi.html#a0e0344ad58f871a62820fc42a2fca91a" title="Ant rotate left This method rotate the ant in its left." alt="" coords="325,5,627,32"/>
-<area shape="rect" id="node3" href="$classlangton__package_1_1fourmi_1_1_fourmi.html#a8b9a05a0f237d7996557ad6d03761880" title="Ant rotate left This method rotate the ant in its right." alt="" coords="340,57,612,98"/>
-</map>

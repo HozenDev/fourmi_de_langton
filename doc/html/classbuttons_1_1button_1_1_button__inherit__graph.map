@@ -1,5 +1,0 @@
-<map id="buttons.button.Button" name="buttons.button.Button">
-<area shape="rect" id="node1" title="Represent a Button." alt="" coords="146,5,310,361"/>
-<area shape="rect" id="node2" href="$classbuttons_1_1check__box_1_1_check_box.html" title="Represent a CheckBox." alt="" coords="5,409,219,692"/>
-<area shape="rect" id="node3" href="$classbuttons_1_1input__box_1_1_input_box.html" title="Represent an InputBox." alt="" coords="243,424,445,677"/>
-</map>
